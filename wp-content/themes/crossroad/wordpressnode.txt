@@ -1,0 +1,206 @@
+﻿category current
+----------------------------------------------------------
+<?php 
+$currentcat= get_category_top_slug();
+?>
+<ul class="clearfix">
+     <?php
+$loop = new WP_Query(array("post_type" => "blog","posts_per_page" => 8,"category_name"=>$currentcat,"paged"=>$paged, 'order' => ASC));
+if ( $loop->have_posts() ) : while($loop->have_posts()): $loop->the_post();
+?>
+      <li class="blog_left">
+        <p class="blog_txt01"><?php the_time('Y年m月d日'); ?></p>
+        <div class="left">
+        <?php  echo get_the_post_thumbnail( $post->ID, 'thumbnail' ); ?>
+        </div>
+        <div class="right clearfix">
+        <p class="blog_txt02"><?php the_title(); ?></p>
+        <p><?php the_content(); ?></p>
+      
+        </div>
+      </li><!-- blog_left !-->
+<?php endwhile; endif; ?>
+</ul>
+
+<!-- function.php!-->
+/*-start---------------------*/
+function get_category_top($ID) {
+	if (!is_numeric($ID)) return '';
+	$p = get_category_parents($ID, false, ',');
+	$pArr = explode(',', $p);
+	return $pArr[0];
+}
+
+//get parentcategoryID
+function get_category_parent($ID) {
+	$catObj = get_category($ID);
+	$parentID = $catObj->category_parent;
+	return $parentID;
+}
+//get topcategoryID
+function get_category_top_id($ID) {
+	$i = 0;
+	$parent = get_category_parent($ID);
+	if ($parent == 0) return $ID;
+	while($parent) {
+		++$i;
+		$parentID = get_category_parent($parent);
+		if($parentID){
+			$parent = $parentID;
+		} else {
+			return $parent;
+			break;
+		}
+		if($i > 5){
+			break;
+		}
+	}
+}
+function get_category_top_slug(){
+	$curCat = get_current_category();
+	$topID = get_category_top_id($curCat->cat_ID);
+	if(!$topID) $topID = $curCat->cat_ID;
+	$topID = get_category($topID)->slug;
+	return $topID;
+}
+
+
+add_action('wp_head', 'get_current_category');
+//get topcategoryID
+function get_current_category()
+{
+	global $_curcat;
+	$cate = null;
+	if( is_category() ) {
+		//カテゴリー表示だったら
+		$now_cate = get_query_var('cat');
+		$cate = get_category($now_cate);
+	} else if (is_single() ) {
+		//シングルページ表示だったら
+		$cates = get_the_category();
+		$i = 0;
+		$use_category = 0;
+		foreach ($cates as $cate) {
+			//未分類を除外した配列の一番初めのカテゴリを選択
+			if($cate->category_parent > 0 && $use_category == 0) {
+				$use_category = $i;
+			}
+			$i++;
+		}
+		$cate = $cates[$use_category];
+	}
+	//カテゴリーのオブジェクトごと保持
+	$_curcat = $cate;
+	return $cate;
+}
+/*----------------------*/
+
+
+-----------------------------------
+
+
+cpt post type
+-----------------------
+
+<ul class="clearfix">
+     <?php
+$loop = new WP_Query(array("post_type" => "blog","posts_per_page" => 8,"paged"=>$paged, 'order' => ASC));
+if ( $loop->have_posts() ) : while($loop->have_posts()): $loop->the_post();
+?>
+      <li class="blog_left">
+        <p class="blog_txt01"><?php the_time('Y年m月d日'); ?></p>
+        <div class="left">
+        <?php  echo get_the_post_thumbnail( $post->ID, 'thumbnail' ); ?>
+        </div>
+        <div class="right clearfix">
+        <p class="blog_txt02"><?php the_title(); ?></p>
+        <p><?php the_content(); ?></p>
+      
+        </div>
+      </li><!-- blog_left !-->
+<?php endwhile; endif; ?>
+</ul>
+
+
+link
+--------------------
+top_page-----><a href="<?php echo site_url(); ?>">HOME</a>
+page    -----><a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ) ?>">
+category----><a href="<?php echo esc_url( get_category_link( get_cat_ID( '施工例' )) ); ?>">
+archeive-----><a href="<?php echo get_post_type_archive_link( 'blog' ); ?>">日記</a>
+single--------><a href="<?php the_permalink() ?>">
+
+==>file directory in wordpress
+/%category%/%postname%/
+
+
+
+/******************************/
+==>image shortcode
+/*
+ * [template_uri]
+ * Return template directry uri.
+ * @return string
+ */
+
+function template_uri() {
+    return get_template_directory_uri();
+}
+
+add_shortcode("template_uri", "template_uri");
+<a href="<?php the_permalink(); ?>">
+
+
+
+ <?php $post_type=get_post_type(); 
+          if($post_type=="blog"):?>
+          <p class="blogsingle_txt03 marbottom"><a href="<?php echo get_post_type_archive_link( 'blog' ); ?>">« ブログ一覧へ戻る</a></p>
+        <?php else: ?>
+          <p class="blogsingle_txt03 marbottom"><a href="<?php echo get_post_type_archive_link( 'news' ); ?>">« お知らせ一覧へ戻る</a></p>
+        <?php endif; ?>
+
+
+
+ <ul class="clearfix">
+          <li><a  href="<?php echo get_home_url(); ?>"  <?php if ( is_home()) { echo ' class="current_page_item"'; } ?>>HOME</a></li>
+          <li><a href="<?php echo get_permalink( get_page_by_path( 'company' ) ) ?>" <?php if ( is_page('company')) { echo ' class="current_page_item"'; } ?>>会社概要</a></li>
+          <li><a href="<?php echo get_permalink( get_page_by_path( 'facility' ) ) ?>" <?php if ( is_page('facility')) { echo ' class="current_page_item"'; } ?>>設備紹介 </a></li>
+          <li><a href="<?php echo get_permalink( get_page_by_path( 'gallery' ) ) ?>" <?php if ( is_page('gallery')) { echo ' class="current_page_item"'; } ?>>ギャラリー</a></li>
+          <li><a href="<?php echo get_permalink( get_page_by_path( 'hifumi' ) ) ?>"<?php if ( is_page('hifumi')) { echo ' class="current_page_item"'; } ?>>鉄板焼ひふみ</a></li>
+        </ul>
+.current_page_item {
+    opacity: 1.2;
+    background: #cd6601;
+}
+<div <?php if ( is_page('access')) 
+       { echo ' class="bnr01"';} 
+        if ( is_page('batting')) 
+       { echo ' class="bnr02"';} 
+?>
+>
+
+
+==>Remove auto insert p tag
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );
+
+==>OR (Only post)
+add_filter('the_content', 'specific_no_wpautop', 9);
+function specific_no_wpautop($content) {
+    if (is_page()) { // or whatever other condition you like
+        remove_filter( 'the_content', 'wpautop' );
+        return $content;
+    } else {
+        return $content;
+    }
+}
+
+   <?php $content = get_the_content();
+               echo mb_substr($content, 0, 60); ?>
+
+https://www.nishi2002.com/15258.html
+https://usortblog.com/ajaxzip3-contact-form-7-2016/
+
+
+some page have box-shadow <body class="<?php if(is_page())echo the_title();?>"> 
+http://localhost/jeltyworld_wp/spain/

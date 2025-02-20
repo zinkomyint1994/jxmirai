@@ -1,0 +1,15 @@
+# Ignore WordPress Core Files
+wp-admin/
+wp-includes/
+
+# Ignore Uploads
+wp-content/uploads/
+
+# Ignore Caches
+wp-content/cache/
+
+# Ignore Plugins (Optional, unless developing your own plugin)
+wp-content/plugins/
+
+# Ignore Config Files
+wp-config.php

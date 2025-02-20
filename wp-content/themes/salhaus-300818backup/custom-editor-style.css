@@ -1,0 +1,25 @@
+.text-box {
+    background: #edede6;
+    margin: 15px 0 10px 0 ;
+    padding: 30px 10px 30px 10px;
+}
+.text-box p {
+    color: #333333;
+    line-height: 1.7rem;    
+}
+.text-box p:first-child {
+    margin: 0 0 20px 0;
+}
+.text-box span {
+    color: #57a800;
+}
+.caption {
+    color: #808080;
+    line-height: 1.3em;
+    margin: 0px 0px 35px;
+}
+.wp-caption-text {
+    color: #808080;
+    line-height: 1.3em;
+    margin: 0px 0px 35px;
+}

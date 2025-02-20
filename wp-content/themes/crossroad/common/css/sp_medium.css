@@ -1,0 +1,498 @@
+@media only screen and (max-width:640px) {
+	.pc {
+		display: none;
+	}
+	.sp {
+		display: block;
+	}
+	#header {
+		width: 98%;
+		margin: 0 auto;
+	}
+	.headerIn {
+		width: 100%;
+	}
+	.logosec {
+		padding: 15px 0 0 0;
+	}
+	.logo {
+		width: 45%;
+		float: left;
+	}
+	.logo img {
+		max-width: 100%;
+	}
+	.h_contact {
+		width: 45%;
+		float: right;
+	}
+	.h_contact img {
+		max-width: 100%;
+	}
+	.htxt {
+		font-size: 0.8em;
+	}
+	.gNav {
+		display: none;
+		margin-bottom: 10px;
+	}
+	.menu {
+		padding: 25px 0 0 0;
+		height: 47px;
+		background: url(../../common/img/header/menu_open.png) no-repeat;
+		cursor: pointer;
+		display: block;
+		font-size: 1.2em;
+		font-weight: bold;
+		text-align: center;
+	}
+	.menu.active {
+		padding: 25px 0 0 0;
+		height: 47px;
+		background: url(../../common/img/header/menu_close.png) no-repeat;
+		display: block;
+		text-align: center;
+	}
+	.gNavIn {
+		width: 100%;
+	}
+	.gNavIn li {
+		width: 100%;
+	}
+	.gNavIn li a {
+		width: 100%;
+		border-bottom: 1px dotted #fff;
+	}
+	.aside {
+		display: none;
+	}
+	.content {
+		width: 100%;
+	}
+	#footer {
+		background: #f9bd3b;
+	}
+	.ftNav {
+		width: 98%;
+		padding: 15px 0;
+	}
+	.ftInfor {
+		width: 47%;
+	}
+	.ftInfor ul, .ftser ul {
+		margin-left: 10px;
+	}
+	.ftser {
+		width: 47%;
+	}
+	.ftInfor ul li, .ftser ul li {
+		padding-bottom: 0;
+	}
+	.main {
+		width: 98%;
+		float: none;
+		margin: 0 auto;
+	}
+	.tit {
+		width: 94%;
+		padding: 1% 0 1% 2%;
+		font-size: 1.2em;
+	}
+	.banner img{
+       max-width: 100%;
+       height: auto;
+	}
+	.l_con img {
+		max-width: 100%;
+		height: auto;
+	}
+	.conbtnimg {
+    position: absolute;
+   bottom: 10px;
+    left: 15px;
+    max-width: 40%!important;
+}
+	/***********index.php***********/
+    .slider {
+		width: 70%;
+		margin: 15px auto;
+		height: 165px;
+	}
+	.slick-list {
+		height: 137px;
+	}
+	.slick-slide {
+		margin: 0 10px;
+	}
+	.top01tit p {
+		font-size: 0.8em;
+		padding: 0;
+		background-size: 115px;
+	}
+	.top01tit p span {
+		font-size: 1.3em;
+		padding: 0 30px;
+	}
+	.tp01 .slick-dotted.slick-slider {
+		margin-bottom: 15px;
+	}
+	.tp02 ul {
+		width: 95%;
+	}
+	.tp02 ul li {
+		width: 95%;
+		font-size: 0.8em;
+		padding: 10px 0 2px;
+		line-height: 18px;
+	}
+	.tp02 ul li span {
+		width: 70px;
+		padding-bottom: 1px;
+	}
+	.tp03 {
+		margin-top: 15px;
+	}
+	.tp03 img {
+		max-width: 100%
+	}
+	.tp04 {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.tp04_01 {
+		width: 95%;
+		margin: -18px 0 10px 3px;
+	}
+	.tp04_01 img {
+		width: 100px;
+	}
+	.tp04_01 p {
+		font-size: 0.8em;
+		line-height: 18px;
+		padding: 5px 0 0 5px;
+		width: 60%;
+	}
+	.tp04_02 {
+		width: 94%;
+		border: 3px solid #d2d2d2;
+		padding: 2%;
+		margin: 0 auto;
+		padding-bottom: 13px;
+	}
+	.tp04_02img {
+		width: 100%;
+		float: left;
+		text-align: center;
+		padding-bottom: 10px;
+	}
+	.tp04_02img img {
+		float: none;
+	}
+	.tp04_02 p {
+		width: 93%;
+		float: none;
+		font-size: 0.8em;
+		line-height: 18px;
+		padding-left: 0;
+		margin: 0 auto;
+	}
+	
+	
+	/***********flow.php***********/
+	.flowtxt {
+		width: 95%
+	}
+	.flowtit{
+        font-size: 1.2em;
+	}
+	.flowIcon img{
+        max-width: 30%;
+	}
+	/***********price.php***********/
+	.pricesec{
+		width: 98%;
+		margin: 0 auto;
+	}
+	.pricetbl{
+		 width: 100%;
+	}
+	.pricetbl tr{
+		 width: 100%;
+		 float: left;
+	}
+	.pricetbl th{
+        width: 100%;
+        float: left;
+           padding: 9px 0 9px 0;
+	}
+	.pricetbl td{
+		 width: 100%;
+		 float: left;
+		padding: 9px 0 9px 0;
+	}
+	/***********voice.php***********/
+	.voicesec{
+       width: 98%;
+		margin: 0 auto;
+	}
+	.voice_l{
+     width: 100%;
+     text-align: center;
+	}
+	.voice_l img{
+		max-width: 100%;
+	}
+	.voice_r{
+     width: 100%;
+	}
+	/***********privacy_policy.php***********/
+	.poltbl {
+		width: 100%;
+		margin: 20px 0;
+	}
+	.poltbl th {
+		width: 100%;
+		float: left;
+	}
+	.poltbl td {
+		width: 96%;
+		float: left;
+		padding: 15px 2%;
+	}
+	/***********cpost.php***********/
+	.cpostsec_r{
+       text-align: center;
+	    float: none;
+	    width: 100%;
+	}
+	.cpost_sec01{
+	width: 98%;	
+    }
+    .cpostsec_l{
+    	width: 100%;
+    	font-size: 0.8em;
+    }
+	.cpostsec_r img{
+		max-width: 100%;
+	}
+	.proceimg{
+       width: 100%;
+	}
+	.proce_l{
+		width: 47%;
+	}
+	.proce_r{
+		width: 47%;
+	}
+	.proce_l img,.proce_r img{
+		max-width: 100%;
+	}
+ /***********topics.php***********/
+	.topics ul li {
+		padding: 10px 0 3px;
+	}
+	.tpctxt01 {
+		font-size: 0.9em;
+		padding: 0 20px 0 5px;
+	}
+	.tpctxt02 {
+		font-size: 1em;
+	}
+/***********corporate***********/
+	.corporate_sec{
+		width: 98%;
+		margin: 20px auto;
+	}
+	.corporate_sec table{
+		width: 100%;
+	}
+	.corporate_sec table tr th {
+		width: 80px;
+		font-size: 1em;
+		padding: 10px;
+	}
+	.corporate_sec table tr td {
+		width: auto;
+		font-size: 1em;
+		padding: 10px;
+	}
+	.corporate_map {
+		width: 98%;
+		margin: 0 auto;
+	}
+	.map {
+		margin: 20px 0 49px 0;
+	}
+	.map iframe {
+		max-width: 100%;
+		height: auto;
+	}
+/***********carpenty***********/	
+	.section {
+		width: 98%;
+		margin: 0 auto;
+	}
+	.section_in {
+		margin: 10px 0;
+	}
+	.section_l {
+		width: 100%;
+		float: none;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.section_l img {
+		max-width: 100%;
+	}
+	.section_r {
+		width: 96%;
+		float: none;
+		padding: 0 2%;
+	}
+	.section_text {
+		font-size: 0.8em;
+	}
+	.section_txt {
+		margin: 12px auto;
+		color: #454545;
+		font-size: 0.8em;
+		font-family: "Meiryo";
+	}
+/***********c-case.php***********/
+	.c-case_sec01{
+		width: 98%;
+		margin: 0 auto;
+	}
+	.c-case_block01{
+		width: 32%;
+		margin:0 2% 26px 0;
+	}
+	.c-case_tit{
+		font-size: 0.7em;
+		min-height: 44px;
+	}
+	.c-case_tit img{
+		max-width: 100%;
+	}
+	.c-case_block01 .c_img01{
+		max-width: 100%;
+	}
+	.c-case_txt01{
+		font-size: 0.8em;
+	}
+	.marnone{
+	    margin: 0;
+    }
+
+	/*********** new_post ***********/
+	.newpost_sec01{
+		width: 98%;
+		margin: 0 auto;
+	}
+    .newpost_tit{
+    	font-size: 1.3em;
+    }
+    .newpost_txt01{
+    	font-size: 1em;
+    }
+    .newpost_txt02{
+    	width: 98%;
+    	font-size: 1em;
+    }
+/***********faq***********/
+	.fqasec01 {
+		padding-top: 20px;
+	}
+	.fqatit {
+		font-size: 1em;
+		padding: 8px 0px 8px 10px;
+	}
+	.fqatxt {
+		font-size: 0.9em;
+		padding: 2px 0px 0px 33px;
+		margin: 10px 5px 0px 5px;
+	}
+/***********contact***********/
+	.cont01 {
+		padding: 15px 0;
+		text-align: center;
+	}
+	.cont01 img {
+		max-width: 98%;
+		height: auto;
+	}
+	.cont_txt01 {
+		font-size: 0.9em;
+		padding: 15px 7px 0px 7px;
+	}
+	.contact_tb {
+		width: 97%;
+		margin: 20px auto;
+	}
+	.contact_tb th {
+		width: 100%;
+		font-size: 0.9em;
+		text-align: left;
+		float: left;
+		padding: 10px 0px 5px 0px;
+	}
+	.contact_tb th p {
+		font-size: 0.9em;
+		padding: 10px 0px 5px 0px;
+	}
+	.contact_tb td {
+		width: 100%;
+		font-size: 0.9em;
+		display: block;
+		padding: 10px 0;
+	}
+	.contact_tb td input {
+		width: 99%;
+		margin: 0 auto;
+		display: block;
+		padding: 10px 0;
+	}
+	.contact_tb select {
+		width: 100%;
+		padding: 8px 0;
+	}
+	.contact_tb .cont_td01 input {
+		width: 99%;
+		margin: 0 auto;
+	}
+	.contact_tb td textarea {
+		width: 98%;
+		height: 109px;
+		margin: 0 auto;
+	}
+	.contact_tb .radio {
+		display: block;
+		padding: 10px 0;
+		clear: both;
+	}
+	.contact_tb .radio input{
+		width: auto;
+    margin:0; 
+    display: inherit;
+	}
+	.radiotxt {
+		font-size: 0.9em;
+		float: left;
+		padding: 0px 6px 0px 0px;
+	}
+	.contact_tb .checkbox input {
+		width: auto;
+		margin: 0px 0px 3px 3px;
+		display: inline-block;
+	}
+	input.radio_btn {
+		margin: 3px 5px 0px 0px !important;
+		width: auto !important;
+		display: inherit;
+		float: left;
+	}
+   .caseimg img{
+   	max-width: 100%;
+   	height: auto;
+   }
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>HTML</title>
+		<meta name="description" content="">
+		<meta name="author" content="Thinzar">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" href="elements/css/set.css" />
+		
+		<script src="elements/js/jquery-1.8.3.min.js"></script>
+		<script src="elements/js/jquery.pnganimation.js"></script>
+		<script type="text/javascript" src="elements/js/TweenMax.min.js"></script>
+		<script type="text/javascript" src="elements/js/ScrollMagic.js"></script>
+		<script type="text/javascript" src="elements/js/animation.gsap.js"></script>
+		<script type="text/javascript" src="elements/js/debug.addIndicators.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+				//$("#auto_header").load("header/header.txt");
+				$.ajax({
+url : "header/header.txt",
+method : 'get',
+dataType : "text",
+success : function(data) {
+	$("#auto_header").html(data);
+var moveSpd = 500;
+var i_mt= 60; 
+$('a[href^=#]').click(function() {
+	
+	var s_tgt = $(this).attr("href");
+	if(s_tgt !== undefined){
+		if(typeof i_mt === 'undefined'){i_mt = 0;}
+			var r_tgt_offset = $(s_tgt).offset();
+			var s_tgt_top = r_tgt_offset.top;
+			$('html, body').animate({scrollTop:s_tgt_top - i_mt},moveSpd, "swing");
+		}
+});
+
+if(location.hash.indexOf("#") !== -1){
+	r_tgt_offset = $(location.hash).offset();
+	s_tgt_top = r_tgt_offset.top;
+	$('html, body').animate({scrollTop:s_tgt_top - i_mt},(moveSpd * 2));
+}
+return this;
+}
+});
+
+				$(window).scroll(function() {
+					if ($(window).scrollTop() > 1) {
+						$('#auto_header').addClass('fixed');
+					} else {
+						$('#auto_header').removeClass('fixed');
+					}
+				});
+				
+				
+
+			});
+		</script>
+		
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<header id="auto_header"></header>
+			
+			<article id="content" class="clearfix">
+				<section id ="intro">
+					<h1 id="logo"><img src="images/konichiwa.gif" /></h1>		
+				</section>
+				<section id="animation">
+					<div class="anim">
+					<h2>Animation Like Vedio</h2>
+					<div id="mov"></div>
+					<script>
+						　$('#mov').pngAnimation({
+						　　prefix : 'mov_',
+						　　filepath : 'images/mov/',
+						  filetype : 'jpg',
+						　　fps : '10',
+						　　totalFrames : '47',
+						　　loop : true,
+						　　preload  : true
+						});
+						</script>
+					</div>
+				</section>
+				
+				<section id="magic">
+					<div class="box">
+					<h2>GIF-like behaviour controlled by the scroll bar</h2>
+					<div id="imagesequence">
+						<img id="myimg"/>
+						<script>
+// define images
+var images = [
+	"images/mov/mov_0000.jpg",
+	"images/mov/mov_0001.jpg",
+	"images/mov/mov_0002.jpg",
+	"images/mov/mov_0003.jpg",
+	"images/mov/mov_0004.jpg",
+	"images/mov/mov_0005.jpg",
+	"images/mov/mov_0006.jpg",
+	"images/mov/mov_0007.jpg",
+	"images/mov/mov_0008.jpg",
+	"images/mov/mov_0009.jpg",
+	"images/mov/mov_0010.jpg",
+	"images/mov/mov_0011.jpg",
+	"images/mov/mov_0012.jpg",
+	"images/mov/mov_0013.jpg",
+	"images/mov/mov_0014.jpg",
+	"images/mov/mov_0015.jpg",
+	"images/mov/mov_0016.jpg",
+	"images/mov/mov_0017.jpg",
+	"images/mov/mov_0018.jpg",
+	"images/mov/mov_0019.jpg",
+	"images/mov/mov_0020.jpg",
+	"images/mov/mov_0021.jpg",
+	"images/mov/mov_0022.jpg",
+	"images/mov/mov_0023.jpg",
+	"images/mov/mov_0024.jpg",
+	"images/mov/mov_0025.jpg",
+	"images/mov/mov_0026.jpg",
+	"images/mov/mov_0027.jpg",
+	"images/mov/mov_0028.jpg",
+	"images/mov/mov_0029.jpg",
+	"images/mov/mov_0030.jpg",
+	"images/mov/mov_0031.jpg",
+	"images/mov/mov_0032.jpg",
+	"images/mov/mov_0033.jpg",
+	"images/mov/mov_0034.jpg",
+	"images/mov/mov_0035.jpg",
+	"images/mov/mov_0036.jpg",
+	"images/mov/mov_0037.jpg",
+	"images/mov/mov_0038.jpg",
+	"images/mov/mov_0039.jpg",
+	"images/mov/mov_0040.jpg",
+	"images/mov/mov_0041.jpg",
+	"images/mov/mov_0042.jpg",
+	"images/mov/mov_0043.jpg",
+	"images/mov/mov_0044.jpg",
+	"images/mov/mov_0045.jpg",
+	"images/mov/mov_0046.jpg",
+	"images/mov/mov_0047.jpg",
+	"images/mov/mov_0048.jpg"
+];
+
+// TweenMax can tween any property of any object. We use this object to cycle through the array
+var obj = {curImg: 0};
+
+// create tween
+var tween = TweenMax.to(obj, 0.5,
+	{
+		curImg: images.length - 1,	// animate propery curImg to number of images
+		roundProps: "curImg",				// only integers so it can be used as an array index
+		repeat: 0,									// repeat 3 times
+		immediateRender: true,			// load first image automatically
+		ease: Linear.easeNone,			// show every image the same ammount of time
+		onUpdate: function () {
+		  $("#myimg").attr("src", images[obj.curImg]); // set the image source
+		}
+	}
+);
+
+// init controller
+var controller = new ScrollMagic.Controller();
+
+// build scene
+var scene = new ScrollMagic.Scene({triggerElement: "#imagesequence",triggerHook: "onCenter", duration: 500})
+				.setTween(tween)
+				.addIndicators() // add indicators (requires plugin)
+				.addTo(controller);
+
+</script>
+					</div>
+					</div>
+				</section>
+			</article>
+			<footer>
+				<p class="copyright">
+					&copy; Copyright  by Thinzar
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,7 @@
+<div id="header">
+<ul class="clearfix">
+<li><a href="#intro">Introduction</a></li>
+<li><a href="#animation">Animation</a></li>
+<li><a href="#magic">Magic</a></li>
+</ul>
+</div>

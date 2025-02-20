@@ -1,0 +1,98 @@
+http://scrollmagic.io/
+
+// Animation Like Vedio
+<script>
+　$('#mov').pngAnimation({
+　　prefix : 'mov_',
+　　filepath : 'images/mov/',
+  filetype : 'jpg',
+　　fps : '10',
+　　totalFrames : '47',
+　　loop : true,
+　　preload  : true
+});
+</script>
+
+
+// GIF-like behaviour controlled by the scroll bar
+<script>
+// define images
+var images = [
+	"images/mov/mov_0000.jpg",
+	"images/mov/mov_0001.jpg",
+	"images/mov/mov_0002.jpg",
+	"images/mov/mov_0003.jpg",
+	"images/mov/mov_0004.jpg",
+	"images/mov/mov_0005.jpg",
+	"images/mov/mov_0006.jpg",
+	"images/mov/mov_0007.jpg",
+	"images/mov/mov_0008.jpg",
+	"images/mov/mov_0009.jpg",
+	"images/mov/mov_0010.jpg",
+	"images/mov/mov_0011.jpg",
+	"images/mov/mov_0012.jpg",
+	"images/mov/mov_0013.jpg",
+	"images/mov/mov_0014.jpg",
+	"images/mov/mov_0015.jpg",
+	"images/mov/mov_0016.jpg",
+	"images/mov/mov_0017.jpg",
+	"images/mov/mov_0018.jpg",
+	"images/mov/mov_0019.jpg",
+	"images/mov/mov_0020.jpg",
+	"images/mov/mov_0021.jpg",
+	"images/mov/mov_0022.jpg",
+	"images/mov/mov_0023.jpg",
+	"images/mov/mov_0024.jpg",
+	"images/mov/mov_0025.jpg",
+	"images/mov/mov_0026.jpg",
+	"images/mov/mov_0027.jpg",
+	"images/mov/mov_0028.jpg",
+	"images/mov/mov_0029.jpg",
+	"images/mov/mov_0030.jpg",
+	"images/mov/mov_0031.jpg",
+	"images/mov/mov_0032.jpg",
+	"images/mov/mov_0033.jpg",
+	"images/mov/mov_0034.jpg",
+	"images/mov/mov_0035.jpg",
+	"images/mov/mov_0036.jpg",
+	"images/mov/mov_0037.jpg",
+	"images/mov/mov_0038.jpg",
+	"images/mov/mov_0039.jpg",
+	"images/mov/mov_0040.jpg",
+	"images/mov/mov_0041.jpg",
+	"images/mov/mov_0042.jpg",
+	"images/mov/mov_0043.jpg",
+	"images/mov/mov_0044.jpg",
+	"images/mov/mov_0045.jpg",
+	"images/mov/mov_0046.jpg",
+	"images/mov/mov_0047.jpg",
+	"images/mov/mov_0048.jpg"
+];
+
+// TweenMax can tween any property of any object. We use this object to cycle through the array
+var obj = {curImg: 0};
+
+// create tween
+var tween = TweenMax.to(obj, 0.5,
+	{
+		curImg: images.length - 1,	// animate propery curImg to number of images
+		roundProps: "curImg",				// only integers so it can be used as an array index
+		repeat: 0,									// repeat 3 times
+		immediateRender: true,			// load first image automatically
+		ease: Linear.easeNone,			// show every image the same ammount of time
+		onUpdate: function () {
+		  $("#myimg").attr("src", images[obj.curImg]); // set the image source
+		}
+	}
+);
+
+// init controller
+var controller = new ScrollMagic.Controller();
+
+// build scene
+var scene = new ScrollMagic.Scene({triggerElement: "#imagesequence",triggerHook: "onCenter", duration: 500})
+				.setTween(tween)
+				.addIndicators() // add indicators (requires plugin)
+				.addTo(controller);
+
+</script>
