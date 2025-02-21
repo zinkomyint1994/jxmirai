@@ -53,61 +53,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 </div>
 <!-- What service do we provide? -->
 <div class="spreator"></div>
-<!-- my company -->
-<div class="my-company-wrapper">
-<div>
-    <?php
-            global $title;
-            $title = "COMPANY PROFILE";
-            include get_template_directory() . '/custom/subTitle.php';
-            ?>
-        </div>
-    <div class="my-com-wrapper">
-        <div class="about_company">
-        <table id="about_table" class="animation01 active">
-      	<tbody>
-      		<tr>
-      			<th>会社名</th>
-      			<td>JX未来株式会社(JXフューチャー株式会社)</td>
-      		</tr>
-      		<tr>
-      			<th>制定日</th>
-      			<td>2024年5月28日</td>
-      		</tr>
-      		<tr>
-      			<th>本社</th>
-				<td>東京都大田区大森西-8448</td>
-      		</tr>
-      		<tr>
-      			<th>資本金</th>
-      			<td>500万円</td>
-      		</tr>
-      		<tr>
-      			<th>リーダーシップ</th>
-      			<td>-</td>
-      		</tr>
-              <tr>
-      			<th>代表取締役</th>
-      			<td>林 錦士（ハヤシ キンシ）</td>
-      		</tr>
-              <tr>
-      			<th>役割</th>
-      			<td>中国メーカーと日本の顧客とのコラボレーションを監 督します。</td>
-      		</tr>
-      	</tbody>
-      </table>
 
-        </div>
-            <div class="water_mark">
-                <div class="water_mark_blur"></div>
-                <div class="blur_txt">JX未来株式会社</div>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/company1.png" alt="Example Image" class="blur_1">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/company2.png" alt="Example Image" class="blur_2">
-            </div>
-    </div>
-</div>
-<div class="spreator"></div>
-<!-- my company -->
 
 <!-- our service -->
 <div class="service-wrapper">
@@ -134,7 +80,7 @@ include get_template_directory() . '/custom/mainBanner.php';
                         ?>
                           <div> 私たちの会社は、多様な業界にわたる経験を持つ専門家チームと協力し 中国と国内で様々なプロジェクトを遂行している試作×量産会社です。</div>
                     </div>
-                    <div>当社は、射出成形、ブロー成形、PVC 成形、ゴム成形、押し出し成形、ディップ成形など、さまざまな樹脂成形技術を専門としています。さらに、カスタム金型製造も提供しており、お客様に正確で高品質のソリューションを提供しています</div>
+                    <div class="body_content">当社は、射出成形、ブロー成形、PVC 成形、ゴム成形、押し出し成形、ディップ成形など、さまざまな樹脂成形技術を専門としています。さらに、カスタム金型製造も提供しており、お客様に正確で高品質のソリューションを提供しています</div>
                 </div>
                 <div>
                     <?php
@@ -340,10 +286,11 @@ include get_template_directory() . '/custom/mainBanner.php';
         <div class="tags-text-wrap">
             <div class="slider-title">3Dプリンター</div>
             <div class="tags-subtitle">FDM (Fused Deposition Modeling) technology</div>
-            <div class="slider-text-container ">
+            <div class="slider-text-container "><p class="body_content">
             これは 3D プリンターで、おそらく FDM (熱溶解積層法) 技術を利用しています。熱可塑性フィラメントを加熱し、層ごとに押し出して 3D オブジェクトを作成します。プリンターに表示されるオブジェクトは、柔軟なフィラメントまたは硬いフィラメントで作られた複雑なデザインのようです。
 
             このタイプのプリンターは、汎用性とコスト効率が高いため、プロトタイピング、教育、趣味の用途でよく使用されます。PLA、ABS、TPU などの材料を扱うことができます。
+</p>
             </div>
         </div>
     </div>
@@ -412,7 +359,7 @@ include get_template_directory() . '/custom/mainBanner.php';
                     <div class="parent-box">
                         <div class="layer1">
                             <div>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/mark.png" alt="Example Image" class="prowduct-image">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/mark.png" alt="Example Image" class="product-image">
                             </div>
                             <div class="quality-text-wrapper">
                                 <div class="card_title">品質</div>
@@ -430,7 +377,7 @@ include get_template_directory() . '/custom/mainBanner.php';
                            <div class="parent-box">
                         <div class="layer1">
                             <div>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/cost.png" alt="Example Image" class="prowduct-image">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/cost.png" alt="Example Image" class="product-image">
                             </div>
                             <div class="quality-text-wrapper">
                                 <div class="card_title">料金</div>
@@ -448,7 +395,7 @@ include get_template_directory() . '/custom/mainBanner.php';
                            <div class="parent-box">
                         <div class="layer1">
                             <div>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/delivery.png" alt="Example Image" class="prowduct-image">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/delivery.png" alt="Example Image" class="product-image">
                             </div>
                             <div class="quality-text-wrapper">
                                 <div class="card_title">配達</div>
@@ -484,25 +431,25 @@ include get_template_directory() . '/custom/mainBanner.php';
                 <div>
                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
                 </div>
-                <div>高度な検査 - 3D スキャンと自動化システムにより欠陥を検出し、正確な寸法を確保します。</div>
+                <div class="body_content">高度な検査 - 3D スキャンと自動化システムにより欠陥を検出し、正確な寸法を確保します。</div>
             </div>
             <div class="list-wrap">
                 <div>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
                 </div>
-                <div>高度な検査 - 3D スキャンと自動化システムにより欠陥を検出し、正確な寸法を確保します。</div>
+                <div >高度な検査 - 3D スキャンと自動化システムにより欠陥を検出し、正確な寸法を確保します。</div>
             </div>
             <div class="list-wrap">
                 <div>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
                 </div>
-                <div>高度な検査 - 3D スキャンと自動化システムにより欠陥を検出し、正確な寸法を確保します。</div>
+                <div class="body_content">高度な検査 - 3D スキャンと自動化システムにより欠陥を検出し、正確な寸法を確保します。</div>
             </div>
             <div class="list-wrap">
                 <div>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
                 </div>
-                <div>高度な検査 - 3D スキャンと自動化システムにより欠陥を検出し、正確な寸法を確保します。</div>
+                <div class="body_content">高度な検査 - 3D スキャンと自動化システムにより欠陥を検出し、正確な寸法を確保します。</div>
             </div>
         </div>
 </div>
@@ -522,12 +469,12 @@ include get_template_directory() . '/custom/mainBanner.php';
             </div>
             <!-- three-blocks -->
             <div class="custom-txt-container">
-                <div class="custom-block">
+                <div class="custom-block" id="test1">
                     <div class="circle-title">
                         <span>A</span>
                     </div>
                     <div class="custom-inner-txt">
-                    私たちは、彼らの細部へのこだわりと仕事の質に感銘を受けました。設計から納品まで、すべてのステップがプロフェッショナルに処理され、私たちの要件が完璧に満たされました。
+                        私たちは、彼らの細部へのこだわりと仕事の質に感銘を受けました。設計から納品まで、すべてのステップがプロフェッショナルに処理され、私たちの要件が完璧に満たされました。
                     </div>
                 </div>
                 <div class="custom-block">
@@ -538,7 +485,7 @@ include get_template_directory() . '/custom/mainBanner.php';
                     私たちは、彼らの細部へのこだわりと仕事の質に感銘を受けました。設計から納品まで、すべてのステップがプロフェッショナルに処理され、私たちの要件が完璧に満たされました。
                     </div>
                 </div>
-                <div class="custom-block">
+                <div class="custom-block" id="test1">
                 <div class="circle-title">
                         <span>A</span>
                     </div>
@@ -554,30 +501,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 <!-- customer feedback -->
 <div class="spreator"></div>
 <!-- <p>“Beyond Borders: Crafting Excellence Through Japan-China Collaboration”</P> -->
-<div class="intro_wrapper">
-    <div class="intro_container">
-        <div class="intro_flex">
-            <div>
-                    <p class="intro_title">林 欣志 氏（日本人 CEO)</p>
-                    <div class="intro_sub_title">
-                    <?php
-                        include get_template_directory() . '/custom/subBlueLine.php';
-                        ?>
-                        「国境のないものづくり：日本の職人技と中国のイノベーションを結集して世界へ」
-                    </div>
-                    <div class="intro_content">
-                    当社の強みは、日本の精密工学と中国の製造規模を融合し、比類のない品質と革新性を提供することです。すべての金型と製品は、日本の職人の精神であるものづくりを反映しています。当社は、迅速な調整と現地サポートを確保するために、国内の日本サプライヤー（長野、千葉、愛知）とのパートナーシップを優先しています。私たちの目標は、標準に妥協することなく、日本で設計された製品を世界中で利用できるようにすることです。JXフューチャーは単なる会社ではなく、伝統と未来をつなぐ架け橋です。
-                    </div>
-            </div>
-            <div>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/intro.png" alt="Example Image" class="intro_img">
-            </div>
-        </div>
-       
-    </div>
-</div>
-<!-- intro -->
-<!-- intro -->
+
 
 <div class="spreator"></div>
 <!-- News -->
@@ -596,7 +520,7 @@ include get_template_directory() . '/custom/mainBanner.php';
                         <div class="news-txt-wrapper">
                             <div class="news-title">リアルタイム監視</div>
                             <div class="news-date">15.1.2025 WED</div>
-                            <div>リアルタイム監視ダッシュボードには検査ステータスが表示され、顧客に透明性と追跡可能性を提供します。
+                            <div class="body_content">リアルタイム監視ダッシュボードには検査ステータスが表示され、顧客に透明性と追跡可能性を提供します。
                                 品質レポートが生成され、発見事項と承認段階が文書化さ.....</div>
                         </div>
                         <div>
@@ -612,7 +536,7 @@ include get_template_directory() . '/custom/mainBanner.php';
                         <div class="news-txt-wrapper">
                             <div class="news-title">リアルタイム監視</div>
                             <div class="news-date">15.1.2025 WED</div>
-                            <div>リアルタイム監視ダッシュボードには検査ステータスが表示され、顧客に透明性と追跡可能性を提供します。
+                            <div class="body_content">リアルタイム監視ダッシュボードには検査ステータスが表示され、顧客に透明性と追跡可能性を提供します。
                                 品質レポートが生成され、発見事項と承認段階が文書化さ.....</div>
                         </div>
                         <div>
@@ -628,7 +552,7 @@ include get_template_directory() . '/custom/mainBanner.php';
                         <div class="news-txt-wrapper">
                             <div class="news-title">リアルタイム監視</div>
                             <div class="news-date">15.1.2025 WED</div>
-                            <div>リアルタイム監視ダッシュボードには検査ステータスが表示され、顧客に透明性と追跡可能性を提供します。
+                            <div class="body_content">リアルタイム監視ダッシュボードには検査ステータスが表示され、顧客に透明性と追跡可能性を提供します。
                                 品質レポートが生成され、発見事項と承認段階が文書化さ.....</div>
                         </div>
                         <div>
@@ -644,7 +568,7 @@ include get_template_directory() . '/custom/mainBanner.php';
                         <div class="news-txt-wrapper">
                             <div class="news-title">リアルタイム監視</div>
                             <div class="news-date">15.1.2025 WED</div>
-                            <div>リアルタイム監視ダッシュボードには検査ステータスが表示され、顧客に透明性と追跡可能性を提供します。
+                            <div class="body_content">リアルタイム監視ダッシュボードには検査ステータスが表示され、顧客に透明性と追跡可能性を提供します。
                                 品質レポートが生成され、発見事項と承認段階が文書化さ.....</div>
                         </div>
                         <div>

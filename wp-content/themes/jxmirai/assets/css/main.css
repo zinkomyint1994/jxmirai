@@ -213,6 +213,7 @@
   align-items: center;
   justify-content: center;
   top: 16%;
+  height: auto;
 }
 .image_flex {
   position: relative;
@@ -272,7 +273,7 @@
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 15px;
-  background: rgba(128, 128, 128, 0.524);
+  background: rgba(128, 128, 128, 0.236);
   align-items: center;
   padding: 30px;
 }
@@ -402,6 +403,7 @@ margin: auto;
   width: 80%;
   color: #fff;
   line-height: 30px;
+  font-size: 16px;
 }
 /* sample */
 
@@ -512,9 +514,11 @@ margin: auto;
   display: flex;
   align-items: center;
   position: relative;
-  width: 90%;
+  width: 100%;
   margin: auto;
   overflow: hidden;
+  background: #0680ff1a;
+  padding: 12px;
 }
 
 .slider {
@@ -537,14 +541,152 @@ margin: auto;
 }
 
 .slider-btn {
-  background-color: #333;
-  color: white;
+  /* background-color: #333; */
+  color: rgb(0, 0, 0);
   border: none;
   padding: 10px 15px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 30px;
 }
 
 .slider-btn:hover {
-  background-color: #555;
+  background-color: rgba(85, 85, 85, 0.3);
 }
+.sidebar, .menu-btn  {
+  display: none;
+}
+@media only screen and (min-width: 420px) and (max-width: 680px) {
+  .subtitle-txt {
+    font-size: 2.3rem;
+  }
+  .text_blur {
+    height: 95%;
+  }
+  .pages-four {
+    display: grid;
+    grid-template-columns: auto auto;
+    bottom: 0;
+    width: unset;
+    gap: 12px;
+  }
+  .img_wrapper {
+    width: 97%;
+  }
+  .products_list_wrapper {
+    height: 100%;
+    margin-top: 22rem !important;
+  }
+  .image_layout {
+    height: 100vh;
+  }
+  .metal_work_wrapper {
+    height: 100%;
+  }
+  .products_details{
+    display: unset;
+  }
+  .others_wrapper {
+    height: 100%;
+  }
+  .others_container {
+    height: 100%;
+    display: block;
+    margin-bottom: 11px;
+  }
+  .factories_container {
+    display: unset;
+  }
+  .sample_inner {
+    display: unset;
+  }
+  .new_blocks {
+    display: block;
+    height: 100%;
+    margin-bottom: 18px;
+  }
+  .left_arrow_{
+    display: none;
+  }
+  .video_container {
+    display: unset;
+  }
+  .news_image{
+    width: 100%;
+  }
+  /* Sidebar */
+.sidebar {
+  display: unset;
+  margin-top: 60px;
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  height: 100%;
+  background: linear-gradient(to bottom, #000000f5, #2c2c2cf0);
+  color: white;
+  transition: left 0.3s ease-in-out;
+  padding-top: 60px;
+  transition: all 0.5s;
+}
+
+/* Sidebar Links */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+}
+
+.sidebar ul li a:hover {
+  background: #444;
+}
+
+/* Menu Button */
+.menu-btn {
+  position: fixed;
+  right: 0px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+/* Bars (for animated icon) */
+.bar {
+  width: 30px;
+  height: 4px;
+  background: rgb(255, 255, 255);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Active State (Menu Open) */
+.menu-btn.active .top {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-btn.active .middle {
+  opacity: 0;
+}
+
+.menu-btn.active .bottom {
+  transform: translateY(-8px) rotate(-45deg);
+}
+}
+
+/* button-slider */
+
+
+

@@ -52,3 +52,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   
+  function toggleMenu() {
+    const sidebar = document.getElementById("sidebar");
+    const menuBtn = document.getElementById("menuBtn");
+
+    // Toggle sidebar
+    if (sidebar.style.right === "0px") {
+        sidebar.style.right = "-400px"; // Close menu
+        menuBtn.classList.remove("active"); // Reset icon
+    } else {
+        sidebar.style.right = "0px"; // Open menu
+        menuBtn.classList.add("active"); // Animate icon
+    }
+}
+
+// Close menu when a link is clicked & reset icon
+document.querySelectorAll(".sidebar a").forEach(link => {
+    link.addEventListener("click", () => {
+        toggleMenu();
+    });
+});

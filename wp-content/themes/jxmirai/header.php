@@ -22,7 +22,7 @@
 
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo.png" alt="Logo">
                 <div class="header_title">
-                    <span>X未来 式会社</span>
+                    <span>JX未来 式会社</span>
                     <span>FUTURE CORPORATION</span>
                 </div>
          
@@ -30,13 +30,28 @@
            </a>
            <div class="menu-container">
                 <div><a href="<?php echo home_url(); ?>">ホーム</a></div>
+                <div><a href="<?php echo get_permalink( get_page_by_path( 'page-news' ) ) ?>">会社概要</a></div>
                 <div><a href="<?php echo get_permalink( get_page_by_path( 'page-products' ) ) ?>">事業内容 と 製造品</a></div>
                 <div><a href="<?php echo get_permalink( get_page_by_path( 'page-manufacture' ) ) ?>">製造拠点</a></div>
-                <div><a href="<?php echo get_permalink( get_page_by_path( 'page-news' ) ) ?>">お知らせ</a></div>
-                <!-- <div>会社概要</div> -->
-                <!-- <div>事業内容 と 製造品</div>
-                <div>お知らせ</div> -->
            </div>
+           <div class="sp_menu">
+           <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/menu.png" alt="Logo"> -->
+           </div>
+        <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">
+        <div class="bar top"></div>
+        <div class="bar middle"></div>
+        <div class="bar bottom"></div>
+    </button>
+
+    <!-- Sidebar Menu -->
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="<?php echo home_url(); ?>">ホーム</a></li>
+            <li><a href="<?php echo get_permalink( get_page_by_path( 'page-news' ) ) ?>">会社概要</a></li>
+            <li><a href="<?php echo get_permalink( get_page_by_path( 'page-products' ) ) ?>">事業内容 と 製造品</a></li>
+            <li><a href="<?php echo get_permalink( get_page_by_path( 'page-manufacture' ) ) ?>">製造拠点</a></li>
+        </ul>
+    </nav>
         </div>
         <!-- <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?> -->
     </nav>
