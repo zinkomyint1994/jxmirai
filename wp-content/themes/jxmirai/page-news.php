@@ -8,8 +8,8 @@ get_header(); ?>
    global $title;
    global $caption;
    global $bgColor;
-   $title = "OUR NEWS";
-   $img = "ニュース";
+   $title = "ABOUT US";
+   $img = "私たちについて";
    $bgColor = '#fff';
    $url = "/assets/images/banner/newbanner.png";
 include get_template_directory() . '/custom/pagesBanner.php';

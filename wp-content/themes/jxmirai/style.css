@@ -460,6 +460,9 @@ footer {
     left: 0;
 }
 @media only screen and (min-width: 420px) and (max-width: 680px) {
+  .responsive-image {
+    width: unset;
+  }
   .card-list .blue-block {
    display: none;
 }
