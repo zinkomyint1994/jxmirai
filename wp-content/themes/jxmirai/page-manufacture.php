@@ -1,6 +1,6 @@
 <?php 
 /**
- * Template Name: Front Page
+ * Template Name: page-manufacture
  */
 get_header(); ?>
 <!-- main-banner -->

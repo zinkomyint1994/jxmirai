@@ -32,6 +32,7 @@
                 <div><a href="<?php echo home_url(); ?>">ホーム</a></div>
                 <div><a href="<?php echo get_permalink( get_page_by_path( 'page-news' ) ) ?>">会社概要</a></div>
                 <div><a href="<?php echo get_permalink( get_page_by_path( 'page-products' ) ) ?>">事業内容 と 製造品</a></div>
+                <div><a href="<?php echo get_permalink( get_page_by_path( 'page-service' ) ) ?>">製造品</a></div>
                 <div><a href="<?php echo get_permalink( get_page_by_path( 'page-manufacture' ) ) ?>">製造拠点</a></div>
            </div>
            <div class="sp_menu">
@@ -49,10 +50,11 @@
             <li><a href="<?php echo home_url(); ?>">ホーム</a></li>
             <li><a href="<?php echo get_permalink( get_page_by_path( 'page-news' ) ) ?>">会社概要</a></li>
             <li><a href="<?php echo get_permalink( get_page_by_path( 'page-products' ) ) ?>">事業内容 と 製造品</a></li>
+            <div><a href="<?php echo get_permalink( get_page_by_path( 'page-service' ) ) ?>">製造品</a></div>
             <li><a href="<?php echo get_permalink( get_page_by_path( 'page-manufacture' ) ) ?>">製造拠点</a></li>
         </ul>
     </nav>
         </div>
-        <!-- <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?> -->
+       
     </nav>
 </header>

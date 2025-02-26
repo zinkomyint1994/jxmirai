@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php 
+/**
+ * Template Name: home-page
+ */
+get_header(); ?>
 
 <!-- main-banner -->
 <?php

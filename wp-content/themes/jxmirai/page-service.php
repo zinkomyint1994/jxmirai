@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: page-products
+ * Template Name: page-service
  */
 get_header(); ?>
 <!-- main-banner -->
@@ -9,60 +9,15 @@ get_header(); ?>
 global $title;
 global $caption;
 global $bgColor;
-$title = "OUR SERVICES";
-$img = "当社のサービス";
+$title = "OUR PRODUCT";
+$img = "製造品";
 $bgColor = '#fff';
 $url = "/assets/images/banner/footer.jpg";
 include get_template_directory() . '/custom/pagesBanner.php';
 ?>
 
 <!-- four-image -->
-<div class="pages-four">
-  <div class="img_wrapper">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/3d.png" alt="Example Image" class="f_img">
-    <div class="f_content">
-      <p>3Dプリンター</p>
-      <span class="body_content">当社は、ステレオリソグラフィー (SLA)、FDM 印刷、..........</span>
-    </div>
-    <p class="f_icons">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/blue_arrow.png" alt="Example Image" class="blue_arrow">
-    </p>
-  </div>
 
-  <div class="img_wrapper">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/v1.png" alt="Example Image" class="f_img">
-    <div class="f_content">
-      <p>3Dプリンター</p>
-      <span class="body_content">当社は、ステレオリソグラフィー (SLA)、FDM 印刷、..........</span>
-    </div>
-    <p class="f_icons">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/blue_arrow.png" alt="Example Image" class="blue_arrow">
-    </p>
-  </div>
-
-  <div class="img_wrapper">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/v2.png" alt="Example Image" class="f_img">
-    <div class="f_content">
-      <p>3Dプリンター</p>
-      <span class="body_content">当社は、ステレオリソグラフィー (SLA)、FDM 印刷、..........</span>
-    </div>
-    <p class="f_icons">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/blue_arrow.png" alt="Example Image" class="blue_arrow">
-    </p>
-  </div>
-
-  <div class="img_wrapper">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/v3.png" alt="Example Image" class="f_img">
-    <div class="f_content">
-      <p>3Dプリンター</p>
-      <span class="body_content">当社は、ステレオリソグラフィー (SLA)、FDM 印刷、..........</span>
-    </div>
-    <p class="f_icons">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/blue_arrow.png" alt="Example Image" class="blue_arrow">
-    </p>
-  </div>
-
-</div>
 <!-- four-image -->
 
 <!-- products list -->
