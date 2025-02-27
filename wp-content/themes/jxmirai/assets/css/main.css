@@ -31,6 +31,8 @@
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
 	padding: 33px;
 	gap: 13px;
 }
@@ -546,7 +548,7 @@
 .menu-btn {
 	display: none;
 }
-@media only screen and (min-width: 420px) and (max-width: 680px) {
+@media only screen and (max-width: 767px) {
 	.subtitle-txt {
 		font-size: 2.3rem;
 	}

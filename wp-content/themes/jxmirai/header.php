@@ -11,7 +11,7 @@
 </head>
 <body <?php body_class(); ?>>
 <header>
-    <nav>
+    <nav class="nav-container">
     <!-- <div class="gNav pc">
 				<?php
 					wp_nav_menu();
