@@ -5,7 +5,7 @@
     <div class="email_wrapper">
     <div class="email_container">
         <div class="email_content_wrap">
-            <div>
+            <div class="mt-14">
                 <p class="email_title">Keep In Touch !</p>
                 <span>連絡を取り合いましょう</span>
             </div>

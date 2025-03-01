@@ -213,7 +213,7 @@ footer {
 	
 }
 /* Mobile Landscape (480px to 680px) */
-@media only screen and (min-width: 420px) and (max-width: 680px) {
+@media screen and (max-width: 800px) {
   .company-container .content_wrapper {
    grid-template-columns: unset;
   }
@@ -350,7 +350,7 @@ footer {
     margin: auto;
     padding: auto;
 }
-@media only screen and (min-width: 420px) and (max-width: 680px) {
+@media screen and (max-width: 800px) {
   .service-container .service-inner-container{
     display: flex;
     flex-direction: column;
@@ -505,7 +505,7 @@ footer {
     bottom: 0;
     left: 0;
 }
-@media only screen and (min-width: 420px) and (max-width: 680px) {
+@media screen and (max-width: 800px) {
   .responsive-image {
     width: unset;
   }
@@ -1034,7 +1034,7 @@ footer {
   width: 45%;
 }
 
-@media only screen and (min-width: 420px) and (max-width: 680px) {
+@media screen and (max-width: 800px) {
   .my-com-wrapper  {
     display: unset;
     width: 100%;
@@ -1062,7 +1062,7 @@ footer {
   position: relative;
   width: 40%;
 }
-@media only screen and (min-width: 420px) and (max-width: 680px) {
+@media screen and (max-width: 800px) {
   .water_mark {
   display: none;
   }
@@ -1319,7 +1319,7 @@ footer {
 /*for modal*/
 /*responsive */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 800px) {
   header {
     padding: unset;
   }

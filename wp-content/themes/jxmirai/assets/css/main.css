@@ -122,11 +122,14 @@
 	gap: 21px;
 }
 .email_title {
-	font-size: 36px;
-	line-height: 0px;
+	font-size: 30px;
+	line-height: 2px;
+	margin-bottom: 14px;
+}.mt-14 {
+	margin-top: 14px;
 }
 .email_text {
-	font-size: 16px;
+	font-size: 13px;
 	line-height: 29px;
 }
 .email_layer {
@@ -700,7 +703,7 @@
 .menu-btn {
 	display: none;
 }
-@media only screen and (min-width: 420px) and (max-width: 680px) {
+@media screen and (max-width: 800px) {
 	.subtitle-txt {
 		font-size: 2.3rem;
 	}
