@@ -28,7 +28,8 @@ include get_template_directory() . '/custom/mainBanner.php';
             </div>
           
             <p class="descripton-txt">
-                自動車や消費財など、さまざまな業界向けの金型を設計およびカスタマイズします。
+			先ずお客様からのご依頼の 3D/2Dデータ,数量,材料を確認し 作成工法を相談しながらお見積り書検討致します。（＊普段のお見積りは2日間内で回答いたします。）
+
             </p>
         </div>
         <div class="s-image-wrapper">
@@ -36,8 +37,7 @@ include get_template_directory() . '/custom/mainBanner.php';
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/img2.png" alt="Example Image" class="image2">
             </div>
             <p class="descripton-txt">
-                高度な技術でサンプル・量産金型を製作します。
-            </p>
+			事業内容金型製造（試作型、量産型）3Dプリンター樹脂切削注型金属その他</p>
         </div>
 
         <div class="s-image-wrapper">
@@ -45,9 +45,10 @@ include get_template_directory() . '/custom/mainBanner.php';
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/img3.png" alt="Example Image" class="image3">
             </div>
             <p class="descripton-txt">
-                日中連携により、高品質、コスト効率、納期厳守を実現します。
+			出荷検査、測定→短納期安全の梱包方法空便/船便選択可能
+
             </p>
-            <p class="description-btn-txt">革新的な3Dプリントと高精度金型製作を専門とする世界的な製造会社</p>
+            <!-- <p class="description-btn-txt">革新的な3Dプリントと高精度金型製作を専門とする世界的な製造会社</p> -->
         </div>
     </div>
 </div>
@@ -60,7 +61,7 @@ include get_template_directory() . '/custom/mainBanner.php';
     <?php
     global $title;
     global $caption;
-    $title = "OUR SERVICE";
+    $title = "OUR SERVICES";
     $caption = "当社のサービス";
             include get_template_directory() . '/custom/title.php';
     ?>
@@ -72,15 +73,18 @@ include get_template_directory() . '/custom/mainBanner.php';
             </div>
             <div class="service-rg-container">
                 <div class="service-rg-txt">
-                    <div class="sub_title_a">試作型/量産型</div>
+                    <div class="sub_title_a">試作金型（簡易金型）/量産金型</div>
             
                     <div class="sub_title_line">
                     <?php
                         include get_template_directory() . '/custom/subBlueLine.php';
                         ?>
-                          <div> 私たちの会社は、多様な業界にわたる経験を持つ専門家チームと協力し 中国と国内で様々なプロジェクトを遂行している試作×量産会社です。</div>
+                          <div class="font-weight-800"> JX未来は多様な業界にわたる経験を持つ専門家チームと協力し 中国と国内で様々なプロジェクトを遂行している試作×量産会社です。</div>
                     </div>
-                    <div class="body_content">当社は、射出成形、ブロー成形、PVC 成形、ゴム成形、押し出し成形、ディップ成形など、さまざまな樹脂成形技術を専門としています。さらに、カスタム金型製造も提供しており、お客様に正確で高品質のソリューションを提供しています</div>
+                    <div class="body_content">当社は射出成形、インサート金型、２色成形、ゴム成形、圧縮成形、ブロー成形、PVC成形、押し出し成形、ディップ成形など、さまざまな樹脂成形技術を専門としています。顧客満足度が高いQCD（Quality, Cost, Delivery）を是供しています。</br>
+					特に...</br>
+					試作金型を用いた小ロット射出成形</br>
+					プラスチック・非鉄金属の特殊切削品、既製品への追加工に定評があります。</div>
                 </div>
                 <div>
                     <?php
@@ -106,15 +110,17 @@ include get_template_directory() . '/custom/mainBanner.php';
                     </div>
                     <div class="card-list">
                         <div>
-                        <div class="product-title">1.3Dプリンタ</div>
+                        <div class="product-title">1. ３Dプリンター</div>
                         <div class="list-txt">
-                            <div>射出成形</div>
-                            <div>ブロー成形</div>
-                            <div>PVC成形</div>
-                            <div>ゴム成形</div>
+                            <div>光造形</div>
+                            <div>FDM造形</div>
+                            <div>粉末造形</div>
+                            <div>UV硬化造形</div>
+                            <div>DLP造形</div>
+                            <div>金属造形</div>
                         </div>
                         </div>
-                        <div>
+                        <div class="arrow-btn-wrapper1">
                             <?php
                                 include get_template_directory() . '/custom/buttontype1.php';
                                 ?>
@@ -123,25 +129,20 @@ include get_template_directory() . '/custom/mainBanner.php';
                     </div>
                 </div>
                  <!-- card-one -->
-                 <!-- card-one -->
+                 <!-- card-two -->
                 <div class="card-container">
                     <div class="img-container ">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Example Image" class="product-image">
                     </div>
                     <div class="card-list">
                         <div>
-                        <div class="product-title">2.樹脂</div>
+                        <div class="product-title">2. 樹脂</div>
                         <div class="list-txt">
-                            <div>切削注型</div>
-                            <div>射出成形</div>
-                            <div>ブロー成形</div>
-                            <div>PVC成形</div>
-                            <div>ゴム成形</div>
-                            <div>押出成形</div>
-                            <div>ディップ成形</div>
+                            <div>＊切削</div>
+                            <div>真空注型</div>
                         </div>
                         </div>
-                        <div>
+						<div class="arrow-btn-wrapper1">
                         <?php
                                 include get_template_directory() . '/custom/buttontype1.php';
                                 ?>
@@ -149,45 +150,22 @@ include get_template_directory() . '/custom/mainBanner.php';
                         <div class="blue-block"></div>
                     </div>
                 </div>
-                 <!-- card-one -->
-                 <!-- card-one -->
-                <div class="card-container">
-                    <div class="img-container ">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p3.png" alt="Example Image" class="product-image">
-                    </div>
-                    <div class="card-list">
-                        <div>
-                        <div class="product-title">3.金属</div>
-                        <div class="list-txt">
-                            <div>切削板金</div>
-                            <div>プレス成形</div>
-                            <div>ダイキャスト</div>
-                            <div>＊金型製造</div>
-                        </div>
-                        </div>
-                        <div>
-                        <?php
-                                include get_template_directory() . '/custom/buttontype1.php';
-                                ?>
-                        </div>
-                        <div class="blue-block"></div>
-                    </div>
-                </div>
-               <!-- card-one -->
+                 <!-- card-two -->
+                
             
                 <!-- card-one -->
                  <div class="card-container2">
                  <div class="card-list2">
                         <div>
-                            <div class="product-title">4.その他</div>
+                            <div class="product-title">3. 金属</div>
                                 <div class="list-txt">
-                                    <div>射出成形</div>
-                                    <div>ブロー成形</div>
-                                    <div>PVC成形</div>
-                                    <div>ゴム成形</div>
+                                    <div>切削</div>
+                                    <div>板金</div>
+                                    <div>プレス（金型製造）</div>
+                                    <div>ダイキャスト （金型製造）</div>
                                 </div>
                             </div>
-                        <div>
+						<div class="arrow-btn-wrapper2">
                         <?php
                                 include get_template_directory() . '/custom/buttontype1.php';
                                 ?>
@@ -204,19 +182,22 @@ include get_template_directory() . '/custom/mainBanner.php';
               <div class="card-container2">
                  <div class="card-list2">
                         <div>
-                            <div class="product-title">4.その他</div>
+                            <div class="product-title">4. その他</div>
                                 <div class="list-txt">
-                                    <div>射出成形</div>
-                                    <div>ブロー成形</div>
-                                    <div>PVC成形</div>
-                                    <div>ゴム成形</div>
+                                    <div>基板ボックス設計開発</div>
+                                    <div>アクリルスタンド</div>
+                                    <div>アクリルキーホルダー</div>
+                                    <div>フィギュア付きストラップ</div>
+                                    <div>樹脂 エポキシ サメ ナイトライト</div>
+                                    <div>弊社の開発品</div>
                                 </div>
                             </div>
-                        <div>
+						<div class="arrow-btn-wrapper2">
                         <?php
-                                include get_template_directory() . '/custom/buttontype1.php';
-                                ?>
-                        </div>
+                            include get_template_directory() . '/custom/buttontype1.php';
+                        ?>
+						</div>
+                        
                         <div class="blue-block"></div>
                     </div>
                     <div class="img-container ">
@@ -225,34 +206,6 @@ include get_template_directory() . '/custom/mainBanner.php';
             
                 </div>
              <!-- card-one -->
-          
-              <!-- card-one -->
-              <div class="card-container2">
-                 <div class="card-list2">
-                        <div>
-                            <div class="product-title">4.その他</div>
-                                <div class="list-txt">
-                                    <div>射出成形</div>
-                                    <div>ブロー成形</div>
-                                    <div>PVC成形</div>
-                                    <div>ゴム成形</div>
-                                </div>
-                            </div>
-                        <div>
-                        <?php
-                                include get_template_directory() . '/custom/buttontype1.php';
-                                ?>
-                        </div>
-                        <div class="blue-block"></div>
-                    </div>
-                    <div class="img-container ">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Example Image" class="product-image">
-                    </div>
-            
-                </div>
-             <!-- card-one -->
-          
-          
             </div>
            
         </div>
@@ -311,15 +264,18 @@ include get_template_directory() . '/custom/mainBanner.php';
     <div class="service-container">
         <div class="service-inner-container">
             <div class="manuf_parent_box">
-                <div class="manuf_layer1">
+                <!-- <div class="manuf_layer1">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/img4.png" alt="Example Image" class="manuf_img">
+                </div> -->
+				<div class="manuf_layer1">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/manufacture/0x0.webp" alt="Example Image" class="manuf_img">
                 </div>
               
                 <div class="manuf_layer2"></div>
             </div>
             <div class="service-rg-container">
                 <div class="service-rg-txt">
-                    <div class="sub_title_a">試作型/量産型</div>
+                    <div class="sub_title_a">製造拠点の概要</div>
                     <div class="sub_txt">
                     ウェブサイトでは、成形と 3D 印刷技術に特化した強力な製造基盤を紹介しています。試作、サンプル金型の作成、量産にわたる業務により、同社は出力の精度と信頼性を確保しています。主な製造プロセスは次のとおりです。
                     </div>

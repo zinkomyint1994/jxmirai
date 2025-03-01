@@ -31,6 +31,8 @@ body {
   /* font-family: 'Playfair Display', sans-serif; */
 	max-width: 100vw;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 	/* scroll-behavior: smooth; */
 }
 /* html, body {
@@ -51,7 +53,7 @@ header {
     position: fixed;
     top: 0;
     height: 60px;
-    padding: 0 30px;
+    /* padding: 0 30px; */
     z-index: 11111;
 }
 
@@ -78,7 +80,7 @@ footer {
 }
 .footer_title {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 800;
   color: #fff;
 }
 .jx_footer {
@@ -95,6 +97,9 @@ footer {
     flex-direction: column;
     color: #fff;
     line-height: 26px;
+	@media only screen and (max-width: 860px) {
+		line-height: 19px;
+	}
 }
 /* banner */
 .main-banner-wrapper {
@@ -121,19 +126,20 @@ footer {
   transition: opacity 0.3s ease;
 }
 .main-title-wrapper {
-  height: 250px;
-  display: flex;
-    position: absolute;
-    z-index: 1111;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    /* right: 19%; */
-    color: #fff;
-    bottom: 0;
-    /* top: 36%; */
-    background: #105db7c7;
-    margin-bottom: 60px;
+  	/* height: 250px; */
+  	display: flex;
+	position: absolute;
+	z-index: 1111;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	/* right: 19%; */
+	color: #fff;
+	bottom: 0;
+	/* top: 36%; */
+	background: #105db7c7;
+	margin-bottom: 60px;
+	padding:25px 0px
 }
 .main-inner-wrap{
   display: flex;
@@ -145,13 +151,14 @@ footer {
 }
 .main-title-wrapper h1 {
   font-size: 5.5rem;
-  line-height: 80px; /* Same as font-size */
+  /* line-height: 30px;  */
+  /* Same as font-size */
   margin: 0;
   padding: 0;
 }
 .main-title-wrapper h2 {
   font-size: 48px;
-  line-height: 50px;
+  line-height: 48px;
   margin: 0;
   padding: 0;
 }
@@ -191,16 +198,19 @@ footer {
 }
 .company-container .content_wrapper {
     display: grid;
-    grid-template-columns: 30% 22% 22% 22%;
-    height: 100%;
+	grid-template-columns: repeat(4, 1fr);
     gap: 15px;
+    height: 100%;
     background: #00000008;
+	padding:0 25px
+
+	
 }
 /* Mobile Landscape (480px to 680px) */
 @media only screen and (min-width: 420px) and (max-width: 680px) {
   .company-container .content_wrapper {
-    grid-template-columns: unset;
-}
+   grid-template-columns: unset;
+  }
 }
 
 .footer-txt {
@@ -283,11 +293,12 @@ footer {
 .s-image-wrapper .descripton-txt {
   position: absolute;
   top: -15px;
+  right:0;
+  left: 0;
   padding: 12px;
   background: #105db7c7;
-  width: 96%;
-  height: 47px;
-  font-weight: 16px;
+  height: 85px;
+  font-weight: 16;
 }
 .description-btn-txt {
     text-align: center;
@@ -319,7 +330,8 @@ footer {
 .service-container {
     margin: auto;
     height: 80%;
-    width: 97%;
+    /* width: 97%; */
+	max-width: 1280px;
     box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.454);
     border: 1px solid rgba(0, 0, 0, 0.319);
 }
@@ -373,7 +385,9 @@ footer {
   font-weight: bold;
   background: var(--primary-color);
 }
-
+.font-weight-800{
+	font-weight: 800;
+}
 .service-img {
     position: absolute;
     z-index: 11;
@@ -392,35 +406,41 @@ footer {
     grid-template-rows: 30% 30% 30%;
     margin: auto;
     height: 80%;
-    width: 97%;
+    max-width: 1280px;
+	
 }
 .product-container {
     padding: 65px 0px 65px 0px;
     margin: auto;
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto ;
     gap: 22px;
 }
 .card-container {
     margin-top: 25px;
     width: 100%;
-    height: 540px;
-    display: flex;
+    /* height: 540px; */
+    /* display: flex; */
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20px;
 }
 .card-container2 {
     margin-top: 25px;
     width: 100%;
-    height: 540px;
-    display: flex;
-    justify-content: space-between;
+    /* height: 540px; */
+	display: grid;
+		justify-content: space-between;
+		grid-template-columns:auto auto;
+   
 }
 
 .card-list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 42%;
+    width: 100%;
     position: relative;
     /* left: 8%; */
 }
@@ -428,8 +448,28 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 42%;
+    /* width: 42%; */
     position: relative;
+}
+.arrow-btn-wrapper1 {
+	cursor: pointer;
+	position: relative;
+	width: 80%;
+	z-index: 11;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 3px;
+	left:30%
+}
+.arrow-btn-wrapper2 {
+	cursor: pointer;
+	position: relative;
+	width: 80%;
+	z-index: 11;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 3px;
+	left:20%
 }
 .product-title {
     font-size: 28px;
@@ -479,9 +519,10 @@ footer {
 .product-image {
     /* height: 100%; */
     overflow: hidden;
-    width: 86%;
+    /* width: 86%; */
+	height: 100%;
     object-fit: cover;
-    margin-top: 18px;
+    /* margin-top: 18px; */
 }
 /* our products */
 
@@ -596,8 +637,8 @@ footer {
     justify-content: center;
     position: relative;
     width: 450px;
-    height: 66%;
-    top: 15%;
+    height: 81%;
+    top: 9%;
     /* left: 13%; */
     z-index: 11;
     border-radius: 13px;
@@ -617,6 +658,8 @@ footer {
   }
 .manuf_img {
   width: 450px;
+  height: 100%;
+  object-fit: cover;
 }
 /* manufacturing basic */
 /* qcd */
@@ -934,11 +977,16 @@ footer {
   width: 100%;
 }
 /* Footer */
+.nav-container{
+	padding: 0 20px;
+	width: 90%;
+	margin: 0 auto;
+}
 .nav-wrapper {
     display: flex;
     color: black;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     align-items: unset;
 }
 .sp_menu {
@@ -953,6 +1001,8 @@ footer {
     display: flex;
     gap: 50px;
     align-items: center;
+	
+	
 }
 /* our-company */
 .my-company-wrapper {
@@ -1087,10 +1137,20 @@ footer {
   font-size: 16px;
 }
 /* font-size */
-@media only screen and (min-width: 420px) and (max-width: 680px) {
+
+/*responsive */
+
+@media only screen and (max-width: 767px) {
   header {
     padding: unset;
   }
+  .nav-container{
+	width: 100%;
+	padding:0;
+	}
+  .nav-wrapper .logo-container {
+    height: 42px;
+ 	}
   .sp_menu {
     display: unset;
     margin-right: 33px;
@@ -1099,12 +1159,22 @@ footer {
     background: #000;
     width: 100%;
     align-items: center;
+	height: 70px;
+  }
+  .s-image-wrapper .descripton-txt {
+	height: 100%;
+	border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+	text-align: center;
+	align-content: center;
+	font-size: 16px;
   }
   .nav-wrapper .menu-container {
     display: none;
   }
   .banner-description {
-    width: 65%;
+	width: 85%;
+	left: 10%;
   }
   .description-btn-txt {
     color: #fff;
@@ -1121,15 +1191,29 @@ footer {
   .descripton-txt {
     font-size: 13px;
   }
+  /*who we are and what we do*/
+  .company-container .content_wrapper {
+	grid-template-columns: unset;
+	padding: 0;
+	gap:0
+   }
   .news-list-wrapper {
     height: 100%;
   }
   .image1 , .image2, .image3 {
     height: 266px;
     object-fit: cover;
+    border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+
   }
   .main-title-wrapper h1 {
-    font-size: 30px;
+    font-size: 2em;
+  }
+  .main-title-wrapper h2 {
+	font-size: 35px;
+	line-height: 35px;
+	
   }
   .banner-first-txt {
     width: auto;
@@ -1272,4 +1356,26 @@ footer {
    .intro_container .intro_flex {
       flex-direction: column-reverse;
    }
+}
+@media only screen and (max-width: 969px) {
+	header {
+	  padding: unset;
+	}
+	
+}
+@media only screen and (max-width: 1024px) {
+	.nav-container{ 
+		padding: 0;
+		width: 100%;
+	}
+	.nav-wrapper .menu-container{
+		gap: 1.5em;
+	}
+	.header_title {
+		line-height: 19px;
+	}
+	
+}
+@media only screen and (max-width:1200px) {
+	
 }

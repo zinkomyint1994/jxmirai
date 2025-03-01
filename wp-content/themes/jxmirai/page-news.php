@@ -1,6 +1,6 @@
 <?php 
 /**
- * Template Name: Front Page news
+ * Template Name: page-news
  */
 get_header(); ?>
 <!-- main-banner -->
