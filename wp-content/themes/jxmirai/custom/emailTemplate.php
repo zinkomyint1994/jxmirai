@@ -32,7 +32,7 @@
                 <input type="text" class="custom-input-bottom" placeholder="メッセージ">
             </div>
 			<p class="submit reset-pass-submit">
-				<input type="submit" name="submit" id="submit" class="button button-primary button-large" value="<?php esc_attr_e( '送信' ); ?>" />
+				<input type="submit" name="submit" id="submit" class="custom-submit-button" value="<?php esc_attr_e( '送信' ); ?>" />
 			</p>
         </div>
     </div>
