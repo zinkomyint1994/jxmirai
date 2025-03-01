@@ -149,10 +149,10 @@ include get_template_directory() . '/custom/pagesBanner.php';
         <div class="content">
           <div class="title">射出成形</div>
           <div class="name">溶融樹脂をカスタム設計された金型に注入して固体物体を作成するプロセス。</div>
-          <div class="des">
+          <!-- <div class="des">
             説明: 選択的レーザー焼結法 (SLS) などの粉末ベースの印刷では、レーザーを使用して粉末材料 (プラスチック樹脂は溶融するまで加熱され、高圧下で金型に注入されます。材料は冷却されて固まり、金型の形状になります。
             例: 自動車部品、電子機器のケース、プラスチック製のおもちゃ。
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -160,9 +160,9 @@ include get_template_directory() . '/custom/pagesBanner.php';
         <div class="content">
           <div class="title">RUGGED ROCKS</div>
           <div class="name">Rocky</div>
-          <div class="des">Explore the rugged beauty of barren rocky mountains.
+          <!-- <div class="des">Explore the rugged beauty of barren rocky mountains.
             A
-            testament to nature's raw power.</div>
+            testament to nature's raw power.</div> -->
         </div>
       </div>
 
@@ -170,9 +170,9 @@ include get_template_directory() . '/custom/pagesBanner.php';
         <div class="content">
           <div class="title">FOREST PATHWAY</div>
           <div class="name">Forest</div>
-          <div class="des">A peaceful trail through dense green forests. Perfect
+          <!-- <div class="des">A peaceful trail through dense green forests. Perfect
             for
-            reconnecting with nature.</div>
+            reconnecting with nature.</div> -->
         </div>
       </div>
 
@@ -180,9 +180,9 @@ include get_template_directory() . '/custom/pagesBanner.php';
         <div class="content">
           <div class="title">COLORFUL MEADOW</div>
           <div class="name">Meadow</div>
-          <div class="des">A colorful meadow filled with butterflies and
+          <!-- <div class="des">A colorful meadow filled with butterflies and
             blooming
-            flowers. Nature at its best.</div>
+            flowers. Nature at its best.</div> -->
         </div>
       </div>
 
@@ -190,9 +190,9 @@ include get_template_directory() . '/custom/pagesBanner.php';
         <div class="content">
           <div class="title">SERENE LAKE</div>
           <div class="name">Lake</div>
-          <div class="des">A calm and serene lake surrounded by towering trees
+          <!-- <div class="des">A calm and serene lake surrounded by towering trees
             and
-            mountains. A perfect escape.</div>
+            mountains. A perfect escape.</div> -->
         </div>
       </div>
 
@@ -200,8 +200,8 @@ include get_template_directory() . '/custom/pagesBanner.php';
         <div class="content">
           <div class="title">PEAKS IN THE CLOUDS</div>
           <div class="name">Clouds</div>
-          <div class="des">Mountain peaks wrapped in clouds. A dreamy sight that
-            inspires awe and wonder.</div>
+          <!-- <div class="des">Mountain peaks wrapped in clouds. A dreamy sight that
+            inspires awe and wonder.</div> -->
         </div>
       </div>
 
@@ -209,9 +209,9 @@ include get_template_directory() . '/custom/pagesBanner.php';
         <div class="content">
           <div class="title">RIVERBANK PARADISE</div>
           <div class="name">Riverbank</div>
-          <div class="des">A picturesque riverbank flowing through lush greenery
+          <!-- <div class="des">A picturesque riverbank flowing through lush greenery
             and
-            vibrant landscapes.</div>
+            vibrant landscapes.</div> -->
         </div>
       </div>
 
@@ -219,8 +219,8 @@ include get_template_directory() . '/custom/pagesBanner.php';
         <div class="content">
           <div class="title">MYSTIC RIDGES</div>
           <div class="name">Ridges</div>
-          <div class="des">Discover the mystic beauty of mountain ridges under a
-            cloudy sky. Perfect for adventurers.</div>
+          <!-- <div class="des">Discover the mystic beauty of mountain ridges under a
+            cloudy sky. Perfect for adventurers.</div> -->
         </div>
       </div>
 
@@ -228,9 +228,9 @@ include get_template_directory() . '/custom/pagesBanner.php';
         <div class="content">
           <div class="title">GOLDEN CLIFFS</div>
           <div class="name">Cliffs</div>
-          <div class="des">Golden cliffs basking in sunlight. A stunning view
+          <!-- <div class="des">Golden cliffs basking in sunlight. A stunning view
             that
-            captures the heart of nature.</div>
+            captures the heart of nature.</div> -->
         </div>
       </div>
 
@@ -238,8 +238,8 @@ include get_template_directory() . '/custom/pagesBanner.php';
         <div class="content">
           <div class="title">PEACEFUL VALLEY</div>
           <div class="name">Valley</div>
-          <div class="des">A peaceful valley surrounded by towering mountains. A
-            perfect destination for solitude.</div>
+          <!-- <div class="des">A peaceful valley surrounded by towering mountains. A
+            perfect destination for solitude.</div> -->
         </div>
       </div>
 

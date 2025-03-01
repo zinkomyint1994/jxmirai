@@ -42,6 +42,11 @@ function enqueue_carousel_scripts() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_carousel_scripts');
 
+function enqueue_manufacture_scripts() {
+  wp_enqueue_script('carousel-js', get_template_directory_uri() . '/assets/js/manufacture.js', array('jquery'), null, true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_manufacture_scripts');
+
 
 add_action('template_redirect', 'custom_php_page_template');
 

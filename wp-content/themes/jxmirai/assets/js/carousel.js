@@ -60,7 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		}, 300); // Wait before showing new content
 	}
 
-	// Logs the current active slide's index
 	function afterSlideChange() {
 		const slideNumberElement = document.querySelector(".slide-number");
 		if (slideNumberElement) slideNumberElement.remove();
@@ -69,22 +68,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		if (sliderItems.length < 2) return;
 
-		const activeItem = sliderItems[1]; // Middle item is the new active one
-		activeItem.classList.add("active");
-		const content = activeItem.querySelector(".content");
-		if (content) {
-			content.classList.remove("fade-out");
-			content.classList.add("fade-in");
-			setTimeout(() => content.style.opacity = 1, 50);
-		}
-
+	
+		// Get the current active index
 		const activeIndex = parseInt(
 			activeItem.querySelector(".title")?.getAttribute("data-item") || "1"
 		);
 
+		// Update slide number UI
 		const div = document.createElement("div");
 		div.classList.add("slide-number");
-		div.textContent = `${activeIndex < 10 ? "0" : ""}${activeIndex}/${sliderItems.length}`;
+		div.textContent = `${activeIndex < 10 ? "0" : ""}${activeIndex}/${
+			sliderItems.length
+		}`;
 
 		arrowsContainer.appendChild(div);
 		updateProgressBar();
@@ -98,7 +93,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		if (sliderItems.length === 0) return;
 
 		const activeItem = parseInt(
-			sliderItems[0].querySelector(".title")?.getAttribute("data-item") || "1"
+			sliderItems[0].querySelector(".title")?.getAttribute("data-item") ||
+				"1"
 		);
 
 		const progressPercentage = (activeItem / totalSlides) * 100;
@@ -110,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const firstContent = itemsArr[0].querySelector(".content");
 	if (firstContent) {
 		firstContent.classList.add("fade-in");
-		setTimeout(() => firstContent.style.opacity = 1, 50);
+		setTimeout(() => (firstContent.style.opacity = 1), 50);
 	}
 
 	afterSlideChange();
