@@ -541,24 +541,8 @@ include get_template_directory() . '/custom/pagesBanner.php';
             </div>
             <div class="text_blur"></div>
         </div>
-        <!-- text-box -->
-                <!-- text-box -->
-                <div class="text_container">
-            <div class="others_title">プレス（金型製造）とは</div>
-            <div class="others_content">
-                縫製加工・製造は、生地を裁断し、縫い合わせて衣類や布製品を作る工程です。職人の技術と最新の機械を活用し、高品質な製品を生産します。デザインに応じたパターン作成や仕上げも重要で、精密な縫製技術が求められます
-            </div>
-            <div class="text_blur"></div>
-        </div>
-        <!-- text-box -->
-                <!-- text-box -->
-                <div class="text_container">
-            <div class="others_title">ダイキャスト（ダイカスト金型製造）とは、</div>
-            <div class="others_content">
-                縫製加工・製造は、生地を裁断し、縫い合わせて衣類や布製品を作る工程です。職人の技術と最新の機械を活用し、高品質な製品を生産します。デザインに応じたパターン作成や仕上げも重要で、精密な縫製技術が求められます
-            </div>
-            <div class="text_blur"></div>
-        </div>
+
+  
 
     </div>
 </div>
