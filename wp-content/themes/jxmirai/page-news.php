@@ -11,8 +11,10 @@ get_header(); ?>
    $title = "ABOUT US";
    $img = "私たちについて";
    $bgColor = '#fff';
-   $url = "/assets/images/banner/newbanner.png";
+//    $url = "/assets/images/banner/newbanner.png";
+$url = "/assets/images/banner/manufacturebanner.png";
 include get_template_directory() . '/custom/pagesBanner.php';
+
 ?>
 <!-- slider -->
  <div class="slider-wrapper">
