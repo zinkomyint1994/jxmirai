@@ -21,14 +21,18 @@ include get_template_directory() . '/custom/pagesBanner.php';
   </button>
   <div class="slider">
     <div class="slider-track">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/v1.png" alt="Image 1">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Image 2">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/n1.png" alt="Image 3">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/v2.png" alt="Image 4">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Image 5">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/v3.png" alt="Image 6">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Image 7">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/v1.png" alt="Image 8">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/ダイキャスト、材料：アルミ.jpg" alt="Image 1">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/ダイキャスト、材料：アルミ＋追加加工.jpg" alt="Image 2">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/板金、材料：銅(C1012),自動車部品 、t＝6mmまで曲げ問題ありません。.jpg" alt="Image 3">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/板金、材料：銅(C1012),自動車部品.jpg" alt="Image 4">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/樹脂 エポキシ サメ ナイトライト 品.jpg" alt="Image 5">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/自動車樹脂製品＋アクリルカーバ.jpg" alt="Image 6">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/試作型、インサート成形、自動車部品、材料：SUS+樹脂 (2).jpg" alt="Image 7">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/試作型、インサート成形、自動車部品、材料：鉄+樹脂 (3).jpg" alt="Image 8">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/量産型、2色製品、自動車部品、材料：ゴム+樹脂 (3).jpg" alt="Image 9">
+        <!-- <img src="<?php echo get_template_directory_uri(); ?>/量産型、射出成形、自動車部品、材料：樹脂.jpg" alt="Image 10"> -->
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/金属切削、材料：アルミ+塗装.jpg" alt="Image 11">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/金属切削品、材料：鉄+塗装.jpg" alt="Image 12">
     </div>
   </div>
   <button class="slider-btn next">
@@ -53,31 +57,39 @@ include get_template_directory() . '/custom/pagesBanner.php';
       	<tbody>
       		<tr>
       			<th>会社名</th>
-      			<td>JX未来株式会社(JXフューチャー株式会社)</td>
+      			<td>JX未来株式会社(JX FUCTURE CO.LD)</td>
+      		</tr>
+              <tr>
+      			<th>代表取締役</th>
+      			<td>林 錦土　(中国ﾒｰｶｰの代表取締役及び取締役)</td>
       		</tr>
       		<tr>
       			<th>制定日</th>
-      			<td>2024年5月28日</td>
+      			<td>2024/5/28</td>
       		</tr>
-      		<tr>
+      		<!-- <tr>
       			<th>本社</th>
 				<td>東京都大田区大森西-8448</td>
-      		</tr>
+      		</tr> -->
       		<tr>
       			<th>資本金</th>
       			<td>500万円</td>
       		</tr>
-      		<tr>
-      			<th>リーダーシップ</th>
-      			<td>-</td>
+              <tr>
+      			<th>所在地 </th>
+      			<td>本社　〒143-0015、東京部大田区大森西7丁目8番17号、ロン。リッシュ102号 長野支店　〒396-0015、長野県伊那市中央5020-1、セレーノ 伊那1 203号</td>
       		</tr>
               <tr>
-      			<th>代表取締役</th>
-      			<td>林 錦士（ハヤシ キンシ）</td>
+      			<th>TEL</th>
+      			<td>03-6424-8053,080-2381-4704</td>
       		</tr>
               <tr>
-      			<th>役割</th>
-      			<td>中国メーカーと日本の顧客とのコラボレーションを監 督します。</td>
+      			<th>FAX</th>
+      			<td>03-6524-8313</td>
+      		</tr>
+              <tr>
+      			<th>E-MAIL</th>
+      			<td>info@jx-f.jp、hein-hk@jx.jp</td>
       		</tr>
       	</tbody>
       </table>
@@ -136,7 +148,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
             <!-- news-blocks -->
             <div class="new_blocks">
                 <div>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/n1.png" alt="Image 8" class="news_image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/金属切削品、材料：鉄+塗装.jpg" alt="Image 8" class="news_image">
                 </div>
                 <div>
                     <div class="news_title">

@@ -21,7 +21,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
   <div>
     <?php
     global $title;
-    $title = "Factories from Japan";
+    $title = "Factories from China";
     include get_template_directory() . '/custom/subTitle.php';
     ?>
   </div>
@@ -30,7 +30,9 @@ include get_template_directory() . '/custom/pagesBanner.php';
     <div>
       <div class="slider-container">
         <div class="main-image">
-          <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/manufacture/Picture1.png" alt="Main Image">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/manufacture/Picture1.png" alt="Main Image">
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
         </div>
 
         <div class="thumbnails">
@@ -65,7 +67,9 @@ include get_template_directory() . '/custom/pagesBanner.php';
     <div>
       <div class="slider-container">
         <div class="main-image">
-          <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/manufacture/Picture7.png" alt="Main Image">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/manufacture/Picture7.png" alt="Main Image">
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
         </div>
 
         <div class="thumbnails">
@@ -155,18 +159,30 @@ include get_template_directory() . '/custom/pagesBanner.php';
   <!-- container -->
   <div class="factories_container">
     <div>
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/banner.png" alt="Example Image" class="mf_img">
+      <div class="slider-container">
+        <div class="main-image">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/manufacture/Picture10.png" alt="Main Image">
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+
+        <div class="thumbnails">
+          <img class="thumb active" src="<?php echo get_template_directory_uri(); ?>/assets/images/manufacture/Picture10.png" alt="Thumb 1" onclick="changeImage(this)">
+          <img class="thumb" src="<?php echo get_template_directory_uri(); ?>/assets/images/manufacture/Picture11.png" alt="Thumb 2" onclick="changeImage(this)">
+          <img class="thumb" src="<?php echo get_template_directory_uri(); ?>/assets/images/manufacture/Picture12.png" alt="Thumb 3" onclick="changeImage(this)">
+          <img class="thumb" src="<?php echo get_template_directory_uri(); ?>/assets/images/manufacture/Picture13.png" alt="Thumb 4" onclick="changeImage(this)">
+        </div>
+      </div>
     </div>
     <div class="mf_list_wrap">
-      <div class="mf_title">Xiamen Xiechangyuan Mold Co., Ltd.</div>
+      <div class="mf_title">プレス成形金型製作/生産メー</div>
       <ul class="ul_flex">
-        <li>Location: Xiamen, China</li>
-        <li>Main Operations: Injection mold manufacturing and molding</li>
-        <li>Established: April 2000</li>
-        <li>Factory Size: 12,000 m² facility, 130 employees</li>
-        <li>Certifications: ISO 9001 & ISO 14001</li>
-        <li>Key Equipment: Injection molding machines (10-1,300 tons, 60 units)</li>
-        <li>Major Clients: TOYOTA, LG, Midea, Haier, TOTO</li>
+        <li>工場名：厦門智迅电子科技有限公司 </li>
+        <li>工場建屋:6,000m2 </li>
+        <li>現在の従業員：80名 </li>
+        <li>システム認証：ISO 9001& ATF16949 </li>
+        <li>設立年：2006年/2月 </li>
+        <li>精密金型、プレス成形 成形機：25ton-250ton 30機 </li>
       </ul>
       <div class="mf_blur"></div>
     </div>
@@ -176,26 +192,68 @@ include get_template_directory() . '/custom/pagesBanner.php';
   <!-- container -->
   <div class="factories_container">
     <div>
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/banner.png" alt="Example Image" class="mf_img">
+      <div class="slider-container">
+        <div class="main-image">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/manufacture/Picture15.png" alt="Main Image">
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+
+        <div class="thumbnails">
+          <img class="thumb active" src="<?php echo get_template_directory_uri(); ?>/assets/images/manufacture/Picture15.png" alt="Thumb 1" onclick="changeImage(this)">
+          <img class="thumb" src="<?php echo get_template_directory_uri(); ?>/assets/images/manufacture/Picture14.png" alt="Thumb 2" onclick="changeImage(this)">
+
+        </div>
+      </div>
     </div>
     <div class="mf_list_wrap">
-      <div class="mf_title">Xiamen Ouli Industrial & Trade Co., Ltd.</div>
+      <div class="mf_title">ダイキャスト成形金型製作/成形メーカー </div>
       <ul class="ul_flex">
-        <li>Location: Xiamen, China</li>
-        <li>Main Operations: Injection mold manufacturing and molding</li>
-        <li>Established: April 2000</li>
-        <li>Factory Size: 12,000 m² facility, 130 employees</li>
-        <li>Certifications: ISO 9001 & ISO 14001</li>
-        <li>Key Equipment: Injection molding machines (10-1,300 tons, 60 units)</li>
-        <li>Major Clients: TOYOTA, LG, Midea, Haier, TOTO</li>
+        <li>工場名：Dongguan Bestcourser Die casting Co., Ltd. </li>
+        <li>工場建屋:10,000m 2 </li>
+        <li>現在の従業員：150名 </li>
+        <li>システム認証：ISO 9001& ATF169</li>
+        <li>設立年：2005年/10月 </li>
+        <li>金型製作、アルミ、マグネシウムダイキャスト 成形機：300ton-3500ton 20機 </li>
       </ul>
       <div class="mf_blur"></div>
     </div>
   </div>
   <!-- container -->
+  <div class="spreator"></div>
+  <!-- container -->
+  <div class="factories_container">
+    <div>
+      <div class="slider-container">
+        <div class="main-image">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/manufacture/Picture18.png" alt="Main Image">
+        </div>
+
+        <div class="thumbnails">
+
+
+        </div>
+      </div>
+    </div>
+    <div class="mf_list_wrap">
+      <div class="mf_title">ダイキャスト成形金型製作/成形メーカー </div>
+      <ul class="ul_flex">
+        <li>工場名：Dongguan Bestcourser Die casting Co., Ltd. </li>
+        <li>工場建屋:10,000m 2 </li>
+        <li>現在の従業員：150名 </li>
+        <li>システム認証：ISO 9001& ATF169</li>
+        <li>設立年：2005年/10月 </li>
+        <li>金型製作、アルミ、マグネシウムダイキャスト 成形機：300ton-3500ton 20機 </li>
+      </ul>
+      <div class="mf_blur"></div>
+    </div>
+  </div>
+  <!-- container -->
+  <div class="spreator"></div>
 </div>
 <!-- factories-japan -->
 <div class="spreator"></div>
+
 
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/manufacture.js"></script>
 <?php get_footer(); ?>

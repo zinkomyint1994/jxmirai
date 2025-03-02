@@ -112,7 +112,10 @@ include get_template_directory() . '/custom/mainBanner.php';
                         <div>
                         <div class="product-title">1. ３Dプリンター</div>
                         <div class="list-txt">
-                            <div>光造形</div>
+                            
+							<button class="trigger">光造形</button>
+							
+							<!-- <div>光造形</div> -->
                             <div>FDM造形</div>
                             <div>粉末造形</div>
                             <div>UV硬化造形</div>
@@ -120,6 +123,46 @@ include get_template_directory() . '/custom/mainBanner.php';
                             <div>金属造形</div>
                         </div>
                         </div>
+						<!-- <div class="modal">
+								<div class="modal-content">
+									<span class="close-button">×</span>
+									<p>Hello, I am a modal!</p>
+								</div>
+							</div> -->
+							<div class="modal">
+						<div class="modal-content">
+							<span class="close-button" >&times;</span>
+							<div class="modal-header">3Dプリンタ</div>
+							<div class="modal-body">
+								<div class="printer-image">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/print1.png" alt="3Dプリンタ" class="tags-img ">
+									<div class="long-arrow-right"></div>
+									<div class="description">
+										<h4>デスクリプション</h4>
+										<p>私たちは、光造形、FDM造形、粉末造形、およびUV硬化造形を含む高度な3Dプリンター技術を専門としており、精密で革新的なソリューションを提供しています。</p>
+									</div>
+
+								</div>
+								<div class="content-section">
+									<div class="item">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/product1.jpg" alt="サンプル1" class="tags-img ">
+										<p>・紫外線光で樹脂を硬化させて製造。細かいディテールを再現可能。
+										例: ジュエリー、精密部品、歯科治療用模型。</p>
+									</div>
+									<div class="item">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/product2.jpg" alt="サンプル1" class="tags-img ">
+										<p>・紫外線光で樹脂を硬化させて製造。細かいディテールを再現可能。<br>例: ジュエリー、精密部品、歯科治療用模型。</p>
+									</div>
+									
+									<div class="item">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/product1.jpg" alt="サンプル1" class="tags-img ">
+										<p>・金属粉末をレーザーで焼結し、強度の高い部品を製造。
+										例: 工業用部品、航空機部品、医療用インプラント。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
                         <div class="arrow-btn-wrapper1">
                             <?php
                                 include get_template_directory() . '/custom/buttontype1.php';
@@ -127,6 +170,7 @@ include get_template_directory() . '/custom/mainBanner.php';
                         </div>
                         <div class="blue-block"></div>
                     </div>
+					<!-- modal -->
                 </div>
                  <!-- card-one -->
                  <!-- card-two -->
@@ -218,17 +262,17 @@ include get_template_directory() . '/custom/mainBanner.php';
     global $title;
     global $caption;
     global $bgColor;
-    $title = "OUR PRODUCTS";
-    $caption = "当社のサービス";
+    $title = "Why Choose Us?";
+    $caption = "当社を選ぶ理由";
     $bgColor = 'white';
             include get_template_directory() . '/custom/title.php';
     ?>
     <div class="p-slider-container">
         <div class="tags-container">
-            <div>3Dプリンター</div>
+            <!-- <div>3Dプリンター</div>
             <div>樹脂</div>
             <div>金属</div>
-            <div>その他</div>
+            <div>その他</div> -->
         </div>
         <div class="tags-img-container">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/print1.png" alt="Example Image" class="tags-img ">
@@ -237,13 +281,15 @@ include get_template_directory() . '/custom/mainBanner.php';
         <div></div>
         </div>
         <div class="tags-text-wrap">
-            <div class="slider-title">3Dプリンター</div>
-            <div class="tags-subtitle">FDM (Fused Deposition Modeling) technology</div>
-            <div class="slider-text-container "><p class="body_content">
-            これは 3D プリンターで、おそらく FDM (熱溶解積層法) 技術を利用しています。熱可塑性フィラメントを加熱し、層ごとに押し出して 3D オブジェクトを作成します。プリンターに表示されるオブジェクトは、柔軟なフィラメントまたは硬いフィラメントで作られた複雑なデザインのようです。
-
-            このタイプのプリンターは、汎用性とコスト効率が高いため、プロトタイピング、教育、趣味の用途でよく使用されます。PLA、ABS、TPU などの材料を扱うことができます。
-</p>
+            <!-- <div class="slider-title">3Dプリンター</div>
+            <div class="tags-subtitle">FDM (Fused Deposition Modeling) technology</div> -->
+            <div class="slider-text-container ">
+			<p class="body_content">
+            <div>光造形：通常サイズ800x800mm、最大1.5m</div>
+			<div>FDM造形：通常サイズ600x600mm、最大1.5m</div>
+			<div>粉末造形：通常サイズ380x280x380mm、最大600mm</div>
+			<div>*コスト安くて納期早くできます。</div>
+			</p>
             </div>
         </div>
     </div>
@@ -412,8 +458,9 @@ include get_template_directory() . '/custom/mainBanner.php';
 </div>
 </div>
 <!-- quality-check -->
-<div class="spreator"></div>
+<!-- <div class="spreator"></div> -->
 <!-- customer feedback -->
+ <!--
 <div class="custom-wrapper">
     <div class="custom-lf-wrapper"></div>
     <div class="custom-center-wrapper">
@@ -423,7 +470,7 @@ include get_template_directory() . '/custom/mainBanner.php';
                 </div>
                 <div class="sub_title_a">お客様の声！</div>
             </div>
-            <!-- three-blocks -->
+            /*three-blocks  */
             <div class="custom-txt-container">
                 <div class="custom-block" id="test1">
                     <div class="circle-title">
@@ -450,12 +497,13 @@ include get_template_directory() . '/custom/mainBanner.php';
                     </div>
                 </div>
             </div>
-            <!-- three-blocks -->
+            
     </div>
     <div class="custom-rg-wrapper"></div>
 </div>
+-->
 <!-- customer feedback -->
-<div class="spreator"></div>
+<!-- <div class="spreator"></div> -->
 <!-- <p>“Beyond Borders: Crafting Excellence Through Japan-China Collaboration”</P> -->
 
 
@@ -467,6 +515,7 @@ include get_template_directory() . '/custom/mainBanner.php';
             global $title;
             $title = "NEWS";
                     include get_template_directory() . '/custom/subTitle.php';
+					$caption = "お知らせ";
             ?>
         </div>
          <div class="news-list-wrapper">
@@ -575,5 +624,6 @@ include get_template_directory() . '/custom/mainBanner.php';
     <!-- <h2><?php the_title(); ?></h2>
     <div><?php the_content(); ?></div> -->
 <?php endwhile; endif; ?>
-
+<!-- others -->
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/open-modal.js"></script>
 <?php get_footer(); ?>

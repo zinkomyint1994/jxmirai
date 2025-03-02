@@ -50,7 +50,7 @@
             <li><a href="<?php echo home_url(); ?>">ホーム</a></li>
             <li><a href="<?php echo get_permalink( get_page_by_path( 'page-news' ) ) ?>">会社概要</a></li>
             <li><a href="<?php echo get_permalink( get_page_by_path( 'page-products' ) ) ?>">事業内容 と 製造品</a></li>
-            <div><a href="<?php echo get_permalink( get_page_by_path( 'page-service' ) ) ?>">製造品</a></div>
+            <li><a href="<?php echo get_permalink( get_page_by_path( 'page-service' ) ) ?>">製造品</a></li>
             <li><a href="<?php echo get_permalink( get_page_by_path( 'page-manufacture' ) ) ?>">製造拠点</a></li>
         </ul>
     </nav>

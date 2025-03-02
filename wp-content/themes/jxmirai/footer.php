@@ -11,9 +11,10 @@
                 <div class="footer_content">
                 <div class="spreator"></div>
                     <div class="footer_title">お問い合わせ</div>
-                    <div>Address: [Your Company Address]</div>
-                    <div>📞 Phone: +[Country Code] [Phone Number]</div>
-                    <div>📧 Email: contact@yourcompany.com</div>
+                    <div>Address: JX未来株式会社</div>
+                    <div>📞 Phone: 03-6424-8053,080-2381-4704</div>
+					<div>📠 Fax: 03-6524-8313</div>
+                    <div>📧 Email: info@jx-f.jp、hein-hk@jx.jp</div>
                     <div>🌐 Website: www.yourcompany.com</div>
                     <div>Business Hours</div>
                     <div>🕒 Monday - Friday: 9:00 AM - 6:00 PM</div>
