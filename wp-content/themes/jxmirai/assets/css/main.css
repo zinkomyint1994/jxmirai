@@ -295,7 +295,12 @@
 	margin-top: 14rem !important;
 	width: 96%;
 	margin: auto;
-	/* height: 900px; */
+	height: 900px;
+}
+@media (min-width:803px) and (max-width: 1342px) {
+	.products_list_wrapper {
+		height: 100%;
+	}
 }
 .metal_work_wrapper {
 	position: relative;

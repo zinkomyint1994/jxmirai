@@ -137,7 +137,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
       global $title;
       global $bgColor;
       $title = "Resin ( 樹脂 )";
-      $bgColor ="#fff";
+      $bgColor ='#ffffff';
       include get_template_directory() . '/custom/subTitle.php';
       ?> </div>
     <!-- <div>
