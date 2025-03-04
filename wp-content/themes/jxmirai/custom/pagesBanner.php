@@ -18,7 +18,7 @@
                     global $title;
                     global $caption;
                     $title = $title;
-                    $caption = "当社のサービス";
+                    $caption = $img;
                             include get_template_directory() . '/custom/title.php';
                     ?>
                 </div>

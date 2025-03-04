@@ -5,16 +5,16 @@
 get_header(); ?>
 <!-- main-banner -->
 <?php
-   global $title;
-   global $caption;
-   global $bgColor;
-   $title = "ABOUT US";
-   $img = "私たちについて";
-   $bgColor = '#fff';
-//    $url = "/assets/images/banner/newbanner.png";
+global $title;
+global $caption;
+global $bgColor;
+global $url;
+$title = "ABOUT US";
+$img = "私たちについて";
+$bgColor = '#fff';
 $url = "/assets/images/banner/manufacturebanner.png";
+header('Content-Type: image/jpeg');
 include get_template_directory() . '/custom/pagesBanner.php';
-
 ?>
 <!-- slider -->
  <div class="slider-wrapper">
@@ -49,6 +49,8 @@ include get_template_directory() . '/custom/pagesBanner.php';
 <div>
     <?php
             global $title;
+            global $bgColor;
+            $bgColor ="#000000";
             $title = "COMPANY PROFILE";
             include get_template_directory() . '/custom/subTitle.php';
             ?>
@@ -105,9 +107,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
             </div>
     </div>
 </div>
-<div class="spreator"></div>
-<div class="spreator"></div>
-<div class="spreator"></div>
+<div class="info_spreator"></div>
 <!-- my company -->
 
 <!-- intro -->
@@ -141,6 +141,8 @@ include get_template_directory() . '/custom/pagesBanner.php';
         <div>
             <?php
             global $title;
+            global $bgColor;
+            $bgColor ="#000000";
             $title = "NEWS";
                     include get_template_directory() . '/custom/subTitle.php';
             ?>
@@ -258,6 +260,8 @@ include get_template_directory() . '/custom/pagesBanner.php';
     <div>
         <?php
         global $title;
+        global $bgColor;
+        $bgColor ="#000000";
         $title = "OUR PRODUCTION VIDEO";
                 include get_template_directory() . '/custom/subTitle.php';
         ?>
@@ -308,5 +312,35 @@ include get_template_directory() . '/custom/pagesBanner.php';
         <!-- video block -->
 </div>
 <!-- video -->
+<!-- map -->
+    <div class="map-wrapper">
+        <div class="map-text-wrap">
+            <div>
+            <?php
+            global $title;
+            global $bgColor;
+            $bgColor ="#000000";
+            $title = "アクセス";
+                    include get_template_directory() . '/custom/subTitle.php';
+            ?>
+            </div>
+            <div>
+                - 本社　〒143-0015、東京部大田区大森西7丁目8番17号
+            </div>
+            <div>
+                - 本社　〒143-0015、東京部大田区大森西7丁目8番17号
+            </div>
+            <div>
+                - ロン。リッシュ102号 長野支店　〒396-0015
+            </div>
+            <div>
+                - 長野県伊那市中央5020-1、セレーノ 伊那1 203号
+            </div>
+        </div>
+        <div  class="responsive-map-container">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4152.984684625595!2d139.72506098386017!3d35.56542146251121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601860458f0c5aab%3A0x4e11595c4bc6016f!2s7%20Chome%20Omorinishi%2C%20Ota%20City%2C%20Tokyo%20143-0015!5e0!3m2!1sen!2sjp!4v1740958492537!5m2!1sen!2sjp"  width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+<!-- map -->
 <div class="spreator"></div>
 <?php get_footer(); ?>

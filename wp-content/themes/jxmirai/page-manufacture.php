@@ -9,6 +9,7 @@ get_header(); ?>
 global $title;
 global $caption;
 global $bgColor;
+global $url;
 $title = "MANUFACTURING BASE";
 $img = "当社のサービス";
 $bgColor = '#fff';
@@ -21,6 +22,8 @@ include get_template_directory() . '/custom/pagesBanner.php';
   <div>
     <?php
     global $title;
+    global $bgColor;
+    $bgColor ="#000000";
     $title = "Factories from China";
     include get_template_directory() . '/custom/subTitle.php';
     ?>
@@ -152,6 +155,8 @@ include get_template_directory() . '/custom/pagesBanner.php';
   <div>
     <?php
     global $title;
+    global $bgColor;
+    $bgColor ="#000000";
     $title = "Factories from China";
     include get_template_directory() . '/custom/subTitle.php';
     ?>

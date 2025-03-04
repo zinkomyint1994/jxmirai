@@ -28,7 +28,13 @@ include get_template_directory() . '/custom/mainBanner.php';
             </div>
           
             <p class="descripton-txt">
-			先ずお客様からのご依頼の 3D/2Dデータ,数量,材料を確認し 作成工法を相談しながらお見積り書検討致します。（＊普段のお見積りは2日間内で回答いたします。）
+			先ずお客様からのご依頼の
+3D/2Dデータ,数量,材料を確認し
+作成工法を相談しながら
+お見積り書検討致します。
+(*普段のお見積りは2日間内で
+回答いたします。）
+
 
             </p>
         </div>
@@ -37,7 +43,13 @@ include get_template_directory() . '/custom/mainBanner.php';
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/img2.png" alt="Example Image" class="image2">
             </div>
             <p class="descripton-txt">
-			事業内容金型製造（試作型、量産型）3Dプリンター樹脂切削注型金属その他</p>
+            金型製造（試作型、量産型）
+3Dプリンター,
+樹脂切削,
+注型,
+金属,
+その他
+
         </div>
 
         <div class="s-image-wrapper">
@@ -45,7 +57,9 @@ include get_template_directory() . '/custom/mainBanner.php';
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/img3.png" alt="Example Image" class="image3">
             </div>
             <p class="descripton-txt">
-			出荷検査、測定→短納期安全の梱包方法空便/船便選択可能
+			検査、測定→短納期
+安全の梱包方法
+空便/船便選択可能
 
             </p>
             <!-- <p class="description-btn-txt">革新的な3Dプリントと高精度金型製作を専門とする世界的な製造会社</p> -->
@@ -68,7 +82,7 @@ include get_template_directory() . '/custom/mainBanner.php';
     <div class="service-container">
         <div class="service-inner-container">
             <div class="service-lf-container">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/img4.png" alt="Example Image" class="ima">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/img4.png" alt="Example Image" class="img_">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/img5.png" alt="Example Image" class="service-img">
             </div>
             <div class="service-rg-container">
@@ -596,13 +610,17 @@ include get_template_directory() . '/custom/mainBanner.php';
         $bgColor = 'black';
                 include get_template_directory() . '/custom/title.php';
         ?>
+        <div class="spreator"></div>
         <div class="brands-wrapper">
             <!-- brands-logo-block -->
             <div class="brands-inner-wrapper">
                 <div class="brands-img-warp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo1.png" alt="Example Image" class="brands-img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/allbanner.png" alt="Example Image" class="brands-img">
                 </div>
                 <div class="brands-img-warp">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/allbanner2.png" alt="Example Image" class="brands-img">
+                </div>
+                <!-- <div class="brands-img-warp">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo4.png" alt="Example Image" class="brands-img">
                 </div>
                 <div class="brands-img-warp">
@@ -610,8 +628,9 @@ include get_template_directory() . '/custom/mainBanner.php';
                 </div>
                 <div class="brands-img-warp">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo4.png" alt="Example Image" class="brands-img">
-                </div>
+                </div> -->
             </div>
+            <div class="spreator"></div>
               <!-- brands-logo-block -->
               
     </div>
