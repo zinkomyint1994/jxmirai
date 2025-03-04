@@ -445,25 +445,25 @@ include get_template_directory() . '/custom/mainBanner.php';
                 <div>
                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
                 </div>
-                <div class="body_content">高度な検査 - 3D スキャンと自動化システムにより欠陥を検出し、正確な寸法を確保します。</div>
+                <div class="body_content">高度な検査 – 3D スキャンと自動化システムにより欠陥を検出し、正確な寸法を確保します。</div>
             </div>
             <div class="list-wrap">
                 <div>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
                 </div>
-                <div >高度な検査 - 3D スキャンと自動化システムにより欠陥を検出し、正確な寸法を確保します。</div>
+                <div >QA チェックリスト – すべての製品は、材料の品質、構造の完全性、および顧客固有のニーズについて徹底的にチェックされます。</div>
             </div>
             <div class="list-wrap">
                 <div>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
                 </div>
-                <div class="body_content">高度な検査 - 3D スキャンと自動化システムにより欠陥を検出し、正確な寸法を確保します。</div>
+                <div class="body_content">リアルタイム監視 –ダッシュボードにより透明性が確保され、検査ステータスを追跡し、詳細な品質レポートを生成します。</div>
             </div>
             <div class="list-wrap">
                 <div>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
                 </div>
-                <div class="body_content">高度な検査 - 3D スキャンと自動化システムにより欠陥を検出し、正確な寸法を確保します。</div>
+                <div class="body_content">配送保証 - 厳格な QCD 基準 (品質、コスト、配送) を満たす製品のみが出荷が承認されます。</div>
             </div>
         </div>
 </div>
