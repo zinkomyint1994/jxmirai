@@ -267,7 +267,7 @@ include get_template_directory() . '/custom/mainBanner.php';
         </div>
     </div>
 <!-- our products -->
-
+<div class="spreator"></div>
 <!-- products-tag  -->
 <div class="p-slider-wrapper ">
 <?php
@@ -280,12 +280,12 @@ include get_template_directory() . '/custom/mainBanner.php';
             include get_template_directory() . '/custom/title.php';
     ?>
     <div class="p-slider-container">
-        <div class="tags-container">
-            <!-- <div>3Dプリンター</div>
+        <!-- <div class="tags-container">
+            <div>3Dプリンター</div>
             <div>樹脂</div>
             <div>金属</div>
-            <div>その他</div> -->
-        </div>
+            <div>その他</div>
+        </div> -->
         <div class="tags-img-container">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/print1.png" alt="Example Image" class="tags-img ">
         <div class="box-1"></div>
@@ -307,7 +307,7 @@ include get_template_directory() . '/custom/mainBanner.php';
     </div>
 </div>
 <!-- products-tag  -->
-
+<div class="spreator"></div>
 <!-- manufacture base -->
 <div class="service-wrapper">
     <?php
@@ -337,7 +337,7 @@ include get_template_directory() . '/custom/mainBanner.php';
                     <div class="sub_txt">
                     ウェブサイトでは、成形と 3D 印刷技術に特化した強力な製造基盤を紹介しています。試作、サンプル金型の作成、量産にわたる業務により、同社は出力の精度と信頼性を確保しています。主な製造プロセスは次のとおりです。
                     </div>
-                    <div>
+                    <div class="manuf_container">
                         <div class="manuf_list_text">
                             <span>1. </span>
                             <p class="title_bold"><span>3D 印刷技術</span> - プロトタイプや複雑なデザインを作成するための高度なステレオリソグラフィー、FDM 印刷、粉末ベースの印刷。</p>
@@ -426,7 +426,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 </div>
     </div>
 <!-- QCD -->
-
+<div class="spreator"></div>
 <!-- quality-check -->
 <div class="check-list-main">
     <div>

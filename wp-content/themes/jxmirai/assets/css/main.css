@@ -205,8 +205,9 @@
 	height: 100%;
 	background: #0499FFB2;
 	border-radius: 20px;
-	top: 15%;
-	left: 22%;
+	top: 0;
+    left: 50%;
+    transform: translate(calc(-50% + 38px), 35px);
 }
 .input_wrap {
 	display: flex;
@@ -392,7 +393,7 @@
 .others_container {
 	/* height: 431px; */
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: auto auto auto;
 	gap: 15px;
 	background: rgba(128, 128, 128, 0.069);
 	align-items: center;
@@ -401,7 +402,7 @@
 .text_container {
     position: relative;
     height: 100%;
-    padding: 5px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */

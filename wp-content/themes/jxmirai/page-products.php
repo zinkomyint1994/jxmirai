@@ -333,54 +333,6 @@ include get_template_directory() . '/custom/pagesBanner.php';
     <div class="others_container">
         <!-- text-box -->
         <div class="text_container">
-            <div class="others_title">金属造形とは、</div>
-            <div class="others_content"> 金属を溶かして3Dプリントする技術で、金属の3Dプリンターとも呼ばれます。金属粉末を積み重ねて立体的な造形物を作る金属積層造形（Metal AM）とも呼ばれます 対応可能な材料: ステンレス鋼: SUS316L、アルミニウムなど </div>
-            <div class="text_blur"></div>
-        </div>
-        <!-- text-box -->
-        <!-- text-box -->
-        <div class="text_container">
-            <div class="others_title">金属造形の特徴</div>
-            <div class="others_content"> 複雑な形状や内部の空洞・格子構造を造形できる、金型が不要で、設計変更が容易 製造時間（工期）が短縮できる、製品毎のトレサビリティが可能、様々な材料が選択できる 切削や鋳造などの製法に比べて複雑な形状の製品を作ることができる 試作品の製作に適している 軽量化が図れる </div>
-            <div class="text_blur"></div>
-        </div>
-        <!-- text-box -->
-        <!-- text-box -->
-        <div class="text_container">
-            <div class="others_title">樹脂切削加工とは</div>
-            <div class="others_content"> 工具や刃物を用いて機械で樹脂を切ったり削ったりする加工方法です。 切削加工は金属を加工する方法として一般的には知られていますが、樹脂素材の加工にも用いられます。 金属と比べ樹脂は加熱すると膨張し、その後冷却すると縮みやすいといった特性があり、金属を切削加工するよりも難易度は高いです。 対応可能な材料:ABS+PC,ABS、PP(ポリプロピレン)、PE(ポリエチレン）,PC(ポリカーボネート)、POM(ジュラコン)、66ナイロン、PBT, PEEK(ピーイーキー)、PTFE(フッ素)、PI(ポリイミド)、PEI(ウルテム®)、PPSU、PET、紙ベークライト、超高分子量ポリエチレンなど﻿ 樹脂切削加工に用いられる素材には、 さまざまな材質とグレードが存在し、材料メーカーも複数ありコストと性能に差があります。そのため、樹脂切削加工品に求める機能とコストを両立させるためには、 最適な材質選定を行うことが大切です、インサート・アウトサートも対応可能です。普通の塗装やUV塗装も対応可能です。 ＊特にJX未来は樹脂切削加工にお客様からコスト、品質に定評があります。 </div>
-            <div class="text_blur"></div>
-        </div>
-        <!-- text-box -->
-        <!-- text-box -->
-        <div class="text_container">
-            <div class="others_title">真空注型とは、</div>
-            <div class="others_content"> 金型を作らずシリコンの型を使って、真空下で液状の樹脂を流し込んで成形する加工方法です。﻿ 対応可能な材料: ABS、PP(ポリプロピレン)、PE(ポリエチレン）,PC(ポリカーボネート)、POM(ジュラコン)、66ナイロン、PBT, PEEK(ピーイーキー)、PTFE(フッ素)、PI(ポリイミド)、PEI(ウルテム®)、PPSU、PET、紙ベークライト、超高分子量ポリエチレン ゴム形など﻿ 【メリット】﻿ 金型に比べて安価で製作できる、納期が短縮できる 気泡が入りにくく、高精度な製品が成形できる インサート成形・アウトサートや一体成型も可能 </div>
-            <div class="text_blur"></div>
-        </div>
-        <!-- text-box -->
-        <!-- text-box -->
-        <div class="text_container">
-            <div class="others_title">金属切削加工とは、</div>
-            <div class="others_content"> 金属切削加工とは、 金属を削ったり穴を開けたりして、目的の形状に加工する方法です。機械加工とも呼ばれ、金属加工の基本的な方法のひとつです 対応可能な材料：鉄鋼やアルミ、ステンレス、真鍮、チタン、インコネル、ハステロイなどの金属材料、非金属材料が加工できます 【メリット】﻿ 特にJX未来はアルミヒートシンク切削とかギアとか特注形状加工にお客様から定評があります。 処理：白アルマイト、カラーアルマイト、硬質アルマイト、アルミニウム化成処理、めっき、黒染め、など。。 </div>
-            <div class="text_blur"></div>
-        </div>
-        <!-- text-box -->
-        <!-- text-box -->
-        <div class="text_container">
-            <div class="others_title">板金とは、</div>
-            <div class="others_content"> プレス機械に取り付けて、板状の材料を圧力を加えて変形させる金型です。金属やプラスチックなどの素材を、所定の形状に成型する加工方法で、 自動車や家電製品などの部品製造に広く利用されています。 対応可能な材料：銅、鉄鋼やステンレス 【メリット】 プレス成形 成形機: 25ton-250tonまで専門メーカー工場に協力しております。 </div>
-            <div class="text_blur"></div>
-        </div>
-        <!-- text-box -->
-        <div class="text_container">
-            <div class="others_title">ダイキャスト（ダイカスト金型製造）とは、</div>
-            <div class="others_content"> 溶かした金属を金型に流し込んで成型する鋳造法の一種で、金型製造も含まれます・ 【メリット】 プレス成形 成形機: 25ton-250tonまで専門メーカー工場に協力しております。 </div>
-            <div class="text_blur"></div>
-        </div>
-         <!-- text-box -->
-                 <!-- text-box -->
-        <div class="text_container">
             <div class="others_title">基板ボックス設計開発</div>
             <div class="others_content"> お客様のご依頼条件でゼロから設計開発し試作品（切削/３Dプリンター）作成→小ロット（試作型）→量産までサポートしております。技術設計専門グループでサポートしています。 </div>
             <div class="text_blur"></div>
@@ -393,7 +345,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
             <div class="text_blur"></div>
         </div>
          <!-- text-box -->
-                 <!-- text-box -->
+        <!-- text-box -->
         <div class="text_container">
             <div class="others_title">アクリルスタンド、アクリルキーホルダー</div>
             <div class="others_content"> 
@@ -401,14 +353,14 @@ include get_template_directory() . '/custom/pagesBanner.php';
             <div class="text_blur"></div>
         </div>
          <!-- text-box -->
-                 <!-- text-box -->
+        <!-- text-box -->
         <div class="text_container">
             <div class="others_title">フィギュア付きストラップ</div>
             <div class="others_content"> お客様のご依頼条件でゼロから設計開発し試作品作成→量産までサポートしております。量産の経験がありますし品質的にお客様から定評があります。 </div>
             <div class="text_blur"></div>
         </div>
          <!-- text-box -->
-                 <!-- text-box -->
+        <!-- text-box -->
         <div class="text_container">
             <div class="others_title">樹脂 エポキシ サメ ナイトライト </div>
             <div class="others_content">弊社の工場の開発品としていろいろなデザインで量産しておりますが、ご興味がございましたらご連絡ください。 </div>
