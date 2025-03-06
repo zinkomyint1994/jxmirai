@@ -23,6 +23,12 @@ function custom_slider_scripts() {
     wp_enqueue_script('custom-slider-js', get_template_directory_uri() . '/assets/js/custom-script.js', array('jquery'), null, true);
 }
 
+function enqueue_custom_scripts() {
+  wp_enqueue_script('custom-products', get_template_directory_uri() . '/assets/js/products.js', array('jquery'), null, true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
+
+
 
 function add_custom_query_var($vars) {
   $vars[] = 'page-news'; // Custom query var
