@@ -96,6 +96,9 @@ footer {
   font-weight: 800;
   color: #fff;
 }
+.menuActive {
+	color: #1257b1;
+}
 .jx_footer {
   /* position: absolute;
   bottom: 0;
