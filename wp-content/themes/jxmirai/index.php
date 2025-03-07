@@ -605,7 +605,7 @@ include get_template_directory() . '/custom/mainBanner.php';
         $bgColor = 'black';
                 include get_template_directory() . '/custom/title.php';
         ?>
-        <div class="spreator"></div>
+        <!-- <div class="spreator"></div> -->
         <div class="brands-wrapper">
             <!-- brands-logo-block -->
             <div class="brands-inner-wrapper">
