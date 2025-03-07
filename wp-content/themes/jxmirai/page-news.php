@@ -16,34 +16,6 @@ $url = "/assets/images/banner/manufacturebanner.png";
 header('Content-Type: image/jpeg');
 include get_template_directory() . '/custom/pagesBanner.php';
 ?>
-<!-- slider -->
- <div class="slider-wrapper">
-  <button class="slider-btn prev">
-    <span class="slider-arrow left">&#10094;</span> 
-  </button>
-  <div class="slider">
-    <div class="slider-track">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/ダイキャスト、材料：アルミ.jpg" alt="Image 1">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/ダイキャスト、材料：アルミ＋追加加工.jpg" alt="Image 2">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/板金、材料：銅(C1012),自動車部品 、t＝6mmまで曲げ問題ありません。.jpg" alt="Image 3">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/板金、材料：銅(C1012),自動車部品.jpg" alt="Image 4">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/樹脂 エポキシ サメ ナイトライト 品.jpg" alt="Image 5">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/自動車樹脂製品＋アクリルカーバ.jpg" alt="Image 6">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/試作型、インサート成形、自動車部品、材料：SUS+樹脂 (2).jpg" alt="Image 7">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/試作型、インサート成形、自動車部品、材料：鉄+樹脂 (3).jpg" alt="Image 8">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/量産型、2色製品、自動車部品、材料：ゴム+樹脂 (3).jpg" alt="Image 9">
-        <!-- <img src="<?php echo get_template_directory_uri(); ?>/量産型、射出成形、自動車部品、材料：樹脂.jpg" alt="Image 10"> -->
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/金属切削、材料：アルミ+塗装.jpg" alt="Image 11">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/金属切削品、材料：鉄+塗装.jpg" alt="Image 12">
-    </div>
-  </div>
-  <button class="slider-btn next">
-  <span class="slider-arrow right">&#10095;</span> 
-  </button>
-</div>
-
-   
-<div class="spreator"></div>
 <!-- my company -->
 <div class="my-company-wrapper">
 <div>
@@ -102,8 +74,8 @@ include get_template_directory() . '/custom/pagesBanner.php';
             <div class="water_mark">
                 <div class="water_mark_blur"></div>
                 <div class="blur_txt">JX未来株式会社</div>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/company1.png" alt="Example Image" class="blur_1">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/company2.png" alt="Example Image" class="blur_2">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/info1.png" alt="Example Image" class="blur_1">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/info2.png" alt="Example Image" class="blur_2">
             </div>
     </div>
 </div>
@@ -127,7 +99,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
                     </div>
             </div>
             <div>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/intro.png" alt="Example Image" class="intro_img">
+                <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/intro.png" alt="Example Image" class="intro_img"> -->
             </div>
         </div>
        
@@ -137,7 +109,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
 
 
 <!-- slider -->
-<div class="news-wrapper">
+<div class="news-wrapper_">
         <div>
             <?php
             global $title;
@@ -154,7 +126,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
                 <div>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/金属切削品、材料：鉄+塗装.jpg" alt="Image 8" class="news_image">
                 </div>
-                <div>
+                <div class="news_txt_wrap">
                     <div class="news_title">
                         <span>
                         <?php
@@ -179,7 +151,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
                 <div>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/n1.png" alt="Image 8" class="news_image">
                 </div>
-                <div>
+                <div class="news_txt_wrap">
                     <div class="news_title">
                         <span>
                         <?php
@@ -204,7 +176,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
                 <div>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/n1.png" alt="Image 8" class="news_image">
                 </div>
-                <div>
+                <div class="news_txt_wrap">
                     <div class="news_title">
                         <span>
                         <?php
@@ -229,7 +201,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
                 <div>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/n1.png" alt="Image 8" class="news_image">
                 </div>
-                <div>
+                <div class="news_txt_wrap">
                     <div class="news_title">
                         <span>
                         <?php
@@ -273,7 +245,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/v1.png" alt="Image 8" class="video_image">
             <div class="video_blur"></div>
         </div>
-        <div>
+         <div class="news_txt_wrap">
             <p class="video_title">リアルタイム監視<p>
             <p class="video_content">リアルタイム監視ダッシュボードには検査ステータスが表示され、顧客に透明性と追跡可能性を提供します。
                 品質レポートが生成され、発見事項と承認段階が文書化さ.....<p>
@@ -288,7 +260,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/v2.png" alt="Image 8" class="video_image">
             <div class="video_blur"></div>
         </div>
-        <div>
+        <div class="news_txt_wrap">
             <p class="video_title">リアルタイム監視<p>
             <p class="video_content">リアルタイム監視ダッシュボードには検査ステータスが表示され、顧客に透明性と追跡可能性を提供します。
                 品質レポートが生成され、発見事項と承認段階が文書化さ.....<p>
@@ -303,7 +275,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/v3.png" alt="Image 8" class="video_image">
             <div class="video_blur"></div>
         </div>
-        <div>
+        <div class="news_txt_wrap">
             <p class="video_title">リアルタイム監視<p>
             <p class="video_content">リアルタイム監視ダッシュボードには検査ステータスが表示され、顧客に透明性と追跡可能性を提供します。
                 品質レポートが生成され、発見事項と承認段階が文書化さ.....<p>

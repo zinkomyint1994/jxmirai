@@ -188,7 +188,7 @@ include get_template_directory() . '/custom/mainBanner.php';
                  <!-- card-two -->
                 <div class="card-container">
                     <div class="img-container ">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Example Image" class="product-image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/resin.jpg" alt="Example Image" class="product-image">
                     </div>
                     <div class="card-list">
                         <div>
@@ -257,7 +257,7 @@ include get_template_directory() . '/custom/mainBanner.php';
                         <div class="blue-block"></div>
                     </div>
                     <div class="img-container ">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Example Image" class="product-image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/other.jpg" alt="Example Image" class="product-image">
                     </div>
             
                 </div>
@@ -436,6 +436,7 @@ include get_template_directory() . '/custom/mainBanner.php';
                 include get_template_directory() . '/custom/subTitle.php';
         ?>
     </div>
+    
     <div class="check-list-wrapper">
         <div>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check.png" alt="Example Image" class="check-img">

@@ -34,7 +34,32 @@ get_header(); ?>
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/2c1c4e913cee431c880798db58eda0f3.png" alt="">
   </div>
 </div>
-
+<!-- slider -->
+<div class="slider-wrapper">
+  <button class="slider-btn prev">
+    <span class="slider-arrow left">&#10094;</span> 
+  </button>
+  <div class="slider">
+    <div class="slider-track">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/ダイキャスト、材料：アルミ.jpg" alt="Image 1">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/ダイキャスト、材料：アルミ＋追加加工.jpg" alt="Image 2">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/板金、材料：銅(C1012),自動車部品 、t＝6mmまで曲げ問題ありません。.jpg" alt="Image 3">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/板金、材料：銅(C1012),自動車部品.jpg" alt="Image 4">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/樹脂 エポキシ サメ ナイトライト 品.jpg" alt="Image 5">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/自動車樹脂製品＋アクリルカーバ.jpg" alt="Image 6">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/試作型、インサート成形、自動車部品、材料：SUS+樹脂 (2).jpg" alt="Image 7">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/試作型、インサート成形、自動車部品、材料：鉄+樹脂 (3).jpg" alt="Image 8">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/量産型、2色製品、自動車部品、材料：ゴム+樹脂 (3).jpg" alt="Image 9">
+        <!-- <img src="<?php echo get_template_directory_uri(); ?>/量産型、射出成形、自動車部品、材料：樹脂.jpg" alt="Image 10"> -->
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/金属切削、材料：アルミ+塗装.jpg" alt="Image 11">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/金属切削品、材料：鉄+塗装.jpg" alt="Image 12">
+    </div>
+  </div>
+  <button class="slider-btn next">
+  <span class="slider-arrow right">&#10095;</span> 
+  </button>
+</div>
+<!-- slider -->
 <div class="product_listing_container">
 
   <div class="product_sidebar_container">

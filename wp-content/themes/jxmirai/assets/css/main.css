@@ -171,26 +171,25 @@
 	text-align: left;
 	background: black;
 	border: 1px solid #fff;
-	width: 60%;
+	width: 75%;
 	height: 100%;
 	position: relative;
 	z-index: 11;
 	display: grid;
 	color: #fff;
-	grid-template-columns: 40% 35%;
+	grid-template-columns: 40% 45%;
 	align-items: center;
 	justify-content: space-around;
 	border-radius: 20px;
-	padding: 12px;
+    padding: 2.3em;
 }
 .email_content_wrap {
 	display: flex;
 	flex-direction: column;
-	gap: 21px;
+	gap: 27px;
 }
 .email_title {
 	font-size: 30px;
-	line-height: 2px;
 	margin-bottom: 14px;
 }
 .mt-14 {
@@ -201,14 +200,14 @@
 	line-height: 29px;
 }
 .email_layer {
-	position: absolute;
-	width: 61%;
-	height: 100%;
-	background: #0499ffb2;
-	border-radius: 20px;
-	top: 0;
-	left: 50%;
-	transform: translate(calc(-50% + 38px), 35px);
+    position: absolute;
+    width: 75%;
+    height: 99%;
+    background: #0499ffb2;
+    border-radius: 20px;
+    top: 0;
+    left: 50%;
+    transform: translate(calc(-50% + 22px), 26px);
 }
 .input_wrap {
 	display: flex;
@@ -229,11 +228,19 @@
 .custom-input-bottom:focus {
 	border-bottom-color: #0499ffb2;
 }
+.reset-pass-submit {
+	text-align: right;
+}
+input, select, textarea{
+    color: #ffffff;
+	font-size: 16px;
+}
+
 .custom-submit-button {
-	width: 112px;
+	width: 153px;
 	height: auto;
-	padding: 5px;
-	border-radius: 40px;
+	padding: 15px;
+	border-radius: 12px;
 	box-shadow: none;
 	background: #0499ffb2;
 	border: none;
@@ -294,7 +301,7 @@
 }
 .products_list_wrapper {
 	position: relative;
-	margin-top: 14rem !important;
+	/* margin-top: 14rem !important; */
 	width: 96%;
 	margin: auto;
 	height: 900px;
@@ -732,7 +739,7 @@
 /* sample */
 
 /* news */
-.news-wrapper {
+.news-wrapper_ {
 	width: 96%;
 	margin: auto;
 }
@@ -782,7 +789,7 @@
 .video_container {
 	position: relative;
 	display: flex;
-	gap: 42px;
+	gap: 70px;
 }
 .video_img_wrap {
 	cursor: pointer;
@@ -833,6 +840,7 @@
 	overflow: hidden;
 	background: #0680ff1a;
 	padding: 12px;
+	margin-bottom: 50px;
 }
 
 .slider {
@@ -1366,4 +1374,10 @@
 .thumbnails .thumb.active {
 	opacity: 1;
 	border: 2px solid #000;
+}
+
+.news_txt_wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
 }
