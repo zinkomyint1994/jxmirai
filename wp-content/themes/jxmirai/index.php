@@ -125,22 +125,16 @@ include get_template_directory() . '/custom/mainBanner.php';
                     <div class="card-list">
                         <div>
                         <div class="product-title">1. ３Dプリンター</div>
-                        <div class="list-txt">    
-							<button class="trigger">光造形</button>
-							<button class="trigger">FDM造形</button>
-							<button class="trigger">粉末造形</button>
-							<button class="trigger">UV硬化造形</button>
-							<button class="trigger">DLP造形</button>
-							<button class="trigger">金属造形</button>							
+                        <ul class="list-txt">    
+							<li><button class="trigger">光造形</button></li>
+							<li><button class="trigger">FDM造形</button></li>
+							<li><button class="trigger">粉末造形</button></li>
+							<li><button class="trigger">UV硬化造形</button></li>
+							<li><button class="trigger">DLP造形</button></li>
+							<li><button class="trigger">金属造形</button></li>							
 							
+						</ul>
                         </div>
-                        </div>
-						<!-- <div class="modal">
-								<div class="modal-content">
-									<span class="close-button">×</span>
-									<p>Hello, I am a modal!</p>
-								</div>
-							</div> -->
 						<div class="modal">
 						<div class="modal-content">
 							<span class="close-button" >&times;</span>
@@ -193,10 +187,10 @@ include get_template_directory() . '/custom/mainBanner.php';
                     <div class="card-list">
                         <div>
                         <div class="product-title">2. 樹脂</div>
-                        <div class="list-txt">
-						<button class="trigger">＊切削</button>
-						<button class="trigger">真空注型</button>
-                        </div>
+                        <ul class="list-txt">
+						<li><button class="trigger">＊切削</button></li>
+						<li><button class="trigger">真空注型</button></li>
+						</ul>
                         </div>
 						<!-- <div class="arrow-btn-wrapper1">
                         <?php
@@ -214,12 +208,12 @@ include get_template_directory() . '/custom/mainBanner.php';
                  <div class="card-list2">
                         <div>
                             <div class="product-title">3. 金属</div>
-                                <div class="list-txt">
-								<button class="trigger">切削</button>
-								<button class="trigger">板金</button>
-								<button class="trigger">プレス（金型製造）</button>
-								<button class="trigger">ダイキャスト （金型製造）</button>
-                                </div>
+                                <ul class="list-txt">
+								<li><button class="trigger">切削</button></li>
+								<li><button class="trigger">板金</button></li>
+								<li><button class="trigger">プレス（金型製造）</button></li>
+								<li><button class="trigger">ダイキャスト （金型製造）</button></li>
+								</ul>
                             </div>
 						<!-- <div class="arrow-btn-wrapper2">
                         <?php
@@ -239,14 +233,14 @@ include get_template_directory() . '/custom/mainBanner.php';
                  <div class="card-list2">
                         <div>
                             <div class="product-title">4. その他</div>
-                                <div class="list-txt">			
-                                    <button class="trigger">基板ボックス設計開発</button>
-                                    <button class="trigger">アクリルスタンド</button>
-                                    <button class="trigger">アクリルキーホルダー</button>
-                                    <button class="trigger">フィギュア付きストラップ</button>
-									<button class="trigger">樹脂 エポキシ サメ ナイトライト</button>
-									<button class="trigger">弊社の開発品</button>
-                                </div>
+                                <ul class="list-txt">			
+                                   <li><button class="trigger">基板ボックス設計開発</button></li>
+								   <li><button class="trigger">アクリルスタンド</button></li>
+								   <li><button class="trigger">アクリルキーホルダー</button></li>
+								   <li><button class="trigger">フィギュア付きストラップ</button></li>
+								   <li><button class="trigger">樹脂 エポキシ サメ ナイトライト</button></li>
+								   <li><button class="trigger">弊社の開発品</button>
+								</ul>
                             </div>
 						<!-- <div class="arrow-btn-wrapper2">
                         <?php
