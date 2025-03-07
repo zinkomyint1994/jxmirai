@@ -105,9 +105,9 @@ include get_template_directory() . '/custom/pagesBanner.php';
   <!-- products-tag  -->
   <div class="sample_inner">
     <div>
-      <div class="sample-main-title">
+      <!-- <div class="sample-main-title">
         We Partner With Over 50 High-quality Manufacturers In China
-      </div>
+      </div> -->
       <div class="sample_content_wrap">
         <div>サンプル金型の作成</div>
         <div class="news_title">

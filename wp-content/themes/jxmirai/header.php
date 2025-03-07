@@ -30,10 +30,10 @@
            </a>
            <div class="menu-container">
                 <div><a href="<?php echo home_url(); ?>">ホーム</a></div>
-                <div><a href="<?php echo get_permalink( get_page_by_path( 'page-news' ) ) ?>">会社概要</a></div>
                 <div><a href="<?php echo get_permalink( get_page_by_path( 'page-products' ) ) ?>">事業内容 と 製造品</a></div>
                 <div><a href="<?php echo get_permalink( get_page_by_path( 'page-service' ) ) ?>">製造品</a></div>
                 <div><a href="<?php echo get_permalink( get_page_by_path( 'page-manufacture' ) ) ?>">製造拠点</a></div>
+                <div><a href="<?php echo get_permalink( get_page_by_path( 'page-news' ) ) ?>">会社概要</a></div>
            </div>
            <div class="sp_menu">
            <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/menu.png" alt="Logo"> -->
