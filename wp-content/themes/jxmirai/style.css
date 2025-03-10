@@ -1119,6 +1119,7 @@ footer {
   width: 96%;
   margin: auto;
   height: 100%;
+  max-width: 1440px;
 }
 
 .my-com-wrapper {
@@ -1181,7 +1182,7 @@ footer {
   background: #0680ff;
   height: 100%;
   bottom: 0;
-  width: 90%;
+  width: 100%;
   right: -5%;
 }
 .blur_1 {
@@ -1219,6 +1220,7 @@ footer {
   background: rgb(0, 0, 0);
   width: 96%;
   margin: auto;
+  max-width: 1440px;
 }
 .intro_container {
   width: 96%;

@@ -15,39 +15,68 @@ $bgColor = '#fff';
 $url = "/assets/images/banner/footer.jpg";
 include get_template_directory() . '/custom/pagesBanner.php';
 ?>
-<!-- four-image -->
-<!-- <div class="pages-four">
-    <div class="img_wrapper">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/3d.png" alt="Example Image" class="f_img" />
-        <div class="f_content">
-            <p>3Dプリンター</p>
-            <span class="body_content">当社は、ステレオリソグラフィー (SLA)、FDM 印刷、...span >
-        </div>
+<!-- metal work -->
+<div class="metal_work_wrapper">
+    <!-- title -->
+    <div class="products_title_wrap">
+        <div> <?php
+      global $title;
+      global $bgColor;
+      $bgColor ="#000000";
+      $title = "試作金型（簡易金型）/量産金型";
+      include get_template_directory() . '/custom/subTitle.php';
+      ?> </div>
+        <!-- <div class="side_title"> 3D 印刷テクノロジー - プロトタイプや複雑なデザインを作成するための高度なステレオリソグラフィー、FDM 印刷、粉末ベースの印刷。 </div> -->
     </div>
-    <div class="img_wrapper">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/v1.png" alt="Example Image" class="f_img" />
-        <div class="f_content">
-            <p>3Dプリンター</p>
-            <span class="body_content">当社は、ステレオリソグラフィー (SLA)、FDM 印刷、...span >
+    <div class="products_details">
         </div>
-    </div>
-    <div class="img_wrapper">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/v2.png" alt="Example Image" class="f_img" />
-        <div class="f_content">
-            <p>3Dプリンター</p>
-            <span class="body_content">当社は、ステレオリソグラフィー (SLA)、FDM 印刷、...span >
-        </div>
-    </div>
-    <div class="img_wrapper">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/v3.png" alt="Example Image" class="f_img" />
-        <div class="f_content">
-            <p>3Dプリンター</p>
-            <span class="body_content">当社は、ステレオリソグラフィー (SLA)、FDM 印刷、...span >
-        </div>
-    </div>
-</div> -->
+        <div class="list_wrap">
+            <div class="others_list_wrap">
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Example Image" class="img_one" />
+                </div>
+                <div>
+                    <div class="others_title"> <?php
+                    include get_template_directory() . '/custom/subBlueLine.php';
+                    ?>試作金型（簡易金型）</div>
+                    <div class="p_description"> 
+                            調整や改造が迅速に行えること等があります。
+                            ご注文からお届けまで工期15日～。＃P20金型製のカセット簡易金型を用いて圧倒的な速さで射出成形品を作り出しています。
+                            成形実績の多くは自動車の試作部品で、コネクター・電装部品・エアコンパネル・ステアリング・充電器部品・クリップなど様々です。
+                            もちろん、速さだけでなく品質と柔軟な対応にも自信があります。
+                            （保証ショット数：１万個ぐらいまでは試作金型で可能です。）
+                            成形機：10ton~1,300tonまで１月/40型ぐらい改造しております。
+                    </div>
+                </div>
+            </div>
 
-<!-- products list -->
+            <div class="others_list_wrap">
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Example Image" class="img_one" />
+                </div>
+                <div>
+                    <div class="others_title"> <?php
+                    include get_template_directory() . '/custom/subBlueLine.php';
+                    ?> 量産金型 </div>
+                    <div class="p_description">
+                        中国工場生産と国内に生産方法で対応しております。
+                        国内に成形、金型パートナーと連携し国内生産、金型仕様変更やメンテナンス対応も出来ます。
+                        （射出成形、インサート金型、２色成形、コンプレッション成形
+                        成形機：10ton~1,300ton
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- <div class="products_btn_">
+      <?php
+      include get_template_directory() . '/custom/buttontype1.php';
+      ?>
+    </div> -->
+    </div>
+    <!-- title -->
+</div>
+<!-- metal work -->
 <div class="products_list_wrapper">
     <!-- title -->
     <div class="products_title_wrap">
@@ -58,40 +87,65 @@ include get_template_directory() . '/custom/pagesBanner.php';
       $title = "3D PRINTING";
       include get_template_directory() . '/custom/subTitle.php';
       ?> </div>
-        <div class="side_title"> 3D 印刷テクノロジー - プロトタイプや複雑なデザインを作成するための高度なステレオリソグラフィー、FDM 印刷、粉末ベースの印刷。 </div>
+        <!-- <div class="side_title"> 3D 印刷テクノロジー - プロトタイプや複雑なデザインを作成するための高度なステレオリソグラフィー、FDM 印刷、粉末ベースの印刷。 </div> -->
     </div>
     <div class="products_details">
-        <div class="image_layout">
+        <!-- <div class="image_layout">
             <div class="layer_0">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p1.png" alt="Example Image" class="img_ly1" />
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Example Image" class="img_ly2" />
             </div>
-        </div>
+        </div> -->
         <div class="list_wrap">
             <div class="others_list_wrap">
-                <div class="others_title"> <?php
-          include get_template_directory() . '/custom/subBlueLine.php';
-          ?> 光造形とは </div>
-                <div class="p_description"> 説明: 紫外線レーザーなどの光で感光性樹脂を固め、立体的なモデルを作成する3Dプリンターの造形方式です。 対応可能な材料:ABSライク樹脂、PPライク樹脂が一般的、PCライク透明度の高い樹脂﻿,ゴムやエラストマーなど 。 </div>
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Example Image" class="img_one" />
+                </div>
+                <div>
+                        <div class="others_title"> <?php
+                        include get_template_directory() . '/custom/subBlueLine.php';
+                            ?> 光造形とは </div>
+                        <div class="p_description"> 説明: 紫外線レーザーなどの光で感光性樹脂を固め、立体的なモデルを作成する3Dプリンターの造形方式です。 対応可能な材料:ABSライク樹脂、PPライク樹脂が一般的、PCライク透明度の高い樹脂﻿,ゴムやエラストマーなど 。 </div>
+                </div>
+     
             </div>
+
             <div class="others_list_wrap">
-                <div class="others_title"> <?php
-          include get_template_directory() . '/custom/subBlueLine.php';
-          ?> 光造形の特徴 </div>
-                <div class="p_description"> 説明: 透明度の高い材料を使用できるため、可視化サンプルや展示用モック、デザインモックなどに適している﻿ 耐久性や耐熱性に優れた樹脂、弾性のあるゴムやエラストマーを再現したようなゴムライクなど、さまざまな材料が使用可能﻿ 300度の熱に耐えられる耐熱性樹脂やUL94 V0規格の難燃性樹脂、耐候性樹脂など、スーパーエンプラに匹敵する材料も登場している﻿ 。 </div>
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Example Image" class="img_one" />
+                </div>
+                <div>
+                    <div class="others_title"> <?php
+                    include get_template_directory() . '/custom/subBlueLine.php';
+                    ?> 光造形の特徴 </div>
+                    <div class="p_description"> 説明: 透明度の高い材料を使用できるため、可視化サンプルや展示用モック、デザインモックなどに適している﻿ 耐久性や耐熱性に優れた樹脂、弾性のあるゴムやエラストマーを再現したようなゴムライクなど、さまざまな材料が使用可能﻿ 300度の熱に耐えられる耐熱性樹脂やUL94 V0規格の難燃性樹脂、耐候性樹脂など、スーパーエンプラに匹敵する材料も登場している﻿ 。 </div>
+                </div>
             </div>
+
             <div class="others_list_wrap">
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Example Image" class="img_one" />
+                </div>
+                <div>
                 <div class="others_title"> <?php
-          include get_template_directory() . '/custom/subBlueLine.php';
-          ?> FDM造形とは </div>
-                <div class="p_description"> 説明: Fused Deposition Modelingの略称で、日本語では熱溶融積層(方式）と訳されます。 FDM方式の3Dプリンターは、材料となる熱可塑性プラスチックなどを高温で熱して液状に溶かし、それを一筆書きのような要領で、ノズルから押し出しながら成形を行い、立体の造形物を製作します。 対応可能な材料:ABS樹脂(ABS-M30、ABS-M30i、ABS-ESD7など)、ポリカーボネート(PC-ABSなど)、PLA(ポリ乳酸)樹脂、ナイロン、カーボンファイバー入り材料、ULTEM(ポリエーテルイミド)、ASA、TPU 92A、PC、PC-ISOなど。 </div>
-            </div>
+                         include get_template_directory() . '/custom/subBlueLine.php';
+                        ?> FDM造形とは </div>
+                        <div class="p_description"> 説明: Fused Deposition Modelingの略称で、日本語では熱溶融積層(方式）と訳されます。 FDM方式の3Dプリンターは、材料となる熱可塑性プラスチックなどを高温で熱して液状に溶かし、それを一筆書きのような要領で、ノズルから押し出しながら成形を行い、立体の造形物を製作します。 対応可能な材料:ABS樹脂(ABS-M30、ABS-M30i、ABS-ESD7など)、ポリカーボネート(PC-ABSなど)、PLA(ポリ乳酸)樹脂、ナイロン、カーボンファイバー入り材料、ULTEM(ポリエーテルイミド)、ASA、TPU 92A、PC、PC-ISOなど。 </div>
+                        </div>
+                    </div>
+            
             <div class="others_list_wrap">
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Example Image" class="img_one" />
+                </div>
+                <div>
                 <div class="others_title"> <?php
           include get_template_directory() . '/custom/subBlueLine.php';
           ?> FDM造形の特徴 </div>
                 <div class="p_description"> 説明: 実製品と同じ工業用樹脂素材を使用できるため、機械的・熱的・化学的に実製品レベルの物性を持つ造形パーツが作成できる﻿ 試作だけでなく実用品やパーツの製作にも活用できる﻿ 耐候性や汎用性、生体適合性、静電気拡散性、耐薬品性、柔軟性、衝撃吸収、高靭性、低摩擦性、安価さ、耐熱性、滅菌可能性などの特徴がある﻿ 。 </div>
+                </div>
             </div>
+            
         </div>
         <!-- <div class="products_btn_">
       <?php
@@ -123,7 +177,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
                 ">
                 <div class="content">
                     <div class="title">射出成形</div>
-                    <div class="name"> 溶融樹脂をカスタム設計された金型に注入して固体物体を作成するプロセス。 </div>
+                    <!-- <div class="name"> 溶融樹脂をカスタム設計された金型に注入して固体物体を作成するプロセス。 </div> -->
                     <!-- <div class="des">
             説明: 選択的レーザー焼結法 (SLS) などの粉末ベースの印刷では、レーザーを使用して粉末材料 (プラスチック樹脂は溶融するまで加熱され、高圧下で金型に注入されます。材料は冷却されて固まり、金型の形状になります。
             例: 自動車部品、電子機器のケース、プラスチック製のおもちゃ。
@@ -235,31 +289,38 @@ include get_template_directory() . '/custom/pagesBanner.php';
       global $title;
       global $bgColor;
       $bgColor ="#000000";
-      $title = "METAL WORK ( 金属 )";
+      $title = "METAL WORK(金属)";
       include get_template_directory() . '/custom/subTitle.php';
       ?> </div>
-        <div class="side_title"> 3D 印刷テクノロジー - プロトタイプや複雑なデザインを作成するための高度なステレオリソグラフィー、FDM 印刷、粉末ベースの印刷。 </div>
+        <!-- <div class="side_title"> 3D 印刷テクノロジー - プロトタイプや複雑なデザインを作成するための高度なステレオリソグラフィー、FDM 印刷、粉末ベースの印刷。 </div> -->
     </div>
     <div class="products_details">
-        <div class="image_layout">
-            <div class="layer_0">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p1.png" alt="Example Image" class="img_ly1" />
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Example Image" class="img_ly2" />
-            </div>
         </div>
         <div class="list_wrap">
             <div class="others_list_wrap">
-                <div class="others_title"> <?php
-          include get_template_directory() . '/custom/subBlueLine.php';
-          ?> DLP(Digital Light Processing)造形は </div>
-                <div class="p_description"> 説明: 3Dプリンターの光造形方式の1つ。 この方式では、デジタルミラーデバイスという特殊なチップを使って、光を特定の部分に向けて樹脂を硬化させる。 DLPを使用した3Dプリンターは、高精度なプリントが可能で、細かいディテールを持つオブジェクトの製造に適している。 対応可能な材料:エポキシ系樹脂のABSライク樹脂やPPライク樹脂、アクリル系のレジンなど。 </div>
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Example Image" class="img_one" />
+                </div>
+                <div>
+                    <div class="others_title"> <?php
+                    include get_template_directory() . '/custom/subBlueLine.php';
+                    ?> DLP(Digital Light Processing)造形は </div>
+                    <div class="p_description"> 説明: 3Dプリンターの光造形方式の1つ。 この方式では、デジタルミラーデバイスという特殊なチップを使って、光を特定の部分に向けて樹脂を硬化させる。 DLPを使用した3Dプリンターは、高精度なプリントが可能で、細かいディテールを持つオブジェクトの製造に適している。 対応可能な材料:エポキシ系樹脂のABSライク樹脂やPPライク樹脂、アクリル系のレジンなど。 </div>
+                </div>
             </div>
+
             <div class="others_list_wrap">
-                <div class="others_title"> <?php
-          include get_template_directory() . '/custom/subBlueLine.php';
-          ?> DLP(Digital Light Processing)造形の特徴 </div>
-                <div class="p_description"> 説明: 造形スピードが速い、造形精度が高い、滑らかな仕上がりになる、透明度の高い造形物が可能、大型で高精度な造形物が可能、 レーザーやガルバノミラーを必要としないため、SLA方式よりも設備の導入コストが低く抑えられる。 </div>
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Example Image" class="img_one" />
+                </div>
+                <div>
+                    <div class="others_title"> <?php
+                    include get_template_directory() . '/custom/subBlueLine.php';
+                    ?> DLP(Digital Light Processing)造形の特徴 </div>
+                    <div class="p_description"> 説明: 造形スピードが速い、造形精度が高い、滑らかな仕上がりになる、透明度の高い造形物が可能、大型で高精度な造形物が可能、 レーザーやガルバノミラーを必要としないため、SLA方式よりも設備の導入コストが低く抑えられる。 </div>
+                </div>
             </div>
+
             <!-- <div class="others_list_wrap">
         <div class="others_title">
           <?php
