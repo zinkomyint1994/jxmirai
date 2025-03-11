@@ -118,103 +118,103 @@ include get_template_directory() . '/custom/mainBanner.php';
 <!-- our service -->
 
 <!-- our products -->
-    <div>
-        <div class="product-wrapper">
-            <div class="product-container">
-                <!-- card-one -->
-                <div class="card-container">
-                    <div class="img-container ">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p1.png" alt="Example Image" class="product-image">
+<div>
+  <div class="product-wrapper">
+    <div class="product-container">
+      <!-- card-one -->
+      <div class="card-container">
+        <div class="img-container ">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p1.png" alt="Example Image" class="product-image">
+        </div>
+        <div class="card-list">
+          <div>
+            <div class="product-title">1. ３Dプリンター</div>
+            <ul class="list-txt">
+              <li><button class="trigger" data-modal="modal1">光造形</button></li>
+              <li><button class="trigger" data-modal="modal2">FDM造形</button></li>
+              <li><button class="trigger">粉末造形</button></li>
+              <li><button class="trigger">UV硬化造形</button></li>
+              <li><button class="trigger">DLP造形</button></li>
+              <li><button class="trigger">金属造形</button></li>
+            </ul>
+          </div>
+          <!-- modal-1 -->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <span class="close-button" data-modal="modal1">&times;</span>
+              <div>
+                <div class="modal-header">3Dプリンタ</div>
+                <div class="modal-body">
+                  <div class="printer-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/print1.png" alt="3Dプリンタ" class="tags-img ">
+                    <div class="long-arrow-right"></div>
+                    <div class="description">
+                      <h4>光造形</h4>
+                      <p>私たちは、光造形、FDM造形、粉末造形、およびUV硬化造形を含む高度な3Dプリンター技術を専門としており、精密で革新的なソリューションを提供しています。</p>
                     </div>
-                    <div class="card-list">
-                        <div>
-							<div class="product-title">1. ３Dプリンター</div>
-							<ul class="list-txt">    
-								<li><button class="trigger" data-modal="modal1">光造形</button></li>
-								<li><button class="trigger" data-modal="modal2">FDM造形</button></li>
-								<li><button class="trigger">粉末造形</button></li>
-								<li><button class="trigger">UV硬化造形</button></li>
-								<li><button class="trigger">DLP造形</button></li>
-								<li><button class="trigger">金属造形</button></li>							
-							</ul>
-                        </div>
-						<!-- modal-1 -->
-					<div id="modal1" class="modal">
-    				<div class="modal-content">
-       					<span class="close-button" data-modal="modal1">&times;</span>
-       				<div>
-	   				<div class="modal-header">3Dプリンタ</div>
-						<div class="modal-body">
-							<div class="printer-image">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/print1.png" alt="3Dプリンタ" class="tags-img ">
-								<div class="long-arrow-right"></div>
-								<div class="description">
-									<h4>光造形</h4>
-									<p>私たちは、光造形、FDM造形、粉末造形、およびUV硬化造形を含む高度な3Dプリンター技術を専門としており、精密で革新的なソリューションを提供しています。</p>
-								</div>
 
-							</div>
-							<div class="content-section">
-								<div class="item">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/product1.jpg" alt="サンプル1" class="tags-img ">
-									<p>・紫外線光で樹脂を硬化させて製造。細かいディテールを再現可能。
-									例: ジュエリー、精密部品、歯科治療用模型。</p>
-								</div>
-								<div class="item">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/product2.jpg" alt="サンプル1" class="tags-img ">
-									<p>・紫外線光で樹脂を硬化させて製造。細かいディテールを再現可能。<br>例: ジュエリー、精密部品、歯科治療用模型。</p>
-								</div>
-								
-								<div class="item">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/product1.jpg" alt="サンプル1" class="tags-img ">
-									<p>・金属粉末をレーザーで焼結し、強度の高い部品を製造。
-									例: 工業用部品、航空機部品、医療用インプラント。</p>
-								</div>
-							</div>
-						</div>
-				</div>
-			</div>
-			</div>
-					 <!-- modal-1 -->
-					  <!-- modal-2 -->
-					<div id="modal2" class="modal">
-    				<div class="modal-content">
-       					<span class="close-button" data-modal="modal2">&times;</span>
-       				<div>
-	   				<div class="modal-header">3Dプリンタ</div>
-						<div class="modal-body">
-							<div class="printer-image">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/print1.png" alt="3Dプリンタ" class="tags-img ">
-								<div class="long-arrow-right"></div>
-								<div class="description">
-									<h4>.....modal 2</h4>
-									<p>私たちは、光造形、FDM造形、粉末造形、およびUV硬化造形を含む高度な3Dプリンター技術を専門としており、精密で革新的なソリューションを提供しています。</p>
-								</div>
+                  </div>
+                  <div class="content-section">
+                    <div class="item">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/product1.jpg" alt="サンプル1" class="tags-img ">
+                      <p>・紫外線光で樹脂を硬化させて製造。細かいディテールを再現可能。
+                        例: ジュエリー、精密部品、歯科治療用模型。</p>
+                    </div>
+                    <div class="item">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/product2.jpg" alt="サンプル1" class="tags-img ">
+                      <p>・紫外線光で樹脂を硬化させて製造。細かいディテールを再現可能。<br>例: ジュエリー、精密部品、歯科治療用模型。</p>
+                    </div>
 
-							</div>
-							<div class="content-section">
-								<div class="item">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/product1.jpg" alt="サンプル1" class="tags-img ">
-									<p>・紫外線光で樹脂を硬化させて製造。細かいディテールを再現可能。
-									例: ジュエリー、精密部品、歯科治療用模型。</p>
-								</div>
-								<div class="item">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/product2.jpg" alt="サンプル1" class="tags-img ">
-									<p>・紫外線光で樹脂を硬化させて製造。細かいディテールを再現可能。<br>例: ジュエリー、精密部品、歯科治療用模型。</p>
-								</div>
-								
-								<div class="item">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/product1.jpg" alt="サンプル1" class="tags-img ">
-									<p>・金属粉末をレーザーで焼結し、強度の高い部品を製造。
-									例: 工業用部品、航空機部品、医療用インプラント。</p>
-								</div>
-							</div>
-						</div>
-				</div>
-			</div>
-			</div>
-		<!-- modal-2 -->
-						
+                    <div class="item">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/product1.jpg" alt="サンプル1" class="tags-img ">
+                      <p>・金属粉末をレーザーで焼結し、強度の高い部品を製造。
+                        例: 工業用部品、航空機部品、医療用インプラント。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal-1 -->
+          <!-- modal-2 -->
+          <div id="modal2" class="modal">
+            <div class="modal-content">
+              <span class="close-button" data-modal="modal2">&times;</span>
+              <div>
+                <div class="modal-header">3Dプリンタ</div>
+                <div class="modal-body">
+                  <div class="printer-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/print1.png" alt="3Dプリンタ" class="tags-img ">
+                    <div class="long-arrow-right"></div>
+                    <div class="description">
+                      <h4>.....modal 2</h4>
+                      <p>私たちは、光造形、FDM造形、粉末造形、およびUV硬化造形を含む高度な3Dプリンター技術を専門としており、精密で革新的なソリューションを提供しています。</p>
+                    </div>
+
+                  </div>
+                  <div class="content-section">
+                    <div class="item">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/product1.jpg" alt="サンプル1" class="tags-img ">
+                      <p>・紫外線光で樹脂を硬化させて製造。細かいディテールを再現可能。
+                        例: ジュエリー、精密部品、歯科治療用模型。</p>
+                    </div>
+                    <div class="item">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/product2.jpg" alt="サンプル1" class="tags-img ">
+                      <p>・紫外線光で樹脂を硬化させて製造。細かいディテールを再現可能。<br>例: ジュエリー、精密部品、歯科治療用模型。</p>
+                    </div>
+
+                    <div class="item">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/product1.jpg" alt="サンプル1" class="tags-img ">
+                      <p>・金属粉末をレーザーで焼結し、強度の高い部品を製造。
+                        例: 工業用部品、航空機部品、医療用インプラント。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal-2 -->
+
           <!-- <div class="arrow-btn-wrapper1">
                             <?php
                             include get_template_directory() . '/custom/buttontype1.php';
@@ -327,7 +327,7 @@ include get_template_directory() . '/custom/mainBanner.php';
             <div>その他</div>
         </div> -->
     <div class="tags-img-container">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/print1.png" alt="Example Image" class="tags-img ">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/6j7wc6l3izxdfxauag09fk58yln6mbyg.png" alt="Example Image" class="tags-img ">
       <div class="box-1"></div>
       <div class="box-2"></div>
       <div></div>
@@ -477,8 +477,9 @@ include get_template_directory() . '/custom/mainBanner.php';
     ?>
   </div>
   <div class="check-list-wrapper">
-    <div>
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check.png" alt="Example Image" class="check-img">
+    <div class="check-list-img-container">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/Nastroyki-slaysera-v-fotopolimernoy-pechati_11.jpg" alt="Example Image" class="check-img">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/certificate.png" class="check-img-two" alt="Example Image" class="check-img">
     </div>
     <div class="check-list-container">
       <div class="list-wrap">
@@ -640,27 +641,27 @@ include get_template_directory() . '/custom/mainBanner.php';
 <!-- News -->
 <div class="spreator"></div>
 <!-- COLLABORATION -->
-    <div>
-        <?php
-        global $title;
-        global $caption;
-        global $bgColor;
-        $title = "OUR COLLABORATION";
-        $caption = "BRANDS";
-        $bgColor = 'black';
-                include get_template_directory() . '/custom/title.php';
-        ?>
-        <!-- <div class="spreator"></div> -->
-        <div class="brands-wrapper">
-            <!-- brands-logo-block -->
-            <div class="brands-inner-wrapper">
-                <div class="brands-img-warp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/allbanner.png" alt="Example Image" class="brands-img">
-                </div>
-                <div class="brands-img-warp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/allbanner2.png" alt="Example Image" class="brands-img">
-                </div>
-                <!-- <div class="brands-img-warp">
+<div>
+  <?php
+  global $title;
+  global $caption;
+  global $bgColor;
+  $title = "OUR COLLABORATION";
+  $caption = "BRANDS";
+  $bgColor = 'black';
+  include get_template_directory() . '/custom/title.php';
+  ?>
+  <!-- <div class="spreator"></div> -->
+  <div class="brands-wrapper">
+    <!-- brands-logo-block -->
+    <div class="brands-inner-wrapper">
+      <div class="brands-img-warp">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/allbanner.png" alt="Example Image" class="brands-img">
+      </div>
+      <div class="brands-img-warp">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/allbanner2.png" alt="Example Image" class="brands-img">
+      </div>
+      <!-- <div class="brands-img-warp">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo4.png" alt="Example Image" class="brands-img">
                 </div>
                 <div class="brands-img-warp">
