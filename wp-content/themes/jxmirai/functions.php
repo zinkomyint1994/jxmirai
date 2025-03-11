@@ -1,4 +1,11 @@
 <!-- <?php
+
+function add_favicon() {
+  echo '<link rel="icon" href="' . get_template_directory_uri() . '/assets/images/favicon.ico" type="image/x-icon">';
+}
+add_action('wp_head', 'add_favicon');
+
+
 function my_theme_enqueue_styles() {
     wp_enqueue_style('normalize', get_template_directory_uri() . '/assets/css/normalize.css');
 
