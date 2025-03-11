@@ -6,7 +6,7 @@
 <body>
     <div class="main-banner-wrapper">
         <div class="banner-overlayq">
-           <div class="banner-img-container">
+           <div class="main-banner-img-container">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/banner.png" alt="Example Image" class="responsive_image_main">
             </div>
            

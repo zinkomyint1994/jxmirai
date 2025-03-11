@@ -7,10 +7,16 @@
 	box-sizing: border-box;
 }
 
-.pages-banner-wrapper {
+.main-pages-banner-wrapper {
 	position: relative;
 	height: calc(60vh - 60px);
 	margin-top: 60px;
+	z-index: 2;
+	/* background: black; */
+}
+.pages-banner-wrapper {
+	position: relative;
+	height: calc(60vh - 60px);
 	z-index: 2;
 	/* background: black; */
 }
@@ -317,7 +323,7 @@ input, select, textarea{
 }
 .metal_work_wrapper {
 	position: relative;
-	margin-top: 3rem !important;
+	/* margin-top: 3rem !important; */
 	width: 96%;
 	max-width: 1440px;
 	margin: auto;

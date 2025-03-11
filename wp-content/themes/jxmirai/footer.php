@@ -12,8 +12,8 @@
                 <div class="spreator"></div>
                     <div class="footer_title">お問い合わせ</div>
                     <div class="footer-size">Address: JX未来株式会社</div>
-                    <div class="footer-size">📞 Phone: 03-6424-8053,080-2381-4704</div>
-					<div class="footer-size">📠 Fax: 03-6524-8313</div>
+                    <div class="footer-size"><span>📞</span> Phone: 03-6424-8053,080-2381-4704</div>
+										<div class="footer-size">📠 Fax: 03-6524-8313</div>
                     <div class="footer-size">📧 Email: info@jx-f.jp、hein-hk@jx.jp</div>
                     <div class="footer-size">🌐 Website: www.yourcompany.com</div>
                     <div class="footer-size">Business Hours</div>
