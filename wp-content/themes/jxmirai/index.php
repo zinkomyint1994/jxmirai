@@ -118,45 +118,39 @@ include get_template_directory() . '/custom/mainBanner.php';
 <!-- our service -->
 
 <!-- our products -->
-<div>
-  <div class="product-wrapper">
-    <div class="product-container">
-      <!-- card-one -->
-      <div class="card-container">
-        <div class="img-container ">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p1.png" alt="Example Image" class="product-image">
-        </div>
-        <div class="card-list">
-          <div>
-            <div class="product-title">1. ３Dプリンター</div>
-            <div class="list-txt">
-              <button class="trigger">光造形</button>
-              <button class="trigger">FDM造形</button>
-              <button class="trigger">粉末造形</button>
-              <button class="trigger">UV硬化造形</button>
-              <button class="trigger">DLP造形</button>
-              <button class="trigger">金属造形</button>
-
-            </div>
-          </div>
-          <!-- <div class="modal">
-								<div class="modal-content">
-									<span class="close-button">×</span>
-									<p>Hello, I am a modal!</p>
-								</div>
-							</div> -->
-          <div class="modal">
-            <div class="modal-content">
-              <span class="close-button">&times;</span>
-              <div class="modal-header">3Dプリンタ</div>
-              <div class="modal-body">
-                <div class="printer-image">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/print1.png" alt="3Dプリンタ" class="tags-img ">
-                  <div class="long-arrow-right"></div>
-                  <div class="description">
-                    <h4>デスクリプション</h4>
-                    <p>私たちは、光造形、FDM造形、粉末造形、およびUV硬化造形を含む高度な3Dプリンター技術を専門としており、精密で革新的なソリューションを提供しています。</p>
-                  </div>
+    <div>
+        <div class="product-wrapper">
+            <div class="product-container">
+                <!-- card-one -->
+                <div class="card-container">
+                    <div class="img-container ">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p1.png" alt="Example Image" class="product-image">
+                    </div>
+                    <div class="card-list">
+                        <div>
+                        <div class="product-title">1. ３Dプリンター</div>
+                        <ul class="list-txt">    
+							<li><button class="trigger">光造形</button></li>
+							<li><button class="trigger">FDM造形</button></li>
+							<li><button class="trigger">粉末造形</button></li>
+							<li><button class="trigger">UV硬化造形</button></li>
+							<li><button class="trigger">DLP造形</button></li>
+							<li><button class="trigger">金属造形</button></li>							
+							
+						</ul>
+                        </div>
+						<div class="modal">
+						<div class="modal-content">
+							<span class="close-button" >&times;</span>
+							<div class="modal-header">3Dプリンタ</div>
+							<div class="modal-body">
+								<div class="printer-image">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/print1.png" alt="3Dプリンタ" class="tags-img ">
+									<div class="long-arrow-right"></div>
+									<div class="description">
+										<h4>デスクリプション</h4>
+										<p>私たちは、光造形、FDM造形、粉末造形、およびUV硬化造形を含む高度な3Dプリンター技術を専門としており、精密で革新的なソリューションを提供しています。</p>
+									</div>
 
                 </div>
                 <div class="content-section">
@@ -604,27 +598,27 @@ include get_template_directory() . '/custom/mainBanner.php';
 <!-- News -->
 <div class="spreator"></div>
 <!-- COLLABORATION -->
-<div>
-  <?php
-  global $title;
-  global $caption;
-  global $bgColor;
-  $title = "OUR COLLABORATION";
-  $caption = "BRANDS";
-  $bgColor = 'black';
-  include get_template_directory() . '/custom/title.php';
-  ?>
-  <div class="spreator"></div>
-  <div class="brands-wrapper">
-    <!-- brands-logo-block -->
-    <div class="brands-inner-wrapper">
-      <div class="brands-img-warp">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/allbanner.png" alt="Example Image" class="brands-img">
-      </div>
-      <div class="brands-img-warp">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/allbanner2.png" alt="Example Image" class="brands-img">
-      </div>
-      <!-- <div class="brands-img-warp">
+    <div>
+        <?php
+        global $title;
+        global $caption;
+        global $bgColor;
+        $title = "OUR COLLABORATION";
+        $caption = "BRANDS";
+        $bgColor = 'black';
+                include get_template_directory() . '/custom/title.php';
+        ?>
+        <!-- <div class="spreator"></div> -->
+        <div class="brands-wrapper">
+            <!-- brands-logo-block -->
+            <div class="brands-inner-wrapper">
+                <div class="brands-img-warp">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/allbanner.png" alt="Example Image" class="brands-img">
+                </div>
+                <div class="brands-img-warp">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/allbanner2.png" alt="Example Image" class="brands-img">
+                </div>
+                <!-- <div class="brands-img-warp">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo4.png" alt="Example Image" class="brands-img">
                 </div>
                 <div class="brands-img-warp">
