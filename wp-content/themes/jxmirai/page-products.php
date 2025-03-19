@@ -9,8 +9,8 @@ global $title;
 global $caption;
 global $bgColor;
 global $url;
-$title = "OUR SERVICES";
-$img = "当社のサービス";
+$title = "当社のサービス";
+$img = "";
 $bgColor = '#fff';
 $url = "/assets/images/banner/footer.jpg";
 include get_template_directory() . '/custom/pagesBanner.php';
@@ -33,7 +33,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
         <div class="list_wrap">
             <div class="others_list_wrap">
                 <div>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Example Image" class="img_one" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/v2.png" alt="Example Image" class="img_one" />
                 </div>
                 <div>
                     <div class="others_title"> <?php
@@ -52,7 +52,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
 
             <div class="others_list_wrap">
                 <div>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Example Image" class="img_one" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/ENGEL-VC-500-220-TECH-PRO-213172-2016-5.jpg" alt="Example Image" class="img_one" />
                 </div>
                 <div>
                     <div class="others_title"> <?php
@@ -99,50 +99,80 @@ include get_template_directory() . '/custom/pagesBanner.php';
         <div class="list_wrap">
             <div class="others_list_wrap">
                 <div>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Example Image" class="img_one" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/type/p1.png" alt="Example Image" class="img_one" />
                 </div>
                 <div>
                         <div class="others_title"> <?php
                         include get_template_directory() . '/custom/subBlueLine.php';
                             ?> 光造形とは </div>
-                        <div class="p_description"> 説明: 紫外線レーザーなどの光で感光性樹脂を固め、立体的なモデルを作成する3Dプリンターの造形方式です。 対応可能な材料:ABSライク樹脂、PPライク樹脂が一般的、PCライク透明度の高い樹脂﻿,ゴムやエラストマーなど 。 </div>
+                        <div class="p_description">
+                                 紫外線レーザーなどの光で感光性樹脂を固め、立体的なモデルを作成する3Dプリンターの造形方式です。
+                                対応可能な材料：ABSライク樹脂、PPライク樹脂が一般的、PCライク透明度の高い樹脂﻿,ゴムやエラストマーなど
+                                光造形の特徴
+                                透明度の高い材料を使用できるため、可視化サンプルや展示用モック、デザインモックなどに適している﻿
+                                耐久性や耐熱性に優れた樹脂、弾性のあるゴムやエラストマーを再現したようなゴムライクなど、さまざまな材料が使用可能﻿
+                                300度の熱に耐えられる耐熱性樹脂やUL94 V0規格の難燃性樹脂、耐候性樹脂など、スーパーエンプラに匹敵する材料も登場している﻿
+
+                        </div>
                 </div>
      
             </div>
 
             <div class="others_list_wrap">
                 <div>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Example Image" class="img_one" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/picture6.png" alt="Example Image" class="img_one" />
                 </div>
                 <div>
                     <div class="others_title"> <?php
                     include get_template_directory() . '/custom/subBlueLine.php';
-                    ?> 光造形の特徴 </div>
-                    <div class="p_description"> 説明: 透明度の高い材料を使用できるため、可視化サンプルや展示用モック、デザインモックなどに適している﻿ 耐久性や耐熱性に優れた樹脂、弾性のあるゴムやエラストマーを再現したようなゴムライクなど、さまざまな材料が使用可能﻿ 300度の熱に耐えられる耐熱性樹脂やUL94 V0規格の難燃性樹脂、耐候性樹脂など、スーパーエンプラに匹敵する材料も登場している﻿ 。 </div>
+                    ?> FDM造形とは</div>
+                    <div class="p_description">Fused Deposition Modelingの略称で、日本語では熱溶融積層（方式）と訳されます。
+                        FDM方式の3Dプリンターは、材料となる熱可塑性プラスチックなどを高温で熱して液状に溶かし、それを一筆書きのような要領で、ノズルから押し出しながら成形を行い、立体の造形物を製作します。
+                        対応可能な材料：ABS樹脂（ABS-M30、ABS-M30i、ABS-ESD7など）、ポリカーボネート（PC-ABSなど）、PLA（ポリ乳酸）樹脂、ナイロン、カーボンファイバー入り材料、ULTEM（ポリエーテルイミド）、ASA、TPU 92A、PC、PC-ISOなど
+                        FDM造形の特徴
+                        実製品と同じ工業用樹脂素材を使用できるため、機械的・熱的・化学的に実製品レベルの物性を持つ造形パーツが作成できる﻿
+                        試作だけでなく実用品やパーツの製作にも活用できる﻿
+                        耐候性や汎用性、生体適合性、静電気拡散性、耐薬品性、柔軟性、衝撃吸収、高靭性、低摩擦性、安価さ、耐熱性、滅菌可能性などの特徴がある﻿
+                        </div>
                 </div>
             </div>
 
             <div class="others_list_wrap">
                 <div>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Example Image" class="img_one" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/type/p3.png" alt="Example Image" class="img_one" />
                 </div>
                 <div>
                 <div class="others_title"> <?php
                          include get_template_directory() . '/custom/subBlueLine.php';
-                        ?> FDM造形とは </div>
-                        <div class="p_description"> 説明: Fused Deposition Modelingの略称で、日本語では熱溶融積層(方式）と訳されます。 FDM方式の3Dプリンターは、材料となる熱可塑性プラスチックなどを高温で熱して液状に溶かし、それを一筆書きのような要領で、ノズルから押し出しながら成形を行い、立体の造形物を製作します。 対応可能な材料:ABS樹脂(ABS-M30、ABS-M30i、ABS-ESD7など)、ポリカーボネート(PC-ABSなど)、PLA(ポリ乳酸)樹脂、ナイロン、カーボンファイバー入り材料、ULTEM(ポリエーテルイミド)、ASA、TPU 92A、PC、PC-ISOなど。 </div>
+                        ?> 粉末造形とは </div>
+                        <div class="p_description">
+                            粉末状の樹脂や金属材料にレーザーを照射することにより焼結させ、一層ずつ積層していく方法です。 他の方法と比べて、素材選択の自由度が高く、耐久性のある造形物を作成できるので最終製品としての実用がもっとも進んでいる造形方式です。
+                            対応可能な材料：熱可塑性樹脂：ABS樹脂、ナイロン、PLA樹脂など
+                            粉末造形の特徴
+                            光造形と比べて幅広い材料を使用できる﻿
+                            強度や耐久性、柔軟性を高めた造形を行うことができる﻿
+                            自動車業界で多く利用されている﻿
+                            最終製品としての実用がもっとも進んでいる造形方式﻿
+
+                        </div>
                         </div>
                     </div>
             
             <div class="others_list_wrap">
                 <div>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/p2.png" alt="Example Image" class="img_one" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/type/p4.png" alt="Example Image" class="img_one" />
                 </div>
                 <div>
                 <div class="others_title"> <?php
-          include get_template_directory() . '/custom/subBlueLine.php';
-          ?> FDM造形の特徴 </div>
-                <div class="p_description"> 説明: 実製品と同じ工業用樹脂素材を使用できるため、機械的・熱的・化学的に実製品レベルの物性を持つ造形パーツが作成できる﻿ 試作だけでなく実用品やパーツの製作にも活用できる﻿ 耐候性や汎用性、生体適合性、静電気拡散性、耐薬品性、柔軟性、衝撃吸収、高靭性、低摩擦性、安価さ、耐熱性、滅菌可能性などの特徴がある﻿ 。 </div>
+                include get_template_directory() . '/custom/subBlueLine.php';
+                ?> UV硬化造形とは</div>
+                <div class="p_description">
+                    UV硬化造形とは、UV光を照射することで瞬時に硬化・定着するインクを使用する造形方式です。データをそのままプリンターに読み込ませ、版を製作することなく直接商品に印刷する方法として利用されています。﻿
+                    対応可能な材料：ABSライク樹脂、PPライク樹脂、PEライク樹脂、ゴムライク樹脂、アクリル樹脂 透明度材
+                    UV硬化の特徴
+                    高生産性：硬化時間はたったの0.1~数秒なため、生産プロセスにかかる時間を大幅に短縮することができます。
+                    低熱性：樹脂フィルムなど熱に弱い基材への照射が可能なため、変形や変質することなく硬化できます。
+                    </div>
                 </div>
             </div>
             
@@ -157,131 +187,8 @@ include get_template_directory() . '/custom/pagesBanner.php';
 </div>
 <!-- products list -->
 <div class="spreator"></div>
+
 <!-- Resin -->
-<div class="resin_wrapper">
-<div class="resin_inner"> <?php
-      global $title;
-      global $bgColor;
-      $title = "Resin ( 樹脂 )";
-      $bgColor ='#ffffff';
-      include get_template_directory() . '/custom/subTitle.php';
-      ?> </div>
-    <!-- <div>
-        <div>Resin</div>
-        <span>樹脂</span>
-    </div> -->
-    <div class="carousel">
-        <div class="list">
-            <div class="item" style="
-                    background-image: url(https://images.pexels.com/photos/552785/pexels-photo-552785.jpeg);
-                ">
-                <div class="content">
-                    <div class="title">射出成形</div>
-                    <!-- <div class="name"> 溶融樹脂をカスタム設計された金型に注入して固体物体を作成するプロセス。 </div> -->
-                    <!-- <div class="des">
-            説明: 選択的レーザー焼結法 (SLS) などの粉末ベースの印刷では、レーザーを使用して粉末材料 (プラスチック樹脂は溶融するまで加熱され、高圧下で金型に注入されます。材料は冷却されて固まり、金型の形状になります。
-            例: 自動車部品、電子機器のケース、プラスチック製のおもちゃ。
-          </div> -->
-                </div>
-            </div>
-            <div class="item" style="
-                    background-image: url(https://images.pexels.com/photos/17804524/pexels-photo-17804524/free-photo-of-barren-rocky-mountains.jpeg);
-                ">
-                <div class="content">
-                    <div class="title">RUGGED ROCKS</div>
-                    <div class="name">Rocky</div>
-                    <!-- <div class="des">Explore the rugged beauty of barren rocky mountains.
-            A
-            testament to nature's raw power.</div> -->
-                </div>
-            </div>
-            <div class="item" style="
-                    background-image: url(https://images.pexels.com/photos/6439041/pexels-photo-6439041.jpeg);
-                ">
-                <div class="content">
-                    <div class="title">FOREST PATHWAY</div>
-                    <div class="name">Forest</div>
-                    <!-- <div class="des">A peaceful trail through dense green forests. Perfect
-            for
-            reconnecting with nature.</div> -->
-                </div>
-            </div>
-            <div class="item" style="
-                    background-image: url(https://images.pexels.com/photos/2832061/pexels-photo-2832061.jpeg);
-                ">
-                <div class="content">
-                    <div class="title">COLORFUL MEADOW</div>
-                    <div class="name">Meadow</div>
-                    <!-- <div class="des">A colorful meadow filled with butterflies and
-            blooming
-            flowers. Nature at its best.</div> -->
-                </div>
-            </div>
-            <div class="item" style="
-                    background-image: url(https://images.pexels.com/photos/552784/pexels-photo-552784.jpeg);
-                ">
-                <div class="content">
-                    <div class="title">SERENE LAKE</div>
-                    <div class="name">Lake</div>
-                    <!-- <div class="des">A calm and serene lake surrounded by towering trees
-            and
-            mountains. A perfect escape.</div> -->
-                </div>
-            </div>
-            <div class="item" style="
-                    background-image: url(https://images.pexels.com/photos/18536296/pexels-photo-18536296/free-photo-of-mountain-peaks-over-clouds.jpeg);
-                ">
-                <div class="content">
-                    <div class="title">PEAKS IN THE CLOUDS</div>
-                    <div class="name">Clouds</div>
-                </div>
-            </div>
-            <div class="item" style="
-                    background-image: url(https://images.pexels.com/photos/7616134/pexels-photo-7616134.jpeg);
-                ">
-                <div class="content">
-                    <div class="title">RIVERBANK PARADISE</div>
-                    <div class="name">Riverbank</div>
-                </div>
-            </div>
-            <div class="item" style="
-                    background-image: url(https://images.pexels.com/photos/20641721/pexels-photo-20641721/free-photo-of-barren-mountains-peaks-under-clouds.jpeg);
-                ">
-                <div class="content">
-                    <div class="title">MYSTIC RIDGES</div>
-                    <div class="name">Ridges</div>
-                </div>
-            </div>
-            <!-- <div class="item" style="
-                    background-image: url(https://images.pexels.com/photos/17977245/pexels-photo-17977245/free-photo-of-barren-mountain-peaks.jpeg);
-                ">
-                <div class="content">
-                    <div class="title">GOLDEN CLIFFS</div>
-                    <div class="name">Cliffs</div>
-                </div>
-            </div>
-            <div class="item" style="
-                    background-image: url(https://images.pexels.com/photos/2073873/pexels-photo-2073873.jpeg);
-                ">
-                <div class="content">
-                    <div class="title">PEACEFUL VALLEY</div>
-                    <div class="name">Valley</div>
-                </div>
-            </div> -->
-        </div>
-        <!--next prev button-->
-        <div class="arrows">
-            <div class="btn-container">
-                <button class="prev">
-                    <</button>
-                        <button class="next">></button>
-                        <div class="slide-number"></div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Resin -->
-<!-- metal work -->
 <div class="metal_work_wrapper">
     <!-- title -->
     <div class="products_title_wrap">
@@ -289,7 +196,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
       global $title;
       global $bgColor;
       $bgColor ="#000000";
-      $title = "METAL WORK(金属)";
+      $title = "Resin (樹脂)";
       include get_template_directory() . '/custom/subTitle.php';
       ?> </div>
         <!-- <div class="side_title"> 3D 印刷テクノロジー - プロトタイプや複雑なデザインを作成するための高度なステレオリソグラフィー、FDM 印刷、粉末ベースの印刷。 </div> -->
@@ -320,6 +227,49 @@ include get_template_directory() . '/custom/pagesBanner.php';
                     <div class="p_description"> 説明: 造形スピードが速い、造形精度が高い、滑らかな仕上がりになる、透明度の高い造形物が可能、大型で高精度な造形物が可能、 レーザーやガルバノミラーを必要としないため、SLA方式よりも設備の導入コストが低く抑えられる。 </div>
                 </div>
             </div>
+
+    </div>
+    <!-- title -->
+</div>
+<!-- Resin -->
+
+<!-- metal work -->
+<div class="metal_work_wrapper">
+    <!-- title -->
+    <div class="products_title_wrap">
+        <div> <?php
+      global $title;
+      global $bgColor;
+      $bgColor ="#000000";
+      $title = "METAL WORK(金属)";
+      include get_template_directory() . '/custom/subTitle.php';
+      ?> </div>
+        <!-- <div class="side_title"> 3D 印刷テクノロジー - プロトタイプや複雑なデザインを作成するための高度なステレオリソグラフィー、FDM 印刷、粉末ベースの印刷。 </div> -->
+    </div>
+    <div class="products_details">
+        </div>
+        <div class="list_wrap">
+            <div class="others_list_wrap">
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/type/m1.png" alt="Example Image" class="img_one" />
+                </div>
+                <div>
+                    <div class="others_title"> <?php
+                    include get_template_directory() . '/custom/subBlueLine.php';
+                    ?>DLP（Digital Light Processing）造形は</div>
+                    <div class="p_description">
+                    3Dプリンターの光造形方式の1つ。 
+                    この方式では、デジタルミラーデバイスという特殊なチップを使って、光を特定の部分に向けて樹脂を硬化させる。
+                    DLPを使用した3Dプリンターは、高精度なプリントが可能で、細かいディテールを持つオブジェクトの製造に適している。
+                    対応可能な材料：エポキシ系樹脂のABSライク樹脂やPPライク樹脂、アクリル系のレジンなど。。
+                    DLP（Digital Light Processing）造形の特徴
+                    造形スピードが速い、造形精度が高い、滑らかな仕上がりになる、透明度の高い造形物が可能、大型で高精度な造形物が可能、
+                    レーザーやガルバノミラーを必要としないため、SLA方式よりも設備の導入コストが低く抑えられる
+
+                    </div>
+                </div>
+            </div>
+
 
             <!-- <div class="others_list_wrap">
         <div class="others_title">
@@ -356,6 +306,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
 <!-- metal work -->
 <!-- others -->
 <div class="others_wrapper">
+<div class="products_title_wrap">
     <div> <?php
     global $title;
     global $bgColor;
@@ -363,47 +314,48 @@ include get_template_directory() . '/custom/pagesBanner.php';
     $title = "その他";
     include get_template_directory() . '/custom/subTitle.php';
     ?> </div>
+    </div>
     <div class="others_container">
         <!-- text-box -->
         <div class="text_container">
-            <div class="others_title">基板ボックス設計開発</div>
-            <div class="others_content"> お客様のご依頼条件でゼロから設計開発し試作品（切削/３Dプリンター）作成→小ロット（試作型）→量産までサポートしております。技術設計専門グループでサポートしています。 </div>
+            <div class="others_title">縫製加工/製造</div>
+            <!-- <div class="others_content"> お客様のご依頼条件でゼロから設計開発し試作品（切削/３Dプリンター）作成→小ロット（試作型）→量産までサポートしております。技術設計専門グループでサポートしています。 </div> -->
             <div class="text_blur"></div>
         </div>
          <!-- text-box -->
                  <!-- text-box -->
         <div class="text_container">
-            <div class="others_title">鞄開発</div>
-            <div class="others_content"> お客様のご依頼条件で鞄をゼロから試作品作成量産までサポートしております。。 </div>
+            <div class="others_title">医療消耗品製造</div>
+            <!-- <div class="others_content"> お客様のご依頼条件で鞄をゼロから試作品作成量産までサポートしております。。 </div> -->
             <div class="text_blur"></div>
         </div>
          <!-- text-box -->
         <!-- text-box -->
         <div class="text_container">
-            <div class="others_title">アクリルスタンド、アクリルキーホルダー</div>
-            <div class="others_content"> 
-            お客様のご依頼アニメのアクリルスタンド、アクリルキーホルダーを試作→量産までサポートしております。（量産品に良い品質を安く早くできるねとお客様から定評があります。。 </div>
+            <div class="others_title">フィギュア製作</div>
+            <!-- <div class="others_content"> 
+            お客様のご依頼アニメのアクリルスタンド、アクリルキーホルダーを試作→量産までサポートしております。（量産品に良い品質を安く早くできるねとお客様から定評があります。。 </div> -->
             <div class="text_blur"></div>
         </div>
          <!-- text-box -->
         <!-- text-box -->
         <div class="text_container">
-            <div class="others_title">フィギュア付きストラップ</div>
-            <div class="others_content"> お客様のご依頼条件でゼロから設計開発し試作品作成→量産までサポートしております。量産の経験がありますし品質的にお客様から定評があります。 </div>
+            <div class="others_title">木工加工</div>
+            <!-- <div class="others_content"> お客様のご依頼条件でゼロから設計開発し試作品作成→量産までサポートしております。量産の経験がありますし品質的にお客様から定評があります。 </div> -->
             <div class="text_blur"></div>
         </div>
          <!-- text-box -->
         <!-- text-box -->
         <div class="text_container">
-            <div class="others_title">樹脂 エポキシ サメ ナイトライト </div>
-            <div class="others_content">弊社の工場の開発品としていろいろなデザインで量産しておりますが、ご興味がございましたらご連絡ください。 </div>
+            <div class="others_title">基板設計/製造 </div>
+            <!-- <div class="others_content">弊社の工場の開発品としていろいろなデザインで量産しておりますが、ご興味がございましたらご連絡ください。 </div> -->
             <div class="text_blur"></div>
         </div>
          <!-- text-box -->
                       <!-- text-box -->
         <div class="text_container">
-            <div class="others_title">弊社の開発品</div>
-            <div class="others_content">弊社内で設計して開発品も作成しておりますのでご興味がございましたらご連絡ください。</div>
+            <div class="others_title">ロボット関連</div>
+            <!-- <div class="others_content">弊社内で設計して開発品も作成しておりますのでご興味がございましたらご連絡ください。</div> -->
             <div class="text_blur"></div>
         </div>
          <!-- text-box -->
@@ -411,4 +363,53 @@ include get_template_directory() . '/custom/pagesBanner.php';
 </div>
 <div class="spreator"></div>
 <!-- others -->
+
+<!-- quality-check -->
+<div class="check-list-main">
+<div class="products_title_wrap">
+		<div>
+			<?php
+			global $title;
+			$title = "製品の品質チェック体制";
+			include get_template_directory() . '/custom/subTitle.php';
+			?>
+		</div>
+</div>
+		<div class="check-list-wrapper">
+			<div class="check-list-img-container">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/Nastroyki-slaysera-v-fotopolimernoy-pechati_11.jpg" alt="Example Image" class="check-img">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/certificate.png" class="check-img-two" alt="Example Image" class="check-img">
+			</div>
+			<div class="check-list-container">
+				<div class="list-wrap">
+					<div>
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
+					</div>
+					<div class="body_content">高度な検査 – 3D スキャンと自動化システムにより欠陥を検出し、正確な寸法を確保します。</div>
+				</div>
+				<div class="list-wrap">
+					<div>
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
+					</div>
+					<div>QA チェックリスト – すべての製品は、材料の品質、構造の完全性、および顧客固有のニーズについて徹底的にチェックされます。</div>
+				</div>
+				<div class="list-wrap">
+					<div>
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
+					</div>
+					<div class="body_content">リアルタイム監視 –ダッシュボードにより透明性が確保され、検査ステータスを追跡し、詳細な品質レポートを生成します。</div>
+				</div>
+				<div class="list-wrap">
+					<div>
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
+					</div>
+					<div class="body_content">配送保証 - 厳格なQCD基準(品質、コスト、配送) を満たす製品のみが出荷が承認されます。</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- quality-check -->
+<div class="spreator"></div>
+
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/carousel.js"></script> <?php get_footer(); ?>

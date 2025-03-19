@@ -6,8 +6,8 @@
     <div class="email_container">
         <div class="email_content_wrap">
             <div class="mt-14">
-                <p class="email_title">Keep In Touch !</p>
-                <span>連絡を取り合いましょう</span>
+                <p class="email_title">お問合せ先</p>
+                <!-- <span>連絡を取り合いましょう</span> -->
             </div>
             <div>
                 <span class="email_text">

@@ -4,49 +4,72 @@
 include get_template_directory() . '/custom/mainBanner.php';
 ?>
 <!-- main-banner -->
-
+<?php
+	global $title;
+	global $caption;
+	$title = "納品までの流れ";
+	$caption = "";
+	include get_template_directory() . '/custom/title.php';
+	?>
 <!-- What service do we provide? -->
 <div class="company-container">
 	<div class="content_wrapper">
-		<div class="about_banner_container">
-			<div class="banner-first-txt">
-				<p class="">who we</p>
-			</div>
-			<div class="banner-mid-txt">
-				<p class="">Are And What</p>
-			</div>
-			<div class="banner-third-txt">
-				<div class="third_line"></div>
-				<p class="">we do</p>
-			</div>
+		<!-- <div class="about_banner_container">
+					<div class="banner-first-txt">
+						<p class="">who we</p>
+					</div>
+					<div class="banner-mid-txt">
+						<p class="">Are And What</p>
+					</div>
+					<div class="banner-third-txt">
+						<div class="third_line"></div>
+						<p class="">we do</p>
+					</div>
 
-			<!-- <p class="about_banner_title">Who We</p> -->
-		</div>
+		</div> -->
 		<div class="s-image-wrapper">
 			<div class="banner-overlay">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/Picture1.png" alt="Example Image" class="image1">
 			</div>
 
-			<p class="descripton-txt">
-				先ずお客様からのご依頼の3D/2Dデータ、数量,材料を確認し作成工法を相談しながらお見積り書検討致します。(*普段のお見積りは2日間内で回答いたします。)
-			</p>
+			<div class="descripton-txt">
+				<p class="title_">お問合せ～お見積り</p>
+				<span class="title_line"></span>
+				<br />
+				<p class="sub-title">
+				ご依頼の２D/３Dデータ、数量、材料を
+				確認し、お見積りをいたします。
+				また、最適な製作方法もご提案いたします。
+				</p>
+	
+			</div>
 		</div>
 		<div class="s-image-wrapper">
 			<div class="banner-overlay">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/img2.png" alt="Example Image" class="image2">
+				<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/img2.png" alt="Example Image" class="image2"> -->
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/3d_img2.png" alt="Example Image" class="image2">
 			</div>
-			<p class="descripton-txt">
-				金型製造(試作型、量産型) 3Dプリンター、樹脂切削、注型、金属、その他
-			</p>
+			<div class="descripton-txt">
+				<p class="title_">製品製作</p>
+				<span class="title_line"></span>
+				<br />
+				<p class="sub-title">３Dプリンター、切削、注型、成形、板金、ダイキャスト、その他<p>
+			</div>
 		</div>
 
 		<div class="s-image-wrapper">
 			<div class="banner-overlay">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/9383b1c93b9043c4f9b6cd6a4301c5be-removebg-preview.jpg" alt="Example Image" class="image3">
+				<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/9383b1c93b9043c4f9b6cd6a4301c5be-removebg-preview.jpg" alt="Example Image" class="image3"> -->
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/3d_img3.png" alt="Example Image" class="image3">
 			</div>
-			<p class="descripton-txt">
-				検査、測定→短納期安全の梱包方法空便/ 船便選択可能
-			</p>
+			<div class="descripton-txt">
+				<p class="title_">納品</p>
+				<span class="title_line"></span>
+				<br />
+				<p class="sub-title">
+				品質検査/測定/梱包。射出成形の売り金型については送付方法選択可。（空/船便）
+				</p>
+			</div>
 			<!-- <p class="description-btn-txt">革新的な3Dプリントと高精度金型製作を専門とする世界的な製造会社</p> -->
 		</div>
 	</div>
@@ -60,23 +83,26 @@ include get_template_directory() . '/custom/mainBanner.php';
 	<?php
 	global $title;
 	global $caption;
-	$title = "OUR SERVICES";
-	$caption = "当社のサービス";
+	$title = "当社のサービス";
+	$caption = "";
 	include get_template_directory() . '/custom/title.php';
 	?>
 	<div class="service-container">
 		<div class="service-inner-container">
 			<div class="service-lf-container">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/ENGEL-VC-500-220-TECH-PRO-213172-2016-5.jpg" alt="Example Image" class="img_">
-				<video style="width: 230px;" autoplay muted loop playsinline class="service-img">
+				<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/ENGEL-VC-500-220-TECH-PRO-213172-2016-5.jpg" alt="Example Image" class="img_"> -->
+				<video style="width: 400px" autoplay muted loop playsinline>
 					<source src="<?php echo get_template_directory_uri(); ?>/assets/images/home/482943751_28564538546524700_8701543597361842967_n.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
-
+				<!-- <video style="width: 230px;" autoplay muted loop playsinline class="service-img">
+					<source src="<?php echo get_template_directory_uri(); ?>/assets/images/home/482943751_28564538546524700_8701543597361842967_n.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video> -->
 			</div>
 			<div class="service-rg-container">
 				<div class="service-rg-txt">
-					<div class="sub_title_a">試作金型(簡易金型) / 量産金型</div>
+					<div class="sub_title_a">1. 試作金型(簡易金型) / 量産金型</div>
 
 					<div class="sub_title_line">
 						<?php
@@ -113,7 +139,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 				</div>
 				<div class="card-list">
 					<div>
-						<div class="product-title">1. ３Dプリンター</div>
+						<div class="product-title">2. ３Dプリンター</div>
 						<ul class="list-txt">
 							<li><button class="trigger" data-modal="modal1">光造形</button></li>
 							<li><button class="trigger" data-modal="modal2">FDM造形</button></li>
@@ -217,7 +243,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 				</div>
 				<div class="card-list">
 					<div>
-						<div class="product-title">2. 樹脂</div>
+						<div class="product-title">3. 樹脂</div>
 						<ul class="list-txt">
 							<li><button class="trigger">＊切削</button></li>
 							<li><button class="trigger">真空注型</button></li>
@@ -238,7 +264,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 			<div class="card-container2">
 				<div class="card-list2">
 					<div>
-						<div class="product-title">3. 金属</div>
+						<div class="product-title">4. 金属</div>
 						<ul class="list-txt">
 							<li><button class="trigger">切削</button></li>
 							<li><button class="trigger">板金</button></li>
@@ -263,14 +289,14 @@ include get_template_directory() . '/custom/mainBanner.php';
 			<div class="card-container2">
 				<div class="card-list2">
 					<div>
-						<div class="product-title">4. その他</div>
+						<div class="product-title">5. その他</div>
 						<ul class="list-txt">
-							<li><button class="trigger">基板ボックス設計開発</button></li>
-							<li><button class="trigger">アクリルスタンド</button></li>
-							<li><button class="trigger">アクリルキーホルダー</button></li>
-							<li><button class="trigger">フィギュア付きストラップ</button></li>
-							<li><button class="trigger">樹脂 エポキシ サメ ナイトライト</button></li>
-							<li><button class="trigger">弊社の開発品</button></li>
+							<li><button class="trigger">縫製加工/製造</button></li>
+							<li><button class="trigger">医療消耗品製造</button></li>
+							<li><button class="trigger">フィギュア製作</button></li>
+							<li><button class="trigger">木工加工</button></li>
+							<li><button class="trigger">基板設計/製造</button></li>
+							<li><button class="trigger">ロボット関連</button></li>
 						</ul>
 					</div>
 					<!-- <div class="arrow-btn-wrapper2">
@@ -292,9 +318,8 @@ include get_template_directory() . '/custom/mainBanner.php';
 	</div>
 </div>
 <!-- our products -->
-<div class="spreator"></div>
 <!-- products-tag  -->
-<div class="p-slider-wrapper ">
+<!-- <div class="p-slider-wrapper ">
 	<?php
 	global $title;
 	global $caption;
@@ -305,12 +330,6 @@ include get_template_directory() . '/custom/mainBanner.php';
 	include get_template_directory() . '/custom/title.php';
 	?>
 	<div class="p-slider-container">
-		<!-- <div class="tags-container">
-            <div>3Dプリンター</div>
-            <div>樹脂</div>
-            <div>金属</div>
-            <div>その他</div>
-        </div> -->
 		<div class="tags-img-container">
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/6j7wc6l3izxdfxauag09fk58yln6mbyg.png" alt="Example Image" class="tags-img ">
 			<div class="box-1"></div>
@@ -318,8 +337,6 @@ include get_template_directory() . '/custom/mainBanner.php';
 			<div></div>
 		</div>
 		<div class="tags-text-wrap">
-			<!-- <div class="slider-title">3Dプリンター</div>
-            <div class="tags-subtitle">FDM (Fused Deposition Modeling) technology</div> -->
 			<div class="slider-text-container ">
 				<p class="body_content">
 				<div>光造形：通常サイズ800x800mm、最大1.5m</div>
@@ -330,17 +347,17 @@ include get_template_directory() . '/custom/mainBanner.php';
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 <!-- products-tag  -->
-<div class="spreator"></div>
+
 <!-- manufacture base -->
 <div class="service-wrapper">
 	<?php
 	global $title;
 	global $caption;
 	global $bgColor;
-	$title = "MANUFACUTRING BASE";
-	$caption = "製造拠点";
+	$title = "製造拠点";
+	$caption = "";
 	$bgColor = 'black';
 	include get_template_directory() . '/custom/title.php';
 	?>
@@ -351,7 +368,8 @@ include get_template_directory() . '/custom/mainBanner.php';
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/img4.png" alt="Example Image" class="manuf_img">
                 </div> -->
 				<div class="manuf_layer1">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/manufacture/0x0.webp" alt="Example Image" class="manuf_img">
+					<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/manufacture/0x0.webp" alt="Example Image" class="manuf_img"> -->
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/map.png" alt="Example Image" class="manuf_img">
 				</div>
 
 				<div class="manuf_layer2"></div>
@@ -392,7 +410,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 <div class="spreator"></div>
 <div class="quality-wrapper">
 	<div class="overlay">
-		<div class="quality-title">Quality, Cost, Delivery: Excellence in Every Step .</br>Your Trusted Partner for Precision Manufacturing</div>
+		<!-- <div class="quality-title">Quality, Cost, Delivery: Excellence in Every Step .</br>Your Trusted Partner for Precision Manufacturing</div> -->
 		<div class="quality-card-container">
 			<!-- QCD -->
 			<div class="parent-box">
@@ -450,52 +468,54 @@ include get_template_directory() . '/custom/mainBanner.php';
 		</div>
 	</div>
 </div>
+
 <!-- QCD -->
 <!-- <div class="spreator"></div> -->
 <!-- quality-check -->
-<div class="check-list-main">
-	<div>
-		<?php
-		global $title;
-		$title = "製品の品質チェック体制";
-		include get_template_directory() . '/custom/subTitle.php';
-		?>
-	</div>
-	<div class="check-list-wrapper">
-		<div class="check-list-img-container">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/Nastroyki-slaysera-v-fotopolimernoy-pechati_11.jpg" alt="Example Image" class="check-img">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/certificate.png" class="check-img-two" alt="Example Image" class="check-img">
+<!-- <div class="check-list-main">
+		<div>
+			<?php
+			global $title;
+			$title = "製品の品質チェック体制";
+			include get_template_directory() . '/custom/subTitle.php';
+			?>
 		</div>
-		<div class="check-list-container">
-			<div class="list-wrap">
-				<div>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
-				</div>
-				<div class="body_content">高度な検査 – 3D スキャンと自動化システムにより欠陥を検出し、正確な寸法を確保します。</div>
+		<div class="check-list-wrapper">
+			<div class="check-list-img-container">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/Nastroyki-slaysera-v-fotopolimernoy-pechati_11.jpg" alt="Example Image" class="check-img">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/certificate.png" class="check-img-two" alt="Example Image" class="check-img">
 			</div>
-			<div class="list-wrap">
-				<div>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
+			<div class="check-list-container">
+				<div class="list-wrap">
+					<div>
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
+					</div>
+					<div class="body_content">高度な検査 – 3D スキャンと自動化システムにより欠陥を検出し、正確な寸法を確保します。</div>
 				</div>
-				<div>QA チェックリスト – すべての製品は、材料の品質、構造の完全性、および顧客固有のニーズについて徹底的にチェックされます。</div>
-			</div>
-			<div class="list-wrap">
-				<div>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
+				<div class="list-wrap">
+					<div>
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
+					</div>
+					<div>QA チェックリスト – すべての製品は、材料の品質、構造の完全性、および顧客固有のニーズについて徹底的にチェックされます。</div>
 				</div>
-				<div class="body_content">リアルタイム監視 –ダッシュボードにより透明性が確保され、検査ステータスを追跡し、詳細な品質レポートを生成します。</div>
-			</div>
-			<div class="list-wrap">
-				<div>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
+				<div class="list-wrap">
+					<div>
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
+					</div>
+					<div class="body_content">リアルタイム監視 –ダッシュボードにより透明性が確保され、検査ステータスを追跡し、詳細な品質レポートを生成します。</div>
 				</div>
-				<div class="body_content">配送保証 - 厳格なQCD基準(品質、コスト、配送) を満たす製品のみが出荷が承認されます。</div>
+				<div class="list-wrap">
+					<div>
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
+					</div>
+					<div class="body_content">配送保証 - 厳格なQCD基準(品質、コスト、配送) を満たす製品のみが出荷が承認されます。</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-</div>
+</div> -->
 <!-- quality-check -->
+
 <!-- <div class="spreator"></div> -->
 <!-- customer feedback -->
 <!--
@@ -547,7 +567,9 @@ include get_template_directory() . '/custom/mainBanner.php';
 
 <!-- <div class="spreator"></div> -->
 <!-- News -->
-<div class="news-wrapper">
+
+
+<!-- <div class="news-wrapper">
 	<div>
 		<?php
 		global $title;
@@ -557,7 +579,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 		?>
 	</div>
 	<div class="news-list-wrapper">
-		<!-- news block -->
+	
 		<div class="new-list-inner">
 			<div class="new-list-container">
 				<div class="news-txt-wrapper">
@@ -572,8 +594,8 @@ include get_template_directory() . '/custom/mainBanner.php';
 			</div>
 			<div class="news-line"></div>
 		</div>
-		<!-- news block -->
-		<!-- news block -->
+	
+		
 		<div class="new-list-inner">
 			<div class="new-list-container">
 				<div class="news-txt-wrapper">
@@ -588,8 +610,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 			</div>
 			<div class="news-line"></div>
 		</div>
-		<!-- news block -->
-		<!-- news block -->
+	
 		<div class="new-list-inner">
 			<div class="new-list-container">
 				<div class="news-txt-wrapper">
@@ -604,8 +625,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 			</div>
 			<div class="news-line"></div>
 		</div>
-		<!-- news block -->
-		<!-- news block -->
+
 		<div class="new-list-inner">
 			<div class="new-list-container">
 				<div class="news-txt-wrapper">
@@ -620,10 +640,12 @@ include get_template_directory() . '/custom/mainBanner.php';
 			</div>
 			<div class="news-line"></div>
 		</div>
-		<!-- news block -->
+
 	</div>
-</div>
+</div> -->
 <!-- News -->
+
+
 <div class="spreator"></div>
 <!-- COLLABORATION -->
 <div>
@@ -631,8 +653,8 @@ include get_template_directory() . '/custom/mainBanner.php';
 	global $title;
 	global $caption;
 	global $bgColor;
-	$title = "OUR COLLABORATION";
-	$caption = "BRANDS";
+	$title = "顧客一覧";
+	$caption = "";
 	$bgColor = 'black';
 	include get_template_directory() . '/custom/title.php';
 	?>
@@ -644,7 +666,10 @@ include get_template_directory() . '/custom/mainBanner.php';
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/allbanner.png" alt="Example Image" class="brands-img">
 			</div>
 			<div class="brands-img-warp">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/allbanner2.png" alt="Example Image" class="brands-img">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/allbanner3.png" alt="Example Image" class="brands-img">
+			</div>
+			<div class="brands-img-warp">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/allbanner5.png" alt="Example Image" class="brands-img">
 			</div>
 			<!-- <div class="brands-img-warp">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo4.png" alt="Example Image" class="brands-img">

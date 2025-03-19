@@ -11,8 +11,8 @@ get_header(); ?>
     <div class="title-wrapper">
       <div class="line" style="background-color: #000;"></div>
       <div>
-        <div class="title-text" style="color: #000;">OUR PRODUCTS</div>
-        <span style="color: #000;">製造品</span>
+        <div class="title-text" style="color: #000;">製造品</div>
+        <!-- <span style="color: #000;">製造品</span> -->
       </div>
       <div class="line" style="background-color: #000;"></div>
     </div>

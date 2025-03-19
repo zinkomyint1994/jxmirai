@@ -27,7 +27,7 @@
 
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo.png" alt="Logo">
                 <div class="header_title">
-                    <span>JX未来 式会社</span>
+                    <span>JX未来株式会社</span>
                     <span>FUTURE CORPORATION</span>
                 </div>
          
@@ -38,7 +38,7 @@
                 <div><a href="<?php echo get_permalink( get_page_by_path( 'page-products' ) ) ?>" class="<?php echo is_page('page-products') ? 'menuActive' : ''; ?>">事業内容 </a></div>
                 <div><a href="<?php echo get_permalink( get_page_by_path( 'page-service' ) ) ?>" class="<?php echo is_page('page-service') ? 'menuActive' : ''; ?>">製造品</a></div>
                 <div><a href="<?php echo get_permalink( get_page_by_path( 'page-manufacture' ) ) ?>" class="<?php echo is_page('page-manufacture') ? 'menuActive' : ''; ?>">製造拠点</a></div>
-                <div><a href="<?php echo get_permalink( get_page_by_path( 'page-news' ) ) ?>" class="<?php echo is_page('page-news') ? 'menuActive' : ''; ?>">会社概要 と お知らせ</a></div>
+                <div><a href="<?php echo get_permalink( get_page_by_path( 'page-news' ) ) ?>" class="<?php echo is_page('page-news') ? 'menuActive' : ''; ?>">会社概要</a></div>
 
 
 				</div>
@@ -59,24 +59,23 @@
           <div><a href="<?php echo get_permalink(get_page_by_path('page-products')) ?>">事業内容 と 製造品</a></div>
           <div><a href="<?php echo get_permalink(get_page_by_path('page-service')) ?>">製造品</a></div>
           <div><a href="<?php echo get_permalink(get_page_by_path('page-manufacture')) ?>">製造拠点</a></div>
-        </div> -->
+         </div> -->
 			<div class="sp_menu">
-				<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/menu.png" alt="Logo"> -->
 			</div>
-			<button class="menu-btn" id="menuBtn" onclick="toggleMenu()">
+			<!-- <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">
 				<div class="bar top"></div>
 				<div class="bar middle"></div>
 				<div class="bar bottom"></div>
-			</button>
+			</button> -->
 
         <!-- Sidebar Menu -->
         <nav class="sidebar" id="sidebar">
           <ul>
             <li><a href="<?php echo home_url(); ?>">ホーム</a></li>
-            <li><a href="<?php echo get_permalink(get_page_by_path('page-news')) ?>">会社概要 と お知らせ</a></li>
             <li><a href="<?php echo get_permalink(get_page_by_path('page-products')) ?>">事業内容</a></li>
             <li><a href="<?php echo get_permalink(get_page_by_path('page-service')) ?>">製造品</a></li>
             <li><a href="<?php echo get_permalink(get_page_by_path('page-manufacture')) ?>">製造拠点　</a></li>
+			<li><a href="<?php echo get_permalink(get_page_by_path('page-news')) ?>">会社概要</a></li>
           </ul>
         </nav>
       </div>
