@@ -12,7 +12,8 @@ global $url;
 $title = "私たちについて";
 $img = "";
 $bgColor = '#fff';
-$url = "/assets/images/banner/manufacturebanner.png";
+// $url = "/assets/images/banner/manufacturebanner.png";
+$url = "/assets/images/banner/footer.jpg";
 header('Content-Type: image/jpeg');
 include get_template_directory() . '/custom/pagesBanner.php';
 ?>
@@ -23,13 +24,14 @@ include get_template_directory() . '/custom/pagesBanner.php';
             global $title;
             global $bgColor;
             $bgColor ="#000000";
-            $title = "COMPANY PROFILE";
+            $title = "会社概要";
             include get_template_directory() . '/custom/subTitle.php';
             ?>
         </div>
     <div class="my-com-wrapper">
         <div class="about_company">
         <table id="about_table" class="animation01 active">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logoFinal_.png" alt="Example Image" class="blur_1">
       	<tbody>
       		<tr>
       			<th>会社名</th>
@@ -37,10 +39,10 @@ include get_template_directory() . '/custom/pagesBanner.php';
       		</tr>
               <tr>
       			<th>代表取締役</th>
-      			<td>林 錦土　(中国ﾒｰｶｰの代表取締役及び取締役)</td>
+      			<td>林 錦土</td>
       		</tr>
       		<tr>
-      			<th>制定日</th>
+      			<th>設立</th>
       			<td>2024/5/28</td>
       		</tr>
       		<!-- <tr>
@@ -53,11 +55,11 @@ include get_template_directory() . '/custom/pagesBanner.php';
       		</tr>
               <tr>
       			<th>所在地 </th>
-      			<td>本社　〒143-0015、東京部大田区大森西7丁目8番17号、ロン。リッシュ102号</td>
+      			<td>本社　〒143-0015、東京部大田区大森西7丁目8番17号、<wbr />ロンリッシュ102号</td>
       		</tr>
               <tr>
       			<th>TEL</th>
-      			<td>03-6424-8053,080-2381-4704</td>
+      			<td>03-6424-8053</td>
       		</tr>
               <tr>
       			<th>FAX</th>
@@ -65,18 +67,19 @@ include get_template_directory() . '/custom/pagesBanner.php';
       		</tr>
               <tr>
       			<th>E-MAIL</th>
-      			<td>info@jx-f.jp、hein-hk@jx.jp</td>
+      			<td>info@jx-f.jp</td>
       		</tr>
       	</tbody>
       </table>
 
         </div>
-            <div class="water_mark">
-                <div class="water_mark_blur"></div>
+            <!-- <div class="water_mark">
+             <div class="water_mark_blur"></div>
                 <div class="blur_txt">JX未来株式会社</div>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/info1.png" alt="Example Image" class="blur_1">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/info2.png" alt="Example Image" class="blur_2">
-            </div>
+                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/istock.png" alt="Example Image" class="blur_2">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/info2.png" alt="Example Image" class="blur_2"> 
+            </div> -->
     </div>
 </div>
 <div class="info_spreator"></div>
@@ -87,7 +90,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
     <div class="intro_container">
         <div class="intro_flex">
             <div>
-                    <p class="intro_title">林 欣志 氏（日本人 CEO)</p>
+                    <p class="intro_title">林 錦土</p>
                     <div class="intro_sub_title">
                     <?php
                         include get_template_directory() . '/custom/subBlueLine.php';
@@ -146,7 +149,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
 
 
 <!-- slider -->
-<div class="news-wrapper_">
+<!-- <div class="news-wrapper_">
         <div>
             <?php
             global $title;
@@ -158,7 +161,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
         </div>
         
         <div>
-            <!-- news-blocks -->
+
             <div class="new_blocks">
                 <div>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/金属切削品、材料：鉄+塗装.jpg" alt="Image 8" class="news_image">
@@ -182,8 +185,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/right_arrow.png" alt="Image 8" class="lf_arrow">
                 </div>
             </div>
-            <!-- news-blocks -->
-                        <!-- news-blocks -->
+
                         <div class="new_blocks">
                 <div>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/n1.png" alt="Image 8" class="news_image">
@@ -207,8 +209,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/right_arrow.png" alt="Image 8" class="lf_arrow">
                 </div>
             </div>
-            <!-- news-blocks -->
-                        <!-- news-blocks -->
+   
                         <div class="new_blocks">
                 <div>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/n1.png" alt="Image 8" class="news_image">
@@ -232,8 +233,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/right_arrow.png" alt="Image 8" class="lf_arrow">
                 </div>
             </div>
-            <!-- news-blocks -->
-                        <!-- news-blocks -->
+
                         <div class="new_blocks">
                 <div>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/n1.png" alt="Image 8" class="news_image">
@@ -257,15 +257,15 @@ include get_template_directory() . '/custom/pagesBanner.php';
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/right_arrow.png" alt="Image 8" class="lf_arrow">
                 </div>
             </div>
-            <!-- news-blocks -->
+ 
             
         </div>
 
-</div>
+</div> -->
 <!-- news -->
 
 <!-- video -->
-<div class="video_wrapper">
+<!-- <div class="video_wrapper">
     <div>
         <?php
         global $title;
@@ -275,7 +275,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
                 include get_template_directory() . '/custom/subTitle.php';
         ?>
     </div>
-    <!-- video block -->
+
     <div class="video_container">
         <div class="video_img_wrap"> 
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/youtube.png" alt="Image 8" class="youtube">
@@ -288,9 +288,9 @@ include get_template_directory() . '/custom/pagesBanner.php';
                 品質レポートが生成され、発見事項と承認段階が文書化さ.....<p>
         </div>
     </div>
-        <!-- video block -->
+ 
         <div class="spreator"></div>
-         <!-- video block -->
+
     <div class="video_container">
         <div class="video_img_wrap"> 
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/youtube.png" alt="Image 8" class="youtube">
@@ -303,9 +303,9 @@ include get_template_directory() . '/custom/pagesBanner.php';
                 品質レポートが生成され、発見事項と承認段階が文書化さ.....<p>
         </div>
     </div>
-        <!-- video block -->
+
     <div class="spreator"></div>
-        <!-- video block -->
+
     <div class="video_container">
         <div class="video_img_wrap"> 
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/youtube.png" alt="Image 8" class="youtube">
@@ -318,8 +318,8 @@ include get_template_directory() . '/custom/pagesBanner.php';
                 品質レポートが生成され、発見事項と承認段階が文書化さ.....<p>
         </div>
     </div>
-        <!-- video block -->
-</div>
+
+</div> -->
 <!-- video -->
 <!-- map -->
     <div class="map-wrapper">
@@ -333,21 +333,16 @@ include get_template_directory() . '/custom/pagesBanner.php';
                     include get_template_directory() . '/custom/subTitle.php';
             ?>
             </div>
-            <div>
-                - 本社　〒143-0015、東京部大田区大森西7丁目8番17号
-            </div>
-            <div>
-                - 本社　〒143-0015、東京部大田区大森西7丁目8番17号
-            </div>
-            <div>
-                - ロン。リッシュ102号 長野支店　〒396-0015
-            </div>
-            <div>
-                - 長野県伊那市中央5020-1、セレーノ 伊那1 203号
+            <div class="address_line">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/pointer.png" alt="Example Image" class="">
+                <span>
+                本社　〒143-0015、東京部大田区大森西7丁目8番17号、ロンリッシュ102号
+                </span>
             </div>
         </div>
         <div  class="responsive-map-container">
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4152.984684625595!2d139.72506098386017!3d35.56542146251121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601860458f0c5aab%3A0x4e11595c4bc6016f!2s7%20Chome%20Omorinishi%2C%20Ota%20City%2C%20Tokyo%20143-0015!5e0!3m2!1sen!2sjp!4v1740958492537!5m2!1sen!2sjp"  width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.494398305552!2d139.7185286026375!3d35.568890297581795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601861cdcc586f71%3A0x333bd55e3e4048b7!2z44Ot44Oz44Oq44OD44K344Ol!5e0!3m2!1sen!2sjp!4v1742955570276!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4152.984684625595!2d139.72506098386017!3d35.56542146251121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601860458f0c5aab%3A0x4e11595c4bc6016f!2s7%20Chome%20Omorinishi%2C%20Ota%20City%2C%20Tokyo%20143-0015!5e0!3m2!1sen!2sjp!4v1740958492537!5m2!1sen!2sjp"  width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
         </div>
     </div>
 <!-- map -->

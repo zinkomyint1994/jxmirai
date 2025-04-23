@@ -7,11 +7,11 @@
                   <p class="title">JX-FUTURE CORPORATION</p>
                   <p class="sub-title">JX未来株式会社</p>
                   <div class="left_container_inner">
-                     <p>本社　〒143-0015、東京部大田区大森西7丁目8番17号、ロン。リッシュ102号</p>
+                     <p>本社　〒143-0015、東京部大田区大森西7丁目8番17号、ロンリッシュ102号</p>
 
                         <div class="footer_contact">
                             <span>TEL :</span>
-                            <p>03-6424-8053,080-2381-4704</p>
+                            <p>03-6424-8053</p>
                         </div>
                         
                         <div class="footer_contact">
@@ -20,13 +20,13 @@
                         </div>
             
                         <p>
-                        info@jx-f.jp、hein-hk@jx.jp
+                        info@jx-f.jp
                         </p>
                   </div>
                </div>
                <div>
                   <div class="footer_logo">
-                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo.png" alt="Logo" class="img_">
+                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logoFinal_.png" alt="Logo" class="img_">
                   </div>
                </div>
                <div class="right_container">
@@ -35,35 +35,36 @@
                         <span>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/right_arrow.png" alt="Image 8" class="footer_arr">
                         </span>
-                        <p class="menu_text">ホーム</p>
+                        <a href="<?php echo home_url(); ?>"><p class="menu_text">ホーム</p></a>
+                     
                     </div>
 
                     <div class="footer_menu">
                         <span>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/right_arrow.png" alt="Image 8" class="footer_arr">
                         </span>
-                        <p class="menu_text">事業内容</p>
+                        <a href="<?php echo get_permalink(get_page_by_path('page-service')) ?>"><p class="menu_text">事業内容</p></a>
                     </div>
 
                     <div class="footer_menu">
                         <span>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/right_arrow.png" alt="Image 8" class="footer_arr">
                         </span>
-                        <p class="menu_text">製造品</p>
+                        <a href="<?php echo get_permalink(get_page_by_path('page-products')) ?>"><p class="menu_text">製造品</p></a>
                     </div>
 
                     <div class="footer_menu">
                         <span>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/right_arrow.png" alt="Image 8" class="footer_arr">
                         </span>
-                        <p class="menu_text">製造拠点</p>
+                        <a href="<?php echo get_permalink(get_page_by_path('page-manufacture')) ?>"><p class="menu_text">製造拠点</p></a>
                     </div>
 
                     <div class="footer_menu">
                         <span>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/right_arrow.png" alt="Image 8" class="footer_arr">
                         </span>
-                        <p class="menu_text">会社概要</p>
+                        <a href="<?php echo get_permalink(get_page_by_path('page-news')) ?>"><p class="menu_text">会社概要</p></a>
                     </div>
 
 
@@ -78,3 +79,4 @@
 <!-- <?php wp_footer(); ?> -->
 </body>
 </html>
+        

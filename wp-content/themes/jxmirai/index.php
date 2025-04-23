@@ -27,13 +27,13 @@ include get_template_directory() . '/custom/mainBanner.php';
 					</div>
 
 		</div> -->
-		<div class="s-image-wrapper">
+		<div class="box1">
 			<div class="banner-overlay">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/Picture1.png" alt="Example Image" class="image1">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/info1.png" alt="Example Image" class="image1">
 			</div>
 
 			<div class="descripton-txt">
-				<p class="title_">お問合せ～お見積り</p>
+				<p class="inner_subtitle_text">お問合せ～お見積り</p>
 				<span class="title_line"></span>
 				<br />
 				<p class="sub-title">
@@ -44,26 +44,26 @@ include get_template_directory() . '/custom/mainBanner.php';
 	
 			</div>
 		</div>
-		<div class="s-image-wrapper">
+		<div class="box2">
 			<div class="banner-overlay">
 				<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/img2.png" alt="Example Image" class="image2"> -->
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/3d_img2.png" alt="Example Image" class="image2">
 			</div>
 			<div class="descripton-txt">
-				<p class="title_">製品製作</p>
+				<p class="inner_subtitle_text">製品製作</p>
 				<span class="title_line"></span>
 				<br />
 				<p class="sub-title">３Dプリンター、切削、注型、成形、板金、ダイキャスト、その他<p>
 			</div>
 		</div>
 
-		<div class="s-image-wrapper">
+		<div class="box3">
 			<div class="banner-overlay">
 				<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/9383b1c93b9043c4f9b6cd6a4301c5be-removebg-preview.jpg" alt="Example Image" class="image3"> -->
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/3d_img3.png" alt="Example Image" class="image3">
 			</div>
 			<div class="descripton-txt">
-				<p class="title_">納品</p>
+				<p class="inner_subtitle_text">納品</p>
 				<span class="title_line"></span>
 				<br />
 				<p class="sub-title">
@@ -91,7 +91,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 		<div class="service-inner-container">
 			<div class="service-lf-container">
 				<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/ENGEL-VC-500-220-TECH-PRO-213172-2016-5.jpg" alt="Example Image" class="img_"> -->
-				<video style="width: 400px" autoplay muted loop playsinline>
+				<video autoplay muted loop playsinline class="video_">
 					<source src="<?php echo get_template_directory_uri(); ?>/assets/images/home/482943751_28564538546524700_8701543597361842967_n.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
@@ -102,7 +102,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 			</div>
 			<div class="service-rg-container">
 				<div class="service-rg-txt">
-					<div class="sub_title_a">1. 試作金型(簡易金型) / 量産金型</div>
+					<div class="subtitle_text">1. 試作金型(簡易金型) / 量産金型</div>
 
 					<div class="sub_title_line">
 						<?php
@@ -110,16 +110,23 @@ include get_template_directory() . '/custom/mainBanner.php';
 						?>
 						<div class="body_title"> JX未来は<wbr />多様な業界にわたる経験を持つ<wbr />専門家チームと協力し<wbr />中国と国内で<wbr />様々なプロジェクトを<wbr />遂行している<wbr />試作×量産会社です。</div>
 					</div>
-					<div class="body_content">当社は射出成形、インサート金型、２色成形、ゴム成形、圧縮成形、ブロー成形、PVC成形、押し出し成形、ディップ成形など、さまざまな樹脂成形技術を専門としています。顧客満足度が高いQCD(Quality, Cost, Delivery)を是供しています。</br>
-						</br>特に...</br>
-						試作金型を用いた小ロット射出成形プラスチック・非鉄金属の特殊切削品、既製品への追加工に定評があります。</div>
+					<div class="body_content">当社は射出成形、インサート金型、２色成形、ゴム成形、圧縮成形、ブロー成形、PVC成形、押し出し成形、ディップ成形など、さまざまな樹脂成形技術を専門としています。顧客満足度が高いQCD(Quality, Cost, Delivery)を是供しています。
+
+					<!-- </br></br>特に...</br> -->
+						試作金型を用いた小ロット射出成形プラスチック・非鉄金属の特殊切削品、既製品への追加工に定評があります。
+					</div>
+
+						<div class="button_wrap">
+							<a href="index.php/page-service#title-1">
+								<?php
+								include get_template_directory() . '/custom/buttontype1.php';
+								?>
+							</a>
+                		</div>
+
 				</div>
+				
 			</div>
-			<!-- <div>
-                    <?php
-										include get_template_directory() . '/custom/buttontype1.php';
-										?>
-                </div> -->
 		</div>
 	</div>
 	<div>
@@ -141,14 +148,53 @@ include get_template_directory() . '/custom/mainBanner.php';
 					<div>
 						<div class="product-title">2. ３Dプリンター</div>
 						<ul class="list-txt">
-							<li><button class="trigger" data-modal="modal1">光造形</button></li>
-							<li><button class="trigger" data-modal="modal2">FDM造形</button></li>
-							<li><button class="trigger">粉末造形</button></li>
+							
+							<li>
+								<button class="trigger">
+									<a href="index.php/page-service#3d-1">光造形</a>
+								</button>
+							</li>
+							<li>
+								<button class="trigger">
+									<a href="index.php/page-service#3d-2">FDM造形</a>
+								</button>
+							</li>
+							<li>
+								<button class="trigger">
+									<a href="index.php/page-service#3d-3">粉末造形</a>
+								</button>
+							</li>
+							<li>
+								<button class="trigger">
+									<a href="index.php/page-service#3d-4">UV硬化造形</a>
+								</button>
+							</li>
+							<li>
+								<button class="trigger">
+									<a href="index.php/page-service#3d-5">DLP造形</a>
+								</button>
+							</li>
+							<li>
+								<button class="trigger">
+									<a href="index.php/page-service#3d-6">金属造形</a>
+								</button>
+							</li>
+							<!-- <li><button class="trigger" data-modal="modal1">光造形</button></li>
+							<li><button class="trigger" data-modal="modal2">FDM造形</button></li> -->
+							<!-- <li><button class="trigger">粉末造形</button></li>
 							<li><button class="trigger">UV硬化造形</button></li>
 							<li><button class="trigger">DLP造形</button></li>
-							<li><button class="trigger">金属造形</button></li>
+							<li><button class="trigger">金属造形</button></li> -->
 						</ul>
-					</div>
+									
+						</div>
+						<div class="button_wrap_list">
+							<a href="index.php/page-service#3d-title">
+								<?php
+								include get_template_directory() . '/custom/buttontype1.php';
+								?>
+							</a>
+                		</div>
 					<!-- modal-1 -->
 					<div id="modal1" class="modal">
 						<div class="modal-content">
@@ -226,11 +272,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 					</div>
 					<!-- modal-2 -->
 
-					<!-- <div class="arrow-btn-wrapper1">
-                            <?php
-														include get_template_directory() . '/custom/buttontype1.php';
-														?>
-                        </div> -->
+				
 					<div class="blue-block"></div>
 				</div>
 				<!-- modal -->
@@ -245,15 +287,27 @@ include get_template_directory() . '/custom/mainBanner.php';
 					<div>
 						<div class="product-title">3. 樹脂</div>
 						<ul class="list-txt">
-							<li><button class="trigger">＊切削</button></li>
-							<li><button class="trigger">真空注型</button></li>
+							<li>
+								<button class="trigger">
+									<a href="index.php/page-service#resin-1">＊切削</a>
+								</button>
+							</li>
+							<li>
+								<button class="trigger">
+									<a href="index.php/page-service#resin-2">真空注型</a>
+								</button>
+							</li>
+							<!-- <li><button class="trigger">＊切削</button></li>
+							<li><button class="trigger">真空注型</button></li> -->
 						</ul>
 					</div>
-					<!-- <div class="arrow-btn-wrapper1">
-                        <?php
-												include get_template_directory() . '/custom/buttontype1.php';
-												?>
-                        </div> -->
+						<div class="button_wrap_list">
+							<a href="index.php/page-service#resin-title">
+								<?php
+								include get_template_directory() . '/custom/buttontype1.php';
+								?>
+							</a>
+                		</div>
 					<div class="blue-block"></div>
 				</div>
 			</div>
@@ -266,17 +320,39 @@ include get_template_directory() . '/custom/mainBanner.php';
 					<div>
 						<div class="product-title">4. 金属</div>
 						<ul class="list-txt">
-							<li><button class="trigger">切削</button></li>
+							<li>
+								<button class="trigger">
+									<a href="index.php/page-service#metal-1">切削</a>
+								</button>
+							</li>
+							<li>
+								<button class="trigger">
+									<a href="index.php/page-service#metal-2">板金</a>
+								</button>
+							</li>
+							<li>
+								<button class="trigger">
+									<a href="index.php/page-service#metal-3">プレス（金型製造）</a>
+								</button>
+							</li>
+							<li>
+								<button class="trigger">
+									<a href="index.php/page-service#metal-4">ダイキャスト （金型製造）</a>
+								</button>
+							</li>
+							<!-- <li><button class="trigger">切削</button></li>
 							<li><button class="trigger">板金</button></li>
 							<li><button class="trigger">プレス（金型製造）</button></li>
-							<li><button class="trigger">ダイキャスト （金型製造）</button></li>
+							<li><button class="trigger">ダイキャスト （金型製造）</button></li> -->
 						</ul>
 					</div>
-					<!-- <div class="arrow-btn-wrapper2">
-                        <?php
-												include get_template_directory() . '/custom/buttontype1.php';
-												?>
-                        </div> -->
+						<div class="button_wrap_list">
+							<a href="index.php/page-service#metal-title">
+								<?php
+								include get_template_directory() . '/custom/buttontype1.php';
+								?>
+							</a>
+                		</div>
 					<div class="blue-block"></div>
 				</div>
 				<div class="img-container ">
@@ -291,20 +367,51 @@ include get_template_directory() . '/custom/mainBanner.php';
 					<div>
 						<div class="product-title">5. その他</div>
 						<ul class="list-txt">
-							<li><button class="trigger">縫製加工/製造</button></li>
+							<li>
+								<button class="trigger">
+									<a href="index.php/page-service#other-1">縫製加工/製造</a>
+								</button>
+							</li>
+							<li>
+								<button class="trigger">
+									<a href="index.php/page-service#other-1">医療消耗品製造</a>
+								</button>
+							</li>
+							<li>
+								<button class="trigger">
+									<a href="index.php/page-service#other-1">フィギュア製作</a>
+								</button>
+							</li>
+							<li>
+								<button class="trigger">
+									<a href="index.php/page-service#other-1">木工加工</a>
+								</button>
+							</li>
+							<li>
+								<button class="trigger">
+									<a href="index.php/page-service#other-1">基板設計/製造</a>
+								</button>
+							</li>
+							<li>
+								<button class="trigger">
+									<a href="index.php/page-service#other-1">ロボット関連</a>
+								</button>
+							</li>
+							<!-- <li><button class="trigger">縫製加工/製造</button></li>
 							<li><button class="trigger">医療消耗品製造</button></li>
 							<li><button class="trigger">フィギュア製作</button></li>
 							<li><button class="trigger">木工加工</button></li>
 							<li><button class="trigger">基板設計/製造</button></li>
-							<li><button class="trigger">ロボット関連</button></li>
+							<li><button class="trigger">ロボット関連</button></li> -->
 						</ul>
 					</div>
-					<!-- <div class="arrow-btn-wrapper2">
-                        <?php
-												include get_template_directory() . '/custom/buttontype1.php';
-												?>
-						</div> -->
-
+						<div class="button_wrap_list">
+							<a href="index.php/page-service#other-title">
+								<?php
+								include get_template_directory() . '/custom/buttontype1.php';
+								?>
+							</a>
+                		</div>
 					<div class="blue-block"></div>
 				</div>
 				<div class="img-container ">
@@ -364,11 +471,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 	<div class="service-container">
 		<div class="service-inner-container">
 			<div class="manuf_parent_box">
-				<!-- <div class="manuf_layer1">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/img4.png" alt="Example Image" class="manuf_img">
-                </div> -->
 				<div class="manuf_layer1">
-					<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/manufacture/0x0.webp" alt="Example Image" class="manuf_img"> -->
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/map.png" alt="Example Image" class="manuf_img">
 				</div>
 
@@ -393,7 +496,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 							<span>3. </span>
 							<p class="title_bold"><span>金型製造</span> - 最先端の設備を使用してサンプル金型と製造金型を作成し、耐久性とコスト効率を確保します。</p>
 						</div>
-						<div>
+						<div class="qc_font">
 							拠点は QCD 原則(品質、コスト、納期) を重視しているため、顧客のニーズに効率的に対応できる優れた製品とサービスが保証されます。
 						</div>
 					</div>
@@ -408,11 +511,10 @@ include get_template_directory() . '/custom/mainBanner.php';
 
 <!-- QCD -->
 <div class="spreator"></div>
-<div class="quality-wrapper">
+<!-- <div class="quality-wrapper">
 	<div class="overlay">
-		<!-- <div class="quality-title">Quality, Cost, Delivery: Excellence in Every Step .</br>Your Trusted Partner for Precision Manufacturing</div> -->
 		<div class="quality-card-container">
-			<!-- QCD -->
+
 			<div class="parent-box">
 				<div class="layer1">
 					<div>
@@ -429,8 +531,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 				</div>
 				<div class="layer2"></div>
 			</div>
-			<!-- QCD -->
-			<!-- QCD -->
+	
 			<div class="parent-box">
 				<div class="layer1">
 					<div>
@@ -447,8 +548,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 				</div>
 				<div class="layer2"></div>
 			</div>
-			<!-- QCD -->
-			<!-- QCD -->
+	
 			<div class="parent-box">
 				<div class="layer1">
 					<div>
@@ -464,10 +564,10 @@ include get_template_directory() . '/custom/mainBanner.php';
 				</div>
 				<div class="layer2"></div>
 			</div>
-			<!-- QCD -->
+		
 		</div>
 	</div>
-</div>
+</div> -->
 
 <!-- QCD -->
 <!-- <div class="spreator"></div> -->

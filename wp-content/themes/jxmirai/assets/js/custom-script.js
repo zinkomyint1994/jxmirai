@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Toggle sidebar
     if (sidebar.style.right === "0px") {
-        sidebar.style.right = "-400px"; // Close menu
+        sidebar.style.right = "-800px"; // Close menu
         menuBtn.classList.remove("active"); // Reset icon
     } else {
         sidebar.style.right = "0px"; // Open menu

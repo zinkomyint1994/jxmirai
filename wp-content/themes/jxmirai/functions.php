@@ -50,6 +50,10 @@ function custom_php_page_template() {
   }
 }
 
+function update_my_css() {
+  wp_enqueue_style('main-style', get_stylesheet_uri() . '/assets/css/style.css', array(), time()); 
+}
+
 function enqueue_carousel_scripts() {
   wp_enqueue_script('carousel-js', get_template_directory_uri() . '/assets/js/carousel.js', array('jquery'), null, true);
 }
@@ -75,6 +79,7 @@ add_action('init', 'my_theme_register_menus');
 
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
 
+add_action('wp_enqueue_scripts', 'update_my_css');
 
 
 

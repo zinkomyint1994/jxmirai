@@ -14,7 +14,7 @@
         <div class="main-title-wrapper">
             <div class="main-inner-wrap">
                 <div><h2>JX未来株式会社</h2></div>
-                <div><h1>JX-FUTURE CORPORATION</h1></div>
+                <div><h1>JXFUTURE CORPORATION</h1></div>
                 <!-- <div class="banner-description">JXMiraiとの<wbr />コラボレーションは、<wbr />品質と顧客満足への取り組みを<wbr />基盤として、<wbr />革新性、<wbr />精度、<wbr />コスト効率を<wbr />融合した企業と<wbr />提携することを<wbr />意味します。</div> -->
                 <div class="banner-description">
                 JX未来株式会社は多様な業界にわたる経験を持った製造メーカー。
