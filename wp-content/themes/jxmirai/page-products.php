@@ -4,44 +4,78 @@
  * Template Name: page-service
  */
 get_header(); ?>
+
+<div id="page-wrapper" class="page-enter">
 <!-- main-banner -->
 <?php
 global $title;
 global $caption;
 global $bgColor;
 global $url;
-$title = "私たちについて";
+$title = "製造品";
 $img = "";
 $bgColor = '#fff';
-// $url = "/assets/images/banner/manufacturebanner.png";
 $url = "/assets/images/banner/footer.jpg";
 header('Content-Type: image/jpeg');
 include get_template_directory() . '/custom/pagesBanner.php';
 ?>
-<!-- <div class="product_space">
-  <div class="page-banner-title">
-    <div class="title-wrapper">
-      <div class="line" style="background-color: #000;"></div>
-      <div>
-        <div class="title-text" style="color: #000;">製造品</div>
-      </div>
-      <div class="line" style="background-color: #000;"></div>
-    </div>
-  </div>
-</div> -->
-
+<!-- top -->
 <div class="head-container">
+<div class="scroll_down">
+  <a href="#product-container">
+    <span class="mouse">
+      <span></span>
+    </span>
+    <p>SCROLL</p>
+  </a>
+</div>
+
   <div class="head_body">
     <p>JX</p>
     <div class="head_text">
-      <!-- <p class="head_des">
-        厳格な検査プロセスにより、
-        エラーのない信頼 性の高い製品が保証されます。
-      </p> -->
       <p class="head_jx">MIRAI PRODUCTS</p>
+      <p class="type">製品の種類</p>
     </div>
   </div>
+
+    <div class="products_inner_menu">
+
+      <div class="d_flex">
+          <div><p class="title">金型</p></div>
+          <div><p>試作金型</p></div>
+          <div><p>量産金型</p></div>
+      </div>
+
+      <div class="d_flex">
+          <div><p class="title">3Dプリンター</p></div>
+          <div><p>光造形</p></div>
+          <div><p>FDM造形</p></div>
+          <div><p>粉末造形</p></div>
+          <div><p>UV硬化造形</p></div>
+          <div><p>DLP造形</p></div>
+          <div><p>金属造形</p></div>
+      </div>
+
+      <div class="d_flex">
+          <div><p class="title">樹脂</p></div>
+          <div><p>切削</p></div>
+          <div><p>真空注型</p></div>
+      </div>
+      
+      <div class="d_flex">
+          <div><p class="title">金属</p></div>
+          <div><p>切削</p></div>
+          <div><p>プレス</p><span>（プレス成形）</span></div>
+          <div><p>ダイキャスト</p><span>（アルミ/マグネシウム） </span></div>
+      </div>
+
+
+    </div>
+
 </div>
+<!-- top -->
+
+<div class="spreator"></div>
 <!-- slider -->
 
 <!-- <div class="slider-wrapper">
@@ -68,7 +102,8 @@ include get_template_directory() . '/custom/pagesBanner.php';
 </div> -->
 
 <!-- slider -->
-<div class="product_listing_container">
+<!-- oldlist -->
+<!-- <div class="product_listing_container">
 
   <div class="product_sidebar_container">
     <p class="sidebar_title">製品の種類</p>
@@ -108,21 +143,11 @@ include get_template_directory() . '/custom/pagesBanner.php';
         <li class="item">真空注型</li>
       </ul>
     </div>
-    <!-- <div class="category">
-      <p class="category_title">その他</p>
-      <ul class="item_list">
-        <li class="item">基板ボックス設計開発</li>
-        <li class="item">アクリルスタンド</li>
-        <li class="item">アクリルキーホルダー</li>
-        <li class="item">フィギュア付きストラップ</li>
-        <li class="item">樹脂エポキシサメナイトライト</li>
-        <li class="item">弊社の開発品</li>
-      </ul>
-    </div> -->
+
   </div>
   <div class="product_listing">
+     <div class="title_list" data-image-url="<?php echo get_template_directory_uri(); ?>"></div>
     <div id="product-container" data-image-url="<?php echo get_template_directory_uri(); ?>"></div>
-
     <div class="listing">
       <div class="list_item">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/a-1.jpg" alt="">
@@ -206,8 +231,17 @@ include get_template_directory() . '/custom/pagesBanner.php';
       </div>
     </div>
   </div>
+</div> -->
+<!-- oldlist -->
+<div class="metal_work_wrapper">
+<div  id="product-container" data-image-url="<?php echo get_template_directory_uri(); ?>"  style="margin-bottom: 40px;"></div>
+</div>
 </div>
 
 
+</div>
+</div>
+
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/pageAnimation.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/products.js"></script>
 <?php get_footer(); ?>

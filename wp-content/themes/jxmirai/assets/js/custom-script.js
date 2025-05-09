@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
         sidebar.style.right = "0px"; // Open menu
         menuBtn.classList.add("active"); // Animate icon
     }
-}
+  }
 
 // Close menu when a link is clicked & reset icon
 document.querySelectorAll(".sidebar a").forEach(link => {

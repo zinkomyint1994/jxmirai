@@ -19,9 +19,9 @@
                             <p>03-6524-8313</p>
                         </div>
             
-                        <p>
-                        info@jx-f.jp
-                        </p>
+                   
+                        <a href="<?php echo get_permalink(get_page_by_path('contact')) ?>"><p class="menu_text">info@jx-f.jp</p></a>
+                        
                   </div>
                </div>
                <div>
@@ -65,6 +65,14 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/right_arrow.png" alt="Image 8" class="footer_arr">
                         </span>
                         <a href="<?php echo get_permalink(get_page_by_path('page-news')) ?>"><p class="menu_text">会社概要</p></a>
+                    </div>
+
+
+                    <div class="footer_menu">
+                        <span>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/right_arrow.png" alt="Image 8" class="footer_arr">
+                        </span>
+                        <a href="<?php echo get_permalink(get_page_by_path('contact')) ?>"><p class="menu_text">お問い合わせ</p></a>
                     </div>
 
 

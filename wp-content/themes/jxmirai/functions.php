@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 
 function add_favicon() {
   echo '<link rel="icon" href="' . get_template_directory_uri() . '/assets/images/favicon.ico" type="image/x-icon">';
@@ -81,6 +81,21 @@ add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
 
 add_action('wp_enqueue_scripts', 'update_my_css');
 
+add_filter( 'wpcf7_mail_components', function( $components, $contact_form, $mail_tag ) {
+  // Only target form ID 123
+  if ( $contact_form->id() !== 123 ) {
+      return $components;
+  }
 
+  // Add a custom header
+  $components['headers'][] = 'Bcc: manager@yourdomain.com';
 
-?> -->
+  // Prepend a note to the body
+  $components['body'] = "【自動送信】\n\n" . $components['body'];
+
+  // Change the subject dynamically
+  $components['subject'] = '【重要】' . $components['subject'];
+
+  return $components;
+}, 10, 3 );
+?> 

@@ -4,6 +4,8 @@
  * Template Name: page-manufacture
  */
 get_header(); ?>
+
+<div id="page-wrapper" class="page-enter">
 <!-- main-banner -->
 <?php
 global $title;
@@ -13,11 +15,10 @@ global $url;
 $title = "製造拠点";
 $img = "";
 $bgColor = '#fff';
-$url = "/assets/images/banner/footer.jpg";
 // $url = "/assets/images/banner/manufacturebanner.png";
+$url = "/assets/images/banner/footer.jpg";
 include get_template_directory() . '/custom/pagesBanner.php';
 ?>
-
 <!-- factories-japan -->
 <div class="factories_wrapper">
   <div>
@@ -25,7 +26,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
     global $title;
     global $bgColor;
     $bgColor ="#000000";
-    $title = "射出成形";
+    $title = "射出成形金型/成形";
     include get_template_directory() . '/custom/subTitle.php';
     ?>
   </div>
@@ -50,8 +51,8 @@ include get_template_directory() . '/custom/pagesBanner.php';
     </div>
     <div class="mf_list_wrap">
      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logoFinal_.png" alt="Example Image" class="blur_manuf">
-      <div class="mf_title">
-        射出成形金型製作/成形メーカー</div>
+      <!-- <div class="mf_title">
+        射出成形金型製作/成形メーカー</div> -->
       <ul class="ul_flex">
         <li>工場名：厦門協晟源模具有限公司</li>
         <li>Main Operations: Injection mold manufacturing and molding</li>
@@ -74,7 +75,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
     global $title;
     global $bgColor;
     $bgColor ="#000000";
-    $title = "樹脂/金属切削‐３D造形";
+    $title = "３Dプリンター、樹脂/金属切削、注型、板金";
     include get_template_directory() . '/custom/subTitle.php';
     ?>
   </div>
@@ -97,7 +98,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
     </div>
     <div class="mf_list_wrap">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logoFinal_.png" alt="Example Image" class="blur_manuf">
-      <div class="mf_title">３Dプリンター、樹脂/金属切削メーカー</div>
+      <!-- <div class="mf_title">３Dプリンター、樹脂/金属切削メーカー</div> -->
       <ul class="ul_flex">
         <li>工場名：厦門欧力工贸有限公司 </li>
         <li>工場建屋:8,000m2 </li>
@@ -164,7 +165,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
     global $title;
     global $bgColor;
     $bgColor ="#000000";
-    $title = "プレス成形";
+    $title = "プレス金型製作/製造";
     include get_template_directory() . '/custom/subTitle.php';
     ?>
   </div>
@@ -188,7 +189,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
     </div>
     <div class="mf_list_wrap">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logoFinal_.png" alt="Example Image" class="blur_manuf">
-      <div class="mf_title">プレス成形金型製作/生産メーカー</div>
+      <!-- <div class="mf_title">プレス成形金型製作/生産メーカー</div> -->
       <ul class="ul_flex">
         <li>工場名：厦門智迅电子科技有限公司 </li>
         <li>工場建屋:6,000m2 </li>
@@ -208,7 +209,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
     global $title;
     global $bgColor;
     $bgColor ="#000000";
-    $title = "ダイキャスト成形";
+    $title = "ダイキャスト成形金型製作/成形";
     include get_template_directory() . '/custom/subTitle.php';
     ?>
   </div>
@@ -231,7 +232,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
     
     <div class="mf_list_wrap">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logoFinal_.png" alt="Example Image" class="blur_manuf">
-      <div class="mf_title">ダイキャスト成形金型製作/成形メーカー </div>
+      <!-- <div class="mf_title">ダイキャスト成形金型製作/成形メーカー </div> -->
       <ul class="ul_flex">
         <li>工場名：Dongguan Bestcourser Die casting Co., Ltd. </li>
         <li>工場建屋:10,000m 2 </li>
@@ -251,7 +252,8 @@ include get_template_directory() . '/custom/pagesBanner.php';
     global $title;
     global $bgColor;
     $bgColor ="#000000";
-    $title = "ゴム成形";
+    $title = "ゴム成形金型製作/成形
+";
     include get_template_directory() . '/custom/subTitle.php';
     ?>
   </div>
@@ -274,14 +276,14 @@ include get_template_directory() . '/custom/pagesBanner.php';
     </div>
     <div class="mf_list_wrap">
      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logoFinal_.png" alt="Example Image" class="blur_manuf">
-      <div class="mf_title">ゴム成形金型製作/成形メーカー </div>
+      <!-- <div class="mf_title">ゴム成形金型製作/成形メーカー </div> -->
       <ul class="ul_flex">
-        <li>工場名：ゴム成形金型製作/成形メーカー </li>
+        <li>工場名：厦門瑞瀚电子科技有限公司</li>
         <li>工場建屋:10,000m 2 </li>
         <li>現在の従業員：50名 </li>
         <li>システム認証：ISO 9001</li>
         <li>設立年：2009年/01月 </li>
-        <li>金型製作、アルミ、マグネシウムダイキャスト 成形機：300ton-3500ton 20機 </li>
+        <li>シリコンゴム、液体シリコンゴム、NBR等のゴム関連。金型製造/生産</li>
       </ul>
       <!-- <div class="mf_blur"></div> -->
     </div>
@@ -292,6 +294,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
 <!-- factories-japan -->
 <div class="spreator"></div>
 
-
+</div>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/pageAnimation.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/manufacture.js"></script>
 <?php get_footer(); ?>

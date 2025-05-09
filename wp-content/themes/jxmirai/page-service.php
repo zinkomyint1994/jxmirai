@@ -4,12 +4,14 @@
  * Template Name: page-products
  */
 get_header(); ?>
+
+<div id="page-wrapper" class="page-enter">
 <!-- main-banner --> <?php
 global $title;
 global $caption;
 global $bgColor;
 global $url;
-$title = "当社のサービス";
+$title = "事業内容";
 $img = "";
 $bgColor = "#fff";
 $url = "/assets/images/banner/footer.jpg";
@@ -37,14 +39,14 @@ include get_template_directory() . "/custom/pagesBanner.php";
                 </div>
                 <div>
                     <div class="others_title"> <?php include get_template_directory() .
-                        "/custom/subBlueLine.php"; ?>試作金型（簡易金型）</div>
+                        "/custom/subBlueLine.php"; ?>試作（簡易）金型</div>
                     <div class="p_description"> 
-                            調整や改造が迅速に行えること等があります。
+                            調整や改造が迅速に行えます。
                             ご注文からお届けまで工期15日～。＃P20金型製のカセット簡易金型を用いて圧倒的な速さで射出成形品を作り出しています。
                             成形実績の多くは自動車の試作部品で、コネクター・電装部品・エアコンパネル・ステアリング・充電器部品・クリップなど様々です。
                             もちろん、速さだけでなく品質と柔軟な対応にも自信があります。
                             （保証ショット数：１万個ぐらいまでは試作金型で可能です。）
-                            成形機：10ton~1,300tonまで１月/40型ぐらい改造しております。
+                            成形機：10ton~1,300tonまで
                     </div>
                 </div>
             </div>
@@ -57,14 +59,25 @@ include get_template_directory() . "/custom/pagesBanner.php";
                     <div class="others_title"> <?php include get_template_directory() .
                         "/custom/subBlueLine.php"; ?> 量産金型 </div>
                     <div class="p_description">
-                        中国工場生産と国内に生産方法で対応しております。
-                        国内に成形、金型パートナーと連携し国内生産、金型仕様変更やメンテナンス対応も出来ます。
-                        （射出成形、インサート金型、２色成形、コンプレッション成形
-                        成形機：10ton~1,300ton
+                        中国と国内にて製品生産や金型製造対応が可能。
+                        国内に射出成形メーカー＋金型製造/メンテナンスメーカーと連携していますので
+                        国内で金型仕様変更やメンテナンスの対応もできます。
+                        成形機：10ton～1,300ton
+                        金型生産能力：４０型/月
                     </div>
                 </div>
             </div>
-
+            <!-- contact_link -->
+            <a href="index.php/contact">
+                <?php
+                include get_template_directory() . '/custom/contactBtn.php';
+                ?>
+            </a>
+            <!-- contact_link -->
+            <!-- <div class="contact_btn_wrapper">
+                <div>お問い合わせ</div>
+            </div> -->
+            
         </div>
         <!-- <div class="products_btn_">
       <?php include get_template_directory() . "/custom/buttontype1.php"; ?>
@@ -72,6 +85,8 @@ include get_template_directory() . "/custom/pagesBanner.php";
     </div>
     <!-- title -->
 </div>
+<div class="spreator"></div>
+
 <!-- metal work -->
 <div class="products_list_wrapper" id="3d-title">
     <!-- title -->
@@ -278,7 +293,13 @@ include get_template_directory() . "/custom/pagesBanner.php";
                     </div>
                 </div>
             </div>
-            
+                <!-- contact_link -->
+                <a href="index.php/contact">
+                <?php
+                include get_template_directory() . '/custom/contactBtn.php';
+                ?>
+            </a>
+            <!-- contact_link -->
         </div>
         <!-- <div class="products_btn_">
       <?php include get_template_directory() . "/custom/buttontype1.php"; ?>
@@ -297,7 +318,7 @@ include get_template_directory() . "/custom/pagesBanner.php";
         global $title;
         global $bgColor;
         $bgColor = "#000000";
-        $title = "Resin (樹脂)";
+        $title = "樹脂";
         include get_template_directory() . "/custom/subTitle.php";
         ?> </div>
         <!-- <div class="side_title"> 3D 印刷テクノロジー - プロトタイプや複雑なデザインを作成するための高度なステレオリソグラフィー、FDM 印刷、粉末ベースの印刷。 </div> -->
@@ -321,13 +342,12 @@ include get_template_directory() . "/custom/pagesBanner.php";
                                             <span class="material_">対応可能な材料</span>
                                             <p>
                                             ABS+PC,ABS、PP（ポリプロピレン）、PE（ポリエチレン）,PC（ポリカーボネート）、POM（ジュラコン）、66ナイロン、PBT,
-                                            PEEK（ピーイーキー）、PTFE（フッ素）、PI（ポリイミド）、PEI（ウルテム®）、PPSU、PET、紙ベークライト、超高分子量ポリエチレンなど﻿
+                                            PEEK（ピーク）、PTFE（フッ素）、PI（ポリイミド）、PEI（ウルテム®）、PPSU、PET、紙ベークライト、超高分子量ポリエチレンなど﻿
                                             <p>
                                     </div>
                             樹脂切削加工に用いられる素材には、
                             さまざまな材質とグレードが存在し、材料メーカーも複数ありコストと性能に差があります。そのため、樹脂切削加工品に求める機能とコストを両立させるためには、
-                            最適な材質選定を行うことが大切です、インサート・アウトサートも対応可能です。普通の塗装やUV塗装も対応可能です。
-                            ＊特にJX未来は樹脂切削加工にお客様からコスト、品質に定評があります。
+                            最適な材質選定を行うことが大切です。また、インサート/アウトサートや塗装等の対応も可能です。
                      </div>
                 </div>
             </div>
@@ -346,25 +366,26 @@ include get_template_directory() . "/custom/pagesBanner.php";
                                             <span class="material_">対応可能な材料</span>
                                             <p>
                                     ABS、PP（ポリプロピレン）、PE（ポリエチレン）,PC（ポリカーボネート）、POM（ジュラコン）、66ナイロン、PBT,
-                                    PEEK（ピーイーキー）、PTFE（フッ素）、PI（ポリイミド）、PEI（ウルテム®）、PPSU、PET、紙ベークライト、超高分子量ポリエチレン
-                            ゴム形など﻿
-                                            <p>
+                                    PEEK（ピーク）、PTFE（フッ素）、PI（ポリイミド）、PEI（ウルテム®）、PPSU、PET、紙ベークライト、超高分子量ポリエチレン
+                            ゴム形など<p>
                              </div>
-                            
-                            【メリット】﻿
-                            金型に比べて安価で製作できる、納期が短縮できる
-                            気泡が入りにくく、高精度な製品が成形できる
-                            インサート成形・アウトサートや一体成型も可能
-
+                             射出成形金型に比べて安価且つ、短納期で製作出来る。
+                            ＊少量生産向け
                          </div>
                 </div>
             </div>
-
+            <!-- contact_link -->
+            <a href="index.php/contact">
+                <?php
+                include get_template_directory() . '/custom/contactBtn.php';
+                ?>
+            </a>
+            <!-- contact_link -->
     </div>
     <!-- title -->
 </div>
 <!-- Resin -->
-
+<div class="spreator"></div>
 <!-- metal work -->
 <div class="metal_work_wrapper" id="metal-title">
     <!-- title -->
@@ -373,7 +394,7 @@ include get_template_directory() . "/custom/pagesBanner.php";
         global $title;
         global $bgColor;
         $bgColor = "#000000";
-        $title = "METAL WORK(金属)";
+        $title = "金属";
         include get_template_directory() . "/custom/subTitle.php";
         ?> </div>
         <!-- <div class="side_title"> 3D 印刷テクノロジー - プロトタイプや複雑なデザインを作成するための高度なステレオリソグラフィー、FDM 印刷、粉末ベースの印刷。 </div> -->
@@ -394,13 +415,9 @@ include get_template_directory() . "/custom/pagesBanner.php";
                     <div class="materail_wrap">
                             <span class="material_">対応可能な材料</span>
                             <p>
-                            対応可能な材料：鉄鋼やアルミ、ステンレス、真鍮、チタン、インコネル、ハステロイなどの金属材料、非金属材料が加工できます
+                            鉄鋼やアルミ、ステンレス、真鍮、チタン、インコネル、ハステロイなどの金属材料、非金属材料が加工できます
                             <p>
                     </div>
-                 
-
-                    【メリット】﻿
-                    特にJX未来はアルミヒートシンク切削とかギアとか特注形状加工にお客様から定評があります。
                     処理：白アルマイト、カラーアルマイト、硬質アルマイト、アルミニウム化成処理、めっき、黒染め、など。
                     </div>
                 </div>
@@ -422,9 +439,6 @@ include get_template_directory() . "/custom/pagesBanner.php";
                             銅、鉄鋼やステンレス
                             <p>
                         </div>
-
-                        【メリット】﻿
-                        ＊特にJX未来は自動車部品銅（C1100,C1102）の厚み6mmの鈑金品はお客様から定評があります。
                      </div>
                 </div>
             </div>
@@ -435,7 +449,7 @@ include get_template_directory() . "/custom/pagesBanner.php";
                 </div>
                 <div>
                     <div class="others_title"> <?php include get_template_directory() .
-                        "/custom/subBlueLine.php"; ?>プレス（金型製造）とは</div>
+                        "/custom/subBlueLine.php"; ?>プレス成形とは</div>
                     <div class="p_description">
                             プレス機械に取り付けて、板状の材料を圧力を加えて変形させる金型です。金属やプラスチックなどの素材を、所定の形状に成型する加工方法で、
                             自動車や家電製品などの部品製造に広く利用されています。
@@ -446,9 +460,6 @@ include get_template_directory() . "/custom/pagesBanner.php";
                                 銅、鉄鋼やステンレス
                                 <p>
                             </div>
-
-                            ﻿【メリット】
-                            プレス成形 成形機：25ton-250tonまで専門メーカー工場に協力しております。
                     </div>
                 </div>
             </div>
@@ -459,15 +470,20 @@ include get_template_directory() . "/custom/pagesBanner.php";
                 </div>
                 <div>
                     <div class="others_title"> <?php include get_template_directory() .
-                        "/custom/subBlueLine.php"; ?>ダイキャスト（ダイカスト金型製造）とは</div>
+                        "/custom/subBlueLine.php"; ?>ダイキャストとは</div>
                     <div class="p_description">
                     溶かした金属を金型に流し込んで成型する鋳造法の一種で、金型製造も含まれます・
-                    【メリット】
-                    プレス成形 成形機：25ton-250tonまで専門メーカー工場に協力しております。
+                   対応可能な材料：アルミ、マグネシウム
                     </div>
                 </div>
             </div>
-            
+                <!-- contact_link -->
+                <a href="index.php/contact">
+                <?php
+                include get_template_directory() . '/custom/contactBtn.php';
+                ?>
+            </a>
+            <!-- contact_link -->
 
 
             <!-- <div class="others_list_wrap">
@@ -496,6 +512,7 @@ include get_template_directory() . "/custom/pagesBanner.php";
     </div>
     <!-- title -->
 </div>
+<div class="spreator"></div>
 <!-- metal work -->
 <!-- others -->
 <div class="others_wrapper" id="other-title">
@@ -556,7 +573,6 @@ include get_template_directory() . "/custom/pagesBanner.php";
 </div>
 <div class="spreator"></div>
 <!-- others -->
-
 <!-- quality-check -->
 <div class="check-list-main">
 <div class="products_title_wrap">
@@ -580,20 +596,20 @@ include get_template_directory() . "/custom/pagesBanner.php";
                         <div>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
                         </div>
-                        <div class="body_content">当社の製品検査チームで完成した製品の品質を検査し、基準を満たしているかどうかを確認します。</div>
+                        <div class="body_content">当社の製品検査チームで完成した製品の品質を検査</div>
                     </div>
                     <div class="list-wrap">
                         <div>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
                         </div>
-                        <div class="body_content">完成した製品を三次元、二次元、顕微鏡を使って測定を確認します。</div>
+                        <div class="body_content">完成した製品を三次元、二次元、顕微鏡を使って測定</div>
                     </div>
 
                     <div class="list-wrap">
                         <div>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
                         </div>
-                        <div class="body_content">当社の工場にはGB/T19001-2016、ISO9001:2015の品質マネジメントシステムの国際規格をもっていますが、企業が品質保証体制を構築し、顧客満足度を高めるための要求事項を定めています。</div>
+                        <div class="body_content">当社の工場にはGB/T19001-2016、ISO9001:2015の品質マネジメントシステムの国際規格を保有</div>
                     </div>
 			
 
@@ -601,7 +617,7 @@ include get_template_directory() . "/custom/pagesBanner.php";
                         <div>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/check_icon.png" alt="Example Image" class="prowduct-image">
                         </div>
-                        <div class="body_content">配送中に製品不良品が出ないように安全梱包をしてから顧客満足度を是供しています。</div>
+                        <div class="body_content">配送中に製品不良品が出ないように安全梱包を徹底</div>
                     </div>
 			
 			
@@ -617,5 +633,6 @@ include get_template_directory() . "/custom/pagesBanner.php";
 </div>
 <!-- quality-check -->
 <div class="spreator"></div>
-
+</div>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/pageAnimation.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/carousel.js"></script> <?php get_footer(); ?>

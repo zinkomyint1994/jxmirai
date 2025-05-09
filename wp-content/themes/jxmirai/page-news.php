@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 /**
  * Template Name: page-news
  */
@@ -55,7 +56,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
       		</tr>
               <tr>
       			<th>所在地 </th>
-      			<td>本社　〒143-0015、東京部大田区大森西7丁目8番17号、<wbr />ロンリッシュ102号</td>
+      			<td>本社　〒143-0015、東京部大田区大森西7丁目8番17号、ロンリッシュ102号</td>
       		</tr>
               <tr>
       			<th>TEL</th>

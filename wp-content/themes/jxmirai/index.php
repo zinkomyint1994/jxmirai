@@ -1,4 +1,6 @@
 <?php get_header(); ?>
+
+<div id="page-wrapper" class="page-enter">
 <!-- main-banner -->
 <?php
 include get_template_directory() . '/custom/mainBanner.php';
@@ -12,6 +14,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 	include get_template_directory() . '/custom/title.php';
 	?>
 <!-- What service do we provide? -->
+
 <div class="company-container">
 	<div class="content_wrapper">
 		<!-- <div class="about_banner_container">
@@ -29,7 +32,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 		</div> -->
 		<div class="box1">
 			<div class="banner-overlay">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/info1.png" alt="Example Image" class="image1">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/1.jpg" alt="jxmirai" class="image1">
 			</div>
 
 			<div class="descripton-txt">
@@ -47,7 +50,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 		<div class="box2">
 			<div class="banner-overlay">
 				<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/img2.png" alt="Example Image" class="image2"> -->
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/3d_img2.png" alt="Example Image" class="image2">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/2.jpg" alt="jxmirai" class="image2">
 			</div>
 			<div class="descripton-txt">
 				<p class="inner_subtitle_text">製品製作</p>
@@ -60,7 +63,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 		<div class="box3">
 			<div class="banner-overlay">
 				<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/9383b1c93b9043c4f9b6cd6a4301c5be-removebg-preview.jpg" alt="Example Image" class="image3"> -->
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/3d_img3.png" alt="Example Image" class="image3">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/3.jpg" alt="jxmirai" class="image3">
 			</div>
 			<div class="descripton-txt">
 				<p class="inner_subtitle_text">納品</p>
@@ -83,7 +86,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 	<?php
 	global $title;
 	global $caption;
-	$title = "当社のサービス";
+	$title = "事業内容";
 	$caption = "";
 	include get_template_directory() . '/custom/title.php';
 	?>
@@ -102,18 +105,27 @@ include get_template_directory() . '/custom/mainBanner.php';
 			</div>
 			<div class="service-rg-container">
 				<div class="service-rg-txt">
-					<div class="subtitle_text">1. 試作金型(簡易金型) / 量産金型</div>
+					<div class="subtitle_text">1. 試作（簡易）金型</div>
 
-					<div class="sub_title_line">
-						<?php
-						include get_template_directory() . '/custom/subBlueLine.php';
-						?>
-						<div class="body_title"> JX未来は<wbr />多様な業界にわたる経験を持つ<wbr />専門家チームと協力し<wbr />中国と国内で<wbr />様々なプロジェクトを<wbr />遂行している<wbr />試作×量産会社です。</div>
-					</div>
-					<div class="body_content">当社は射出成形、インサート金型、２色成形、ゴム成形、圧縮成形、ブロー成形、PVC成形、押し出し成形、ディップ成形など、さまざまな樹脂成形技術を専門としています。顧客満足度が高いQCD(Quality, Cost, Delivery)を是供しています。
-
-					<!-- </br></br>特に...</br> -->
-						試作金型を用いた小ロット射出成形プラスチック・非鉄金属の特殊切削品、既製品への追加工に定評があります。
+					<div class="body_content">
+						<ul class="list_txt_col">
+							<div>
+								<li>射出成形（熱可塑、熱硬化）</li>
+								<li>インサート成形</li>
+								<li>２色成形</li>
+							</div>
+							<div>
+								<li>ゴム成形</li>
+								<li>圧縮成形</li>
+								<li>ブロー成形</li>
+							</div>
+					        <div>
+								<li>PVC成形</li>
+								<li>押出成形</li>
+								<li>ディップ成形</li>
+							</div>
+					
+						</ul>
 					</div>
 
 						<div class="button_wrap">
@@ -289,7 +301,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 						<ul class="list-txt">
 							<li>
 								<button class="trigger">
-									<a href="index.php/page-service#resin-1">＊切削</a>
+									<a href="index.php/page-service#resin-1">切削</a>
 								</button>
 							</li>
 							<li>
@@ -332,12 +344,12 @@ include get_template_directory() . '/custom/mainBanner.php';
 							</li>
 							<li>
 								<button class="trigger">
-									<a href="index.php/page-service#metal-3">プレス（金型製造）</a>
+									<a href="index.php/page-service#metal-3">プレス（プレス成形）</a>
 								</button>
 							</li>
 							<li>
 								<button class="trigger">
-									<a href="index.php/page-service#metal-4">ダイキャスト （金型製造）</a>
+									<a href="index.php/page-service#metal-4">ダイキャスト（アルミ/マグネシウム）</a>
 								</button>
 							</li>
 							<!-- <li><button class="trigger">切削</button></li>
@@ -413,17 +425,28 @@ include get_template_directory() . '/custom/mainBanner.php';
 							</a>
                 		</div>
 					<div class="blue-block"></div>
+					
 				</div>
 				<div class="img-container ">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/i.webp" alt="Example Image" class="product-image">
 				</div>
 
 			</div>
+			
 			<!-- card-one -->
 		</div>
-
 	</div>
+	   <!-- contact_link -->
+	   <div class="hp_contact">
+			<a href="index.php/contact">
+				<?php
+				include get_template_directory() . '/custom/contactBtn.php';
+				?>
+			</a>
+		<div>
+    	<!-- contact_link -->
 </div>
+
 <!-- our products -->
 <!-- products-tag  -->
 <!-- <div class="p-slider-wrapper ">
@@ -469,39 +492,13 @@ include get_template_directory() . '/custom/mainBanner.php';
 	include get_template_directory() . '/custom/title.php';
 	?>
 	<div class="service-container">
-		<div class="service-inner-container">
+		<div class="service-inner-container_img">
 			<div class="manuf_parent_box">
 				<div class="manuf_layer1">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/map.png" alt="Example Image" class="manuf_img">
-				</div>
-
-				<div class="manuf_layer2"></div>
-			</div>
-			<div class="service-rg-container">
-				<div class="service-rg-txt">
-					<div class="sub_title_a">製造拠点の概要</div>
-					<div class="sub_txt">
-						ウェブサイトでは、成形と 3D 印刷技術に特化した強力な製造基盤を紹介しています。試作、サンプル金型の作成、量産にわたる業務により、同社は出力の精度と信頼性を確保しています。主な製造プロセスは次のとおりです。
-					</div>
-					<div class="manuf_container">
-						<div class="manuf_list_text">
-							<span>1. </span>
-							<p class="title_bold"><span>3D 印刷技術</span> - プロトタイプや複雑なデザインを作成するための高度なステレオリソグラフィー、FDM 印刷、粉末ベースの印刷。</p>
-						</div>
-						<div class="manuf_list_text">
-							<span>2. </span>
-							<p class="title_bold"><span>材料の専門知識</span> - プラスチック、樹脂、シリコン、金属など、さまざまな材料を扱うことができ、さまざまな顧客の要求に対応できます。</p>
-						</div>
-						<div class="manuf_list_text">
-							<span>3. </span>
-							<p class="title_bold"><span>金型製造</span> - 最先端の設備を使用してサンプル金型と製造金型を作成し、耐久性とコスト効率を確保します。</p>
-						</div>
-						<div class="qc_font">
-							拠点は QCD 原則(品質、コスト、納期) を重視しているため、顧客のニーズに効率的に対応できる優れた製品とサービスが保証されます。
-						</div>
-					</div>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/map.png" alt="Example Image" class="manuf_img">
 				</div>
 			</div>
+	
 		</div>
 		<div>
 		</div>
@@ -509,12 +506,11 @@ include get_template_directory() . '/custom/mainBanner.php';
 </div>
 <!-- manufacture base -->
 
-<!-- QCD -->
-<div class="spreator"></div>
 <!-- <div class="quality-wrapper">
 	<div class="overlay">
+		
 		<div class="quality-card-container">
-
+			
 			<div class="parent-box">
 				<div class="layer1">
 					<div>
@@ -564,7 +560,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 				</div>
 				<div class="layer2"></div>
 			</div>
-		
+
 		</div>
 	</div>
 </div> -->
@@ -744,11 +740,35 @@ include get_template_directory() . '/custom/mainBanner.php';
 	</div>
 </div> -->
 <!-- News -->
-
-
 <div class="spreator"></div>
+<!-- manufacture base -->
+<div class="service-wrapper">
+	<?php
+	global $title;
+	global $caption;
+	global $bgColor;
+	$title = "製造拠点";
+	$caption = "";
+	$bgColor = 'black';
+	include get_template_directory() . '/custom/title.php';
+	?>
+	<div class="service-container">
+		<div class="service-inner-container_img">
+			<div class="manuf_parent_box">
+				<div class="manuf_layer1">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/map_img.jpg" alt="Example Image" class="manuf_img">
+				</div>
+			</div>
+	
+		</div>
+		<div>
+		</div>
+	</div>
+</div>
+<div class="spreator"></div>
+<!-- manufacture base -->
 <!-- COLLABORATION -->
-<div>
+<!-- <div>
 	<?php
 	global $title;
 	global $caption;
@@ -758,9 +778,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 	$bgColor = 'black';
 	include get_template_directory() . '/custom/title.php';
 	?>
-	<!-- <div class="spreator"></div> -->
 	<div class="brands-wrapper">
-		<!-- brands-logo-block -->
 		<div class="brands-inner-wrapper">
 			<div class="brands-img-warp">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/allbanner.png" alt="Example Image" class="brands-img">
@@ -771,20 +789,9 @@ include get_template_directory() . '/custom/mainBanner.php';
 			<div class="brands-img-warp">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/allbanner5.png" alt="Example Image" class="brands-img">
 			</div>
-			<!-- <div class="brands-img-warp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo4.png" alt="Example Image" class="brands-img">
-                </div>
-                <div class="brands-img-warp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo1.png" alt="Example Image" class="brands-img">
-                </div>
-                <div class="brands-img-warp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo4.png" alt="Example Image" class="brands-img">
-                </div> -->
 		</div>
 		<div class="spreator"></div>
-		<!-- brands-logo-block -->
-
-	</div>
+	</div> -->
 	<!-- COLLABORATION -->
 
 
@@ -793,6 +800,9 @@ include get_template_directory() . '/custom/mainBanner.php';
     <div><?php the_content(); ?></div> -->
 	<?php endwhile;
 	endif; ?>
-	<!-- others -->
-	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/open-modal.js"></script>
-	<?php get_footer(); ?>
+</div>
+
+<!-- others -->
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/pageAnimation.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/open-modal.js"></script>
+<?php get_footer(); ?>
