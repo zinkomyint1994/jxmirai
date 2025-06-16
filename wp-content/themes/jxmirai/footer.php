@@ -7,7 +7,13 @@
                   <p class="title">JX-FUTURE CORPORATION</p>
                   <p class="sub-title">JX未来株式会社</p>
                   <div class="left_container_inner">
-                     <p>本社　〒143-0015、東京部大田区大森西7丁目8番17号、ロンリッシュ102号</p>
+
+                  <div class="footer_contact">
+                            <span>本社 :</span>
+                            <div class="adress_text"><span>〒143-0015</span><br/><span>東京部大田区大森西7丁目8番17号</span><br /><span>ロンリッシュ102号</span></div>
+                        </div>
+                        
+                     <p></p>
 
                         <div class="footer_contact">
                             <span>TEL :</span>

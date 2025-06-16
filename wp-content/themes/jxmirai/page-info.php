@@ -3,6 +3,7 @@
 /**
  * Template Name: page-info
  */
+set_query_var('customPageTitle', '会社概要 | JX未来株式会社');
 get_header(); ?>
 
 <div id="page-wrapper" class="page-enter">
@@ -26,7 +27,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
     <div class="intro_container">
         <div class="intro_flex">
             <div>
-                    <p class="intro_title">林 錦土</p>
+                    <p class="intro_title">林 诚庆</p>
                     <div class="intro_sub_title">
                     <?php
                         include get_template_directory() . '/custom/subBlueLine.php';
@@ -104,7 +105,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
       		</tr>
               <tr>
       			<th>代表取締役</th>
-      			<td>林 錦土</td>
+      			<td>林 诚庆</td>
       		</tr>
       		<tr>
       			<th>設立</th>
@@ -120,7 +121,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
       		</tr>
               <tr>
       			<th>所在地 </th>
-      			<td>本社　〒143-0015、東京部大田区大森西7丁目8番17号、ロンリッシュ102号</td>
+      			<td>本社　〒143-0015 東京部大田区大森西7丁目8番17号 ロンリッシュ102号</td>
       		</tr>
               <tr>
       			<th>TEL</th>
@@ -339,7 +340,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
             <div class="address_line">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner/pointer.png" alt="Example Image" class="">
                 <span>
-                本社　〒143-0015、東京部大田区大森西7丁目8番17号、ロンリッシュ102号
+                本社　〒143-0015 東京部大田区大森西7丁目8番17号 ロンリッシュ102号
                 </span>
             </div>
         </div>

@@ -3,6 +3,7 @@
 /**
  * Template Name: page-manufacture
  */
+set_query_var('customPageTitle', '製造拠点 | JX未来株式会社');
 get_header(); ?>
 
 <div id="page-wrapper" class="page-enter">
@@ -92,7 +93,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
           <img class="thumb active" src="<?php echo get_template_directory_uri(); ?>/assets/images/manufacture/Picture8.png" alt="Thumb 1" onclick="changeImage(this)">
           <img class="thumb" src="<?php echo get_template_directory_uri(); ?>/assets/images/manufacture/Picture9.png" alt="Thumb 2" onclick="changeImage(this)">
           <img class="thumb" src="<?php echo get_template_directory_uri(); ?>/assets/images/manufacture/Picture7.png" alt="Thumb 3" onclick="changeImage(this)">
-          <img class="thumb" src="<?php echo get_template_directory_uri(); ?>/assets/images/manufacture/Picture6.png" alt="Thumb 4" onclick="changeImage(this)">
+          <img class="thumb" src="<?php echo get_template_directory_uri(); ?>/assets/images/manufacture/Picture6_.png" alt="Thumb 4" onclick="changeImage(this)">
         </div>
       </div>
     </div>
@@ -100,7 +101,7 @@ include get_template_directory() . '/custom/pagesBanner.php';
       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logoFinal_.png" alt="Example Image" class="blur_manuf">
       <!-- <div class="mf_title">３Dプリンター、樹脂/金属切削メーカー</div> -->
       <ul class="ul_flex">
-        <li>工場名：厦門欧力工贸有限公司 </li>
+        <li>工場名：厦門朱頂紅科技有限公司</li>
         <li>工場建屋:8,000m2 </li>
         <li>現在の従業員：50名 </li>
         <li>システム認証：ISO 9001 & ISO14001 </li>

@@ -105,7 +105,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 			</div>
 			<div class="service-rg-container">
 				<div class="service-rg-txt">
-					<div class="subtitle_text">1. 試作（簡易）金型</div>
+					<div class="subtitle_text">1. 樹脂‐試作金型/量産金型</div>
 
 					<div class="body_content">
 						<ul class="list_txt_col">
@@ -495,7 +495,7 @@ include get_template_directory() . '/custom/mainBanner.php';
 		<div class="service-inner-container_img">
 			<div class="manuf_parent_box">
 				<div class="manuf_layer1">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/map.png" alt="Example Image" class="manuf_img">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/map_.png" alt="Example Image" class="manuf_img">
 				</div>
 			</div>
 	
@@ -747,16 +747,16 @@ include get_template_directory() . '/custom/mainBanner.php';
 	global $title;
 	global $caption;
 	global $bgColor;
-	$title = "製造拠点";
+	$title = "顧客一覧";
 	$caption = "";
 	$bgColor = 'black';
 	include get_template_directory() . '/custom/title.php';
 	?>
 	<div class="service-container">
-		<div class="service-inner-container_img">
+		<div class="img_map">
 			<div class="manuf_parent_box">
 				<div class="manuf_layer1">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/map_img.jpg" alt="Example Image" class="manuf_img">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/brand_logo.jpg" alt="Example Image" class="manuf_img">
 				</div>
 			</div>
 	

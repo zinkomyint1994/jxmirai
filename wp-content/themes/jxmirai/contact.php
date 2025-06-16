@@ -3,7 +3,6 @@
  * Template Name: page-contact
  */
 get_header(); ?>
-
 <!-- main-banner -->
 <div id="page-wrapper" class="page-enter">
 <?php get_header(); ?>
@@ -22,8 +21,8 @@ get_header(); ?>
       </div>
       <div class="contents_box_w90 mb_50" id="contact_form">
 
-          <!-- <?php echo do_shortcode( '[contact-form-7 id="d98d440" title="jxmirai_contact_form"]' ); ?> -->
-        <?php echo do_shortcode( '[contact-form-7 id="084e235" title="test"]' ); ?>
+          <?php echo do_shortcode( '[contact-form-7 id="d98d440" title="jxmirai_contact_form"]' ); ?>
+        <!-- <?php echo do_shortcode( '[contact-form-7 id="084e235" title="test"]' ); ?> -->
       </div>
       <div class="contents_box_w90 mb_200">
         <p>個人情報についてお寄せいただきましたお客様の情報は、弊社担当者からのご挨拶、連絡業務以外には使用いたしません。<br>
@@ -34,6 +33,8 @@ get_header(); ?>
 </div>
 </div>
 <script>
+document.addEventListener( 'wpcf7mailsent', function( event ) {    location = '<?php echo esc_url( home_url( '/' ) ); ?>page-thanks/';}, false );
+
 document.addEventListener('wpcf7mailsent', function (event) {
     console.log(event.detail);
 }, false);

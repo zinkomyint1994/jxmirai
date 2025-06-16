@@ -3,8 +3,8 @@
 /**
  * Template Name: page-products
  */
+set_query_var('customPageTitle', '事業内容 | JX未来株式会社');
 get_header(); ?>
-
 <div id="page-wrapper" class="page-enter">
 <!-- main-banner --> <?php
 global $title;
@@ -39,7 +39,7 @@ include get_template_directory() . "/custom/pagesBanner.php";
                 </div>
                 <div>
                     <div class="others_title"> <?php include get_template_directory() .
-                        "/custom/subBlueLine.php"; ?>試作（簡易）金型</div>
+                        "/custom/subBlueLine.php"; ?>試作金型</div>
                     <div class="p_description"> 
                             調整や改造が迅速に行えます。
                             ご注文からお届けまで工期15日～。＃P20金型製のカセット簡易金型を用いて圧倒的な速さで射出成形品を作り出しています。
@@ -48,6 +48,28 @@ include get_template_directory() . "/custom/pagesBanner.php";
                             （保証ショット数：１万個ぐらいまでは試作金型で可能です。）
                             成形機：10ton~1,300tonまで
                     </div>
+                    
+                    <div class="body_content">
+						<ul class="list_txt_col" style="margin-top: 0px !important;">
+							<div>
+								<li>射出成形（熱可塑、熱硬化）</li>
+								<li>インサート成形</li>
+								<li>２色成形</li>
+							</div>
+							<div>
+								<li>ゴム成形</li>
+								<li>圧縮成形</li>
+								<li>ブロー成形</li>
+							</div>
+					        <div>
+								<li>PVC成形</li>
+								<li>押出成形</li>
+								<li>ディップ成形</li>
+							</div>
+					
+						</ul>
+					</div>
+
                 </div>
             </div>
 
@@ -59,12 +81,32 @@ include get_template_directory() . "/custom/pagesBanner.php";
                     <div class="others_title"> <?php include get_template_directory() .
                         "/custom/subBlueLine.php"; ?> 量産金型 </div>
                     <div class="p_description">
-                        中国と国内にて製品生産や金型製造対応が可能。
+                        中国と国内にて車載部品、家電、複雑な構造、筐体などの製品生産や金型製造対応が可能。
                         国内に射出成形メーカー＋金型製造/メンテナンスメーカーと連携していますので
-                        国内で金型仕様変更やメンテナンスの対応もできます。
+                        国内で金型仕様変更やメンテナンスの対応もできます。日本国内への金型販売の実績は多数あります。
                         成形機：10ton～1,300ton
                         金型生産能力：４０型/月
                     </div>
+                    <div class="body_content">
+						<ul class="list_txt_col" style="margin-top: 0px !important;">
+							<div>
+								<li>射出成形（熱可塑、熱硬化）</li>
+								<li>インサート成形</li>
+								<li>２色成形</li>
+							</div>
+							<div>
+								<li>ゴム成形</li>
+								<li>圧縮成形</li>
+								<li>ブロー成形</li>
+							</div>
+					        <div>
+								<li>PVC成形</li>
+								<li>押出成形</li>
+								<li>ディップ成形</li>
+							</div>
+					
+						</ul>
+					</div>
                 </div>
             </div>
             <!-- contact_link -->

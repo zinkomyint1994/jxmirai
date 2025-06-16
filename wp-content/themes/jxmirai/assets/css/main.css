@@ -6,6 +6,32 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+.thanks_wrap {
+	position: relative;
+	height: 1000px;
+}
+.thanks_wrap .inner_wrap {
+    font-size: 16px;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+    flex-direction: column;
+    gap: 50px;
+    /* background: red; */
+    width: 50%;
+    margin: auto;
+}
+.thanks_wrap img {
+	position: absolute;
+    top: 1%;
+    left: -49%;
+    width: 194%;
+    height: 101%;
+    opacity: 0.06;
+    object-fit: contain;
+}
 .products_inner_menu {
 	height: 100%;
 	display: grid;
@@ -21,7 +47,7 @@
 	justify-content: flex-start;
 	height: 100%;
 	gap: 15px;
-	width: 160px;
+	width: 100%;
 }
 
 .products_inner_menu .d_flex span {
@@ -207,6 +233,9 @@
     letter-spacing: 0px;
     align-items: center;
 }
+.address_line span {
+	font-size: 16px;
+}
 .responsive-map-container {
 	position: relative;
 	width: 100%;
@@ -237,11 +266,17 @@
 	}
 }
 @media screen and (max-width: 800px) {
+	.thanks_wrap .inner_wrap {
+		gap: 30px;
+	}
+	.thanks_wrap {
+		/* height: 120vh; */
+	}
 	.products_inner_menu {
 		width: 100%;
 		grid-template-columns: 1fr 1fr;
-		gap: 22px;
-		padding: 10px;
+		gap: 25px;
+		padding: 20px;
 	}
 	.products_wrapper {
 		grid-template-columns: 1fr 1fr;
@@ -437,6 +472,9 @@ input, select, textarea{
 	width: 100%;
 }
 @media screen and (max-width: 800px) {
+	.thanks_wrap .inner_wrap  {
+		width: 100%;
+	}
 	.line {
 		width: 10px;
 	}
@@ -490,6 +528,7 @@ input, select, textarea{
 	/* height: 900px; */
 }
 @media (min-width: 803px) and (max-width: 1342px) {
+	
 	.products_list_wrapper {
 		height: 100%;
 	}
@@ -512,10 +551,13 @@ input, select, textarea{
 	margin: 25px 0px 25px 0px;
 }
 @media (min-width: 800px) and (max-width: 1100px) {
+	.thanks_wrap .inner_wrap  {
+		width: 100%;
+	}
 	.products_inner_menu {
 		width: 100%;
 		grid-template-columns: 1fr 1fr;
-		gap: 22px;
+		gap: 40px;
 		padding: 10px;
 	}
 	.pages-banner-wrapper {
@@ -778,11 +820,11 @@ input, select, textarea{
 	color: white;
 	margin: 0px 0px 50px 0px;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	padding-inline: 20px;
+	align-items: center;
+	justify-content: space-around;
 	/* padding: 21px; */
-	gap: 20px;
+	gap: 40px;
 	padding: 15px 0px 15px 15px;
 	/* padding: 15px 0px 15px 0px; */
 }
@@ -859,6 +901,12 @@ input, select, textarea{
 	padding: 10px 0;
 }
 @media screen and (max-width: 800px) {
+	.products_wrapper {
+		padding: 12px;
+	}
+	.products_wrapper img {
+		height: 200px !important;
+	}
 	.head_body {
 		width: 80%;
 	}

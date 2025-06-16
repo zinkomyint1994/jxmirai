@@ -4,7 +4,16 @@
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><?php bloginfo('name'); ?></title>
+	<title>
+		<?php
+			$customTitle = get_query_var('customPageTitle');
+			if (!empty($customTitle)) {
+			echo $customTitle;
+			} else {
+				echo 'JX未来株式会社';
+			}
+		?>
+	</title>
 	<script src=".../wp-content/plugins/contact-form-7/includes/js/scripts.js" ... ></script>
 
 	<!-- <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" type="image/x-icon">

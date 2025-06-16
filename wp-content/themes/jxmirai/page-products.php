@@ -3,8 +3,12 @@
 /**
  * Template Name: page-service
  */
+set_query_var('customPageTitle', '製造品 | JX未来株式会社');
 get_header(); ?>
-
+<?php
+$pageTitle = "products";
+include 'header.php';
+?>
 <div id="page-wrapper" class="page-enter">
 <!-- main-banner -->
 <?php
@@ -21,14 +25,14 @@ include get_template_directory() . '/custom/pagesBanner.php';
 ?>
 <!-- top -->
 <div class="head-container">
-<div class="scroll_down">
+<!-- <div class="scroll_down">
   <a href="#product-container">
     <span class="mouse">
       <span></span>
     </span>
     <p>SCROLL</p>
   </a>
-</div>
+</div> -->
 
   <div class="head_body">
     <p>JX</p>
